@@ -18,6 +18,10 @@ git init
 
 ### origin 설정
 ```
-git remote add origin 컨트리뷰터의-포크된-깃-레포
+git remote add origin 컨트리뷰터의-포크된-깃레포
 ```
-### 동기화
+### upstream 설정
+```
+git remote add upstream 프로젝트-소유자의-깃레포
+```
+### ㅁㄴ
