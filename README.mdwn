@@ -66,6 +66,15 @@ $ git add & commit
 $ git push origin
 ```
 
+5. master branch 동기화
+
+```
+> now: master
+$ git checkout develop
+> now: master/develop
+$ git merge master
+```
+
 #### gitflow others...
 
 **branch 삭제하기**
