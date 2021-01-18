@@ -3,6 +3,7 @@ import { theme } from 'styled-tools';
 
 export const Container = styled.main`
   ${theme("shortcuts.flexCenterColumn")};
+  width: 100vw;
 `;
 
 export const LectureWrap = styled.div`

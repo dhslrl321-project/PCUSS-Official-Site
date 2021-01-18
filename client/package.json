@@ -10,7 +10,9 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@n8tb1t/use-scroll-position": "^2.0.3",
     "@types/node": "^14.14.20",
+    "aos": "^2.3.4",
     "next": "10.0.5",
     "react": "17.0.1",
     "react-dom": "17.0.1",
@@ -20,8 +22,7 @@
     "styled-breakpoints": "^9.0.8",
     "styled-components": "^5.2.1",
     "styled-reset": "^4.3.4",
-    "styled-tools": "^1.7.2",
-    "@n8tb1t/use-scroll-position": "^2.0.3"
+    "styled-tools": "^1.7.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
