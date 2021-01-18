@@ -6,8 +6,8 @@
 - Css In Js
 - Storybook.js
 
-
 ### Npm Packages
+
 - `create-next-app`
 - `styled-components`
 - `styled-tools`
@@ -15,3 +15,74 @@
 - `react-icons`
 - `react-scroll`
 - `@storybook/cli`
+
+### Gitflow
+
+1. Develop Branch 생성
+
+```
+$ git branch develop
+> now: master
+
+$ git checkout develop
+> now: master/develpo
+```
+
+2. 특정 기능 생성 feature branch 추가.
+   ex) Login 기능 생성
+
+```
+$ git branch feature-login
+> now: master/develop
+
+$ git checkout feature-login
+> now: develop/feature-login
+```
+
+3. 특쟁 기능 개발 완료
+
+```
+> now: develop/feature-login
+> 개발 끝.
+$ git add & commit
+$ git checkout develop
+> now: master/develop
+
+$ git merge feature-login
+> now: master/develop
+```
+
+여기까지 오면 develop에 feature-login 기능이 개발 완료 된 시점
+
+4. pull request
+
+```
+> now: master/develop
+$ git checkout master
+> now: master
+
+$ git merge develop
+> now: master
+
+$ git add & commit
+$ git push origin
+```
+
+5. master branch 동기화
+
+```
+> now: master
+$ git checkout develop
+> now: master/develop
+$ git merge master
+```
+
+#### gitflow others...
+
+**branch 삭제하기**
+
+```
+$ git branch -d
+```
+
+> 모든 feature 개발 후에는 삭제요망
