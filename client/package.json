@@ -6,13 +6,22 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -s ./public -p 9001",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@types/node": "^14.14.20",
     "next": "10.0.5",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "react-icon": "^1.0.0",
+    "react-icons": "^4.1.0",
+    "react-scroll": "^1.8.1",
+    "styled-breakpoints": "^9.0.8",
+    "styled-components": "^5.2.1",
+    "styled-reset": "^4.3.4",
+    "styled-tools": "^1.7.2",
+    "@n8tb1t/use-scroll-position": "^2.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
