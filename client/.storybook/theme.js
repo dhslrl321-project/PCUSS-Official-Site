@@ -6,13 +6,22 @@ const theme = {
     xl: '1200px',
   },
   fontSize: {
-    MainTitle: "2.5rem;",
-    SubTitle: "1.5rem;",
+    MainTitle: "2rem;",
+    SubTitle: "1.4rem;",
 
     PrimaryLabel: "1.3rem;",
     SecondaryLabel: "1.2rem;",
     PrimaryDescription: "0.9rem;",
-    SecondaryDescription: "0.7rem;"
+    SecondaryDescription: "0.7rem;",
+
+    /* Mobile */
+    MainTitleM: "1.5rem;",
+    SubTitleM: "1.2rem;",
+
+    PrimaryLabelM: "1.0rem;",
+    SecondaryLabelM: "0.9rem;",
+    PrimaryDescriptionM: "0.8rem;",
+    SecondaryDescriptionM: "0.7rem;"
   },
   shortcuts: {
     flexCenter: `

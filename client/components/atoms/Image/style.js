@@ -7,6 +7,6 @@ export const Picture = styled.img`
 `;
 
 export const Icon = styled.img`
-  width: 50%;
+  width: 60px;
   height: auto;
 `;
