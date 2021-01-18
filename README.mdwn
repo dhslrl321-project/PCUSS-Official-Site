@@ -43,6 +43,8 @@ $ git checkout feature-login
 
 ```
 > now: develop/feature-login
+> 개발 끝.
+$ git add & commit
 $ git checkout develop
 > now: master/develop
 
