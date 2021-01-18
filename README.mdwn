@@ -1,11 +1,13 @@
-# Hello
+### 사용 기술
 
-## 원격 저장소 설정
+- React
+- React Hooks
+- Next.js
+- Css In Js
+- Storybook.js
 
-1. 프로젝트 폴더 생성
-2. origin 설정
-3. upstream 설정
 
+<<<<<<< HEAD
 
 ### 프로젝트 폴더 생성
 
@@ -25,3 +27,13 @@ git remote add origin 컨트리뷰터의-포크된-깃레포
 git remote add upstream 프로젝트-소유자의-깃레포
 ```
 ### ㅁㄴ
+=======
+### Npm Packages
+- `create-next-app`
+- `styled-components`
+- `styled-tools`
+- `styled-breakpoints`
+- `react-icons`
+- `react-scroll`
+- `@storybook/cli`
+>>>>>>> upstream/master
