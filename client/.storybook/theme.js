@@ -12,7 +12,7 @@ const theme = {
     PrimaryLabel: "1.3rem;",
     SecondaryLabel: "1.2rem;",
     PrimaryDescription: "0.9rem;",
-    SecondaryDescription: "0.8rem;"
+    SecondaryDescription: "0.7rem;"
   },
   shortcuts: {
     flexCenter: `

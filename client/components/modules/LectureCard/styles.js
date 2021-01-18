@@ -36,7 +36,7 @@ export const TextColumn = styled.div`
     margin-bottom: 15px;
     font-weight: bolder;
     ${down("md")} {
-      width: 200px;
+      width: 210px;
     }
     ${down("sm")} {
       width: 100%;
@@ -51,6 +51,7 @@ export const TextColumn = styled.div`
     }
     ${down("sm")} {
       padding-right: 5px;
+      padding-bottom: 5px;
       width: 190px;
     }
   }
