@@ -1,33 +1,12 @@
 ### 사용 기술
 
-- React
+- React.js
 - React Hooks
 - Next.js
 - Css In Js
 - Storybook.js
 
 
-<<<<<<< HEAD
-
-### 프로젝트 폴더 생성
-
-```
-mkdir 폴더명
-cd 폴더명
-git init
-```
-폴더를 생성하고 해당 폴더를 git repository로 만든다.
-
-### origin 설정
-```
-git remote add origin 컨트리뷰터의-포크된-깃레포
-```
-### upstream 설정
-```
-git remote add upstream 프로젝트-소유자의-깃레포
-```
-### ㅁㄴ
-=======
 ### Npm Packages
 - `create-next-app`
 - `styled-components`
@@ -36,4 +15,3 @@ git remote add upstream 프로젝트-소유자의-깃레포
 - `react-icons`
 - `react-scroll`
 - `@storybook/cli`
->>>>>>> upstream/master
