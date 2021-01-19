@@ -85,4 +85,4 @@ $ git merge master
 $ git branch -d
 ```
 
-> 모든 feature 개발 후에는 삭제요망
+> 모든 feature 개발 후에는 삭제요망 add
