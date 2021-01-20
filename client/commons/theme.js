@@ -6,8 +6,8 @@ const theme = {
     xl: '1200px',
   },
   fontSize: {
-    MainTitle: "2.5rem;",
-    SubTitle: "1.5rem;",
+    MainTitle: "2rem;",
+    SubTitle: "1.4rem;",
 
     PrimaryLabel: "1.3rem;",
     SecondaryLabel: "1.2rem;",
@@ -39,6 +39,7 @@ const theme = {
   palettes: {
     title: "#fff",
     cardBg: "#1D1D20",
+    focusColor: "#0050FF",
   }
 }
 
