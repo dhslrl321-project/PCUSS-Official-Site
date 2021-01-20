@@ -1,10 +1,12 @@
 import React from 'react'
+import * as S from "./styles";
+import Label from "../../atoms/Label";
 
-const JobTag = () => {
+const JobTag = ({ tagName }) => {
   return (
-    <div>
-      this is job tag
-    </div>
+    <S.Container>
+      <Label styleType="SecondaryDescription" >{tagName}</Label>
+    </S.Container>
   )
 }
 

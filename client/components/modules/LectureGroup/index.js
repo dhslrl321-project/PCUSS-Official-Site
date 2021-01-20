@@ -11,7 +11,7 @@ const LectureGroup = ({ data }) => {
             <Title styleType="SubTitle">{data.lectureTitle}</Title>
           </S.TitleWrap>
           {data.lectures.map(lecture => (
-            <S.LectureWrap>
+            <S.LectureWrap key={lecture.id}>
               <LectureCard id={lecture.id} data={lecture} />
             </S.LectureWrap>
           ))}

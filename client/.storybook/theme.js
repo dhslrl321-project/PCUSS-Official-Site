@@ -39,6 +39,7 @@ const theme = {
   palettes: {
     title: "#fff",
     cardBg: "#1D1D20",
+    focusColor: "#0050FF",
   }
 }
 
