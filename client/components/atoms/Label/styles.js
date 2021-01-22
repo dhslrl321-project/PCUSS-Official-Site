@@ -8,7 +8,7 @@ const defaultStyle = css`
 export const PrimaryLabel = styled.span`
   font-size: ${theme("fontSize.PrimaryLabel")};
   ${defaultStyle}
-  ${down("sm")} {
+  @media screen and (max-width: 480px){
     font-size: ${theme("fontSize.PrimaryLabelM")}
   }
 `;
@@ -16,7 +16,8 @@ export const PrimaryLabel = styled.span`
 export const SecondaryLabel = styled.span`
   font-size: ${theme("fontSize.SecondaryLabel")};
   ${defaultStyle}
-  ${down("sm")} {
+  
+  @media screen and (max-width: 480px){
     font-size: ${theme("fontSize.SecondaryLabelM")}
   }
 `;
@@ -24,7 +25,7 @@ export const SecondaryLabel = styled.span`
 export const PrimaryDescription = styled.p`
   font-size: ${theme("fontSize.PrimaryDescription")};
   ${defaultStyle}
-  ${down("sm")} {
+  @media screen and (max-width: 480px){
     font-size: ${theme("fontSize.PrimaryDescriptionM")}
   }
 `;
@@ -32,7 +33,7 @@ export const PrimaryDescription = styled.p`
 export const SecondaryDescription = styled.p`
   font-size: ${theme("fontSize.SecondaryDescription")};
   ${defaultStyle}
-  ${down("sm")} {
-    font-size: ${theme("fontSize.")}
+  @media screen and (max-width: 480px){
+    font-size: ${theme("fontSize.SecondaryDescriptoinM")}
   }
 `;
