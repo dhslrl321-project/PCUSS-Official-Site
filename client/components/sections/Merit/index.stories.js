@@ -1,4 +1,5 @@
 import Merit from '.';
+import { headerData, cardData } from './data';
 
 export default {
   title: "sections / Merit",
@@ -8,3 +9,7 @@ export default {
 const Template = (args) => <Merit {...args} />;
 
 export const Rendering = Template.bind({});
+Rendering.args = {
+  headerData: headerData,
+  cardData: cardData
+}

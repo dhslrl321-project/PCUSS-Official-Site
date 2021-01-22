@@ -2,9 +2,8 @@ import React from 'react';
 import * as S from './styles';
 import SectionHeader from '../../modules/SectionHeader';
 import CircleGroup from '../../modules/CircleGroup';
-import { headerData, cardData } from './data';
 
-const Merit = () => {
+const Merit = ({ headerData, cardData }) => {
   const { title, description } = headerData;
 
   return (

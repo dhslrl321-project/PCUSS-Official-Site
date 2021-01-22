@@ -9,7 +9,7 @@ const CircleCard = ({ data }) => {
   return (
     <S.Container>
       <S.PictureColumn>
-        <Image styleType="Picture" src={src} />
+        <Image src={src} />
       </S.PictureColumn>
       <S.TextColumn>
         <Label styleType="SecondaryLabel">{label}</Label>

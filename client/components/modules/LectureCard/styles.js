@@ -10,6 +10,7 @@ export const Container = styled.div`
   height: 85px;
   background: ${theme("palettes.cardBg")};
   border-radius: 10px;
+  
   ${down("md")} {
     width: 100%;
   }
@@ -18,9 +19,12 @@ export const Container = styled.div`
 export const IconColumn = styled.div`
   ${theme("shortcuts.flexCenter")};
   margin-left: 20px;
+  width: 60px;
+  height: auto;
 
   ${down("md")} {
     margin-left: 15px;
+    width: 40px;
   }
 `;
 
