@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { theme, ifProp } from 'styled-tools';
-import { down } from "styled-breakpoints";
+
 export const Container = styled.div`
   ${theme("shortcuts.flexCenter")};
   flex-direction: ${ifProp("isQuestions", "row", "row-reverse")};
@@ -23,10 +23,12 @@ export const ChatBallon = styled.div`
 
 export const EmptyColumn = styled.div`
   width: 400px;
-  ${down("md")} {
+  
+  @media screen and (max-width: 768px){
     width: 200px;
   }
-  ${down("sm")} {
+
+  @media screen and (max-width: 480px){
     width: 50px;
   }
 `;

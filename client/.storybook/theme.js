@@ -1,10 +1,4 @@
 const theme = {
-  breakpoints: {
-    sm: '480px', // 모바일
-    md: '768px', // I Pad (태블릿)
-    lg: '1024px', // I Pad Pro (13inch 노트북)
-    xl: '1200px',
-  },
   fontSize: {
     MainTitle: "2rem;",
     SubTitle: "1.4rem;",
