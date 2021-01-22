@@ -8,6 +8,8 @@ export const Container = styled.div`
 
 export const ChatIconWrapper = styled.div`
   /* icon left margin 이상함 */
+  width: 60px;
+  height: auto;
 `;
 
 

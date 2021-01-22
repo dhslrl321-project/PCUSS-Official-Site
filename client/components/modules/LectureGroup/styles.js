@@ -4,12 +4,14 @@ import { theme } from 'styled-tools';
 export const Root = styled.div`
   ${theme("shortcuts.flexCenter")};
 `;
+
 export const Container = styled.div`
   ${theme("shortcuts.flexCenterColumn")};
   width: 100%;
   max-width: 960px;
   /* max-width: 1100px; */
 `;
+
 export const LectureWrapper = styled.div`
   ${theme("shortcuts.flexCenter")};
   justify-content: center;
@@ -21,6 +23,7 @@ export const LectureWrapper = styled.div`
     flex-direction: column;
   }
 `;
+
 export const LectureWrap = styled.div`
   margin: 10px;
 `;

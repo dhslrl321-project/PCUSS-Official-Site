@@ -1,18 +1,12 @@
 import React from 'react'
 import * as S from "./style";
-const Image = ({ styleType, src }) => {
+
+const Image = ({ src }) => {
   const props = {
-    styleType,
     src
-  }
+  };
+  
+  return <S.Image {...props} />;
+};
 
-  if (styleType === "Picture") {
-    return <S.Picture {...props} />
-  } else if (styleType === "Icon") {
-    return <S.Icon {...props} />
-  } else {
-    return <></>
-  }
-}
-
-export default Image
+export default Image;
