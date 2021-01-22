@@ -1,4 +1,9 @@
 
+export const headerData = {
+  title: "우리가 추구하는 가치",
+  description: "보안인재 양성을 위해 다음과 같은 역량을 겸비하려 합니다."
+}
+
 export const chatLabels = [
   { id: 1, label: "탐구하는 자세", active: true },
   { id: 2, label: "끈기있게 임하는 자세", active: false },
