@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { theme } from 'styled-tools';
-import { down } from "styled-breakpoints";
 
 export const Container = styled.div`
   display: flex;
@@ -10,8 +9,8 @@ export const Container = styled.div`
   height: 85px;
   background: ${theme("palettes.cardBg")};
   border-radius: 10px;
-  
-  ${down("md")} {
+
+  @media screen and (max-width: 768px){
     width: 100%;
   }
 `;
@@ -22,38 +21,43 @@ export const IconColumn = styled.div`
   width: 60px;
   height: auto;
 
-  ${down("md")} {
+  @media screen and (max-width: 768px){
     margin-left: 15px;
     width: 40px;
   }
+  
 `;
 
 export const TextColumn = styled.div`
   ${theme("shortcuts.flexCenterColumn")};
   align-items: flex-start;
   margin-left: 10px;
-  ${down("sm")} {
-    margin-left: 10px; 
-  }
 
+  @media screen and (max-width: 480px){
+    margin-left: 10px;
+  }
   span:first-child {
     margin-bottom: 15px;
     font-weight: bolder;
-    ${down("md")} {
+  
+    @media screen and (max-width: 768px){
       width: 210px;
     }
-    ${down("sm")} {
+  
+    @media screen and (max-width: 768px){
       width: 100%;
       margin-bottom: 5px;
     }
   }
   p:nth-child(2){
     width: 300px;
-    ${down("md")} {
+    
+    @media screen and (max-width: 768px){
       margin-right: 5px;
       width: 180px;
     }
-    ${down("sm")} {
+    
+    @media screen and (max-width: 480px){
       padding-right: 5px;
       padding-bottom: 5px;
       width: 190px;
