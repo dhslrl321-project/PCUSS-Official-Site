@@ -12,7 +12,7 @@ const LectureGroup = ({ data }) => {
           </S.TitleWrap>
           {data.lectures.map(lecture => (
             <S.LectureWrap key={lecture.id}>
-              <LectureCard id={lecture.id} data={lecture} />
+              <LectureCard data={lecture} />
             </S.LectureWrap>
           ))}
         </S.LectureWrapper>

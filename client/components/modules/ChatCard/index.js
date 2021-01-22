@@ -17,7 +17,7 @@ const ChatCard = ({ data }) => {
   return (
     <S.Container isQuestions={isQuestions} data-aos={aosProps} >
       <S.ChatIconWrapper>
-        <Image styleType="Icon" src={src} />
+        <Image src={src} />
       </S.ChatIconWrapper>
       <S.ChatBallon isQuestions={isQuestions}>
         <Label styleType="SecondaryDescription">{chatting}</Label>

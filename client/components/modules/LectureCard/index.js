@@ -8,7 +8,7 @@ const LectureCard = ({ data }) => {
   return (
     <S.Container>
       <S.IconColumn>
-        <Image styleType="Icon" src={src} />
+        <Image src={src} />
       </S.IconColumn>
       <S.TextColumn>
         <Label styleType="SecondaryLabel">{title}</Label>
