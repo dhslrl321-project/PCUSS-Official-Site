@@ -34,6 +34,7 @@ const theme = {
     title: "#fff",
     cardBg: "#1D1D20",
     focusColor: "#0050FF",
+    sourceColor: "#B4B4B4"
   }
 }
 
