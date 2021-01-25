@@ -3,7 +3,7 @@ import * as S from './styles';
 import SectionHeader from '../../modules/SectionHeader';
 import CircleGroup from '../../modules/CircleGroup';
 
-const Merit = ({ data }) => {
+const Club = ({ data }) => {
   const { headerData, cardData } = data;
   const { title, titleDescription } = headerData;
   const { cards } = cardData;
@@ -16,4 +16,4 @@ const Merit = ({ data }) => {
   );
 };
 
-export default Merit;
+export default Club;
