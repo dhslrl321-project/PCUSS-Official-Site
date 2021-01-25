@@ -4,10 +4,16 @@ import Image from '../../atoms/Image';
 import Label from '../../atoms/Label';
 
 const SquircleCard = ({ data }) => {
-
+  const { label, src } = data;
+  
   return (
     <S.Container>
-
+      <S.PictureColumn>
+        <Image src={src} />
+      </S.PictureColumn>
+      <S.LabelColumn>
+        <Label styleType="SecondaryDescription">{label}</Label>
+      </S.LabelColumn>
     </S.Container>
   );
 };
