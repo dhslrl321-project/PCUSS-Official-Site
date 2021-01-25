@@ -3,7 +3,8 @@ import SectionHeader from "../../modules/SectionHeader";
 import CarrerGroup from '../../modules/CarrerGroup';
 import LargeDescription from "../../modules/LargeDescription";
 
-const Carrer = ({ headerData, carrerData, largeDescriptionData }) => {
+const Carrer = ({ data }) => {
+  const { headerData, carrerData, largeDescriptionData } = data
   const { title, description } = headerData;
 
   return (

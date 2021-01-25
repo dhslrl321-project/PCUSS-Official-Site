@@ -5,8 +5,8 @@ import * as S from "./styles";
 import Label from '../../atoms/Label';
 
 
-const Qualification = ({ headerData, chatLabels, chatData }) => {
-
+const Qualification = ({ data }) => {
+  const { headerData, chatLabels, chatData } = data;
   const { title, description } = headerData;
 
   const [chatIndex, setChatIndex] = useState(0);

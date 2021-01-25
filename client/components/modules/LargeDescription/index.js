@@ -32,3 +32,7 @@ const LargeDescription = ({ data }) => {
 }
 
 export default LargeDescription
+
+LargeDescription.defaultProps = {
+  data: { isImg: false }
+}
