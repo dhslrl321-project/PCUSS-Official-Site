@@ -31,7 +31,7 @@ export const DescColumn = styled.div`
   width: 250px;
   margin-top: 20px;
   text-align: center;
-  ${ifProp("isVisible", "", "display: none;")}
+  display: ${ifProp("isVisible", "block;", "none;")};
 
   @media screen and (max-width: 768px) {
     width: 180px;
