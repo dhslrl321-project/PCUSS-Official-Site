@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { theme } from 'styled-tools';
+import { ifProp } from 'styled-tools';
 
 export const Container = styled.div`
   display: flex;
@@ -23,6 +23,17 @@ export const PictureColumn = styled.div`
   }
 `;
 
-export const TextColumn = styled.div`
+export const LabelColumn = styled.div`
 
+`;
+
+export const DescColumn = styled.div`
+  width: 250px;
+  margin-top: 20px;
+  text-align: center;
+  display: ${ifProp("isVisible", "block;", "none;")};
+
+  @media screen and (max-width: 768px) {
+    width: 180px;
+  }
 `;
