@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { theme, ifProp } from 'styled-tools';
 import { down } from 'styled-breakpoints';
 
-export const Container = styled.div`
+export const Container = styled.section`
   width: 100vw;
   ${theme("shortcuts.flexCenterColumn")};
 `;

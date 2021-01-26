@@ -8,11 +8,11 @@ const Carrer = ({ data }) => {
   const { title, description } = headerData;
 
   return (
-    <div>
+    <section>
       <SectionHeader title={title} description={description} />
       <CarrerGroup data={carrerData} />
       <LargeDescription data={largeDescriptionData} />
-    </div>
+    </section>
   )
 }
 

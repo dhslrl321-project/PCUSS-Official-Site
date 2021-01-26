@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { theme } from 'styled-tools';
 
-export const Container = styled.div`
+export const Container = styled.section`
   ${theme("shortcuts.flexCenterColumn")};
 `;
 
