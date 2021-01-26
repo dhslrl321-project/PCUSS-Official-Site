@@ -24,7 +24,7 @@ const LargeDescription = ({ data }) => {
         </S.ImageWrapper>
 
         <S.SourceWrapper isImg={isImg}>
-          <Label styleType="PrimaryDescription">{source}</Label>
+          <Label styleType="PrimaryDescription" size="0.9">{source}</Label>
         </S.SourceWrapper>
       </S.DescriptionWrapper>
     </S.Container>
