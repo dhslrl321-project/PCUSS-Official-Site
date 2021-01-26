@@ -12,7 +12,7 @@ const SquircleCard = ({ data }) => {
         <Image src={src} />
       </S.PictureColumn>
       <S.LabelColumn>
-        <Label styleType="SecondaryDescription">{label}</Label>
+        <Label styleType="SecondaryLabel">{label}</Label>
       </S.LabelColumn>
     </S.Container>
   );
