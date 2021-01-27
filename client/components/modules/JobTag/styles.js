@@ -22,4 +22,8 @@ export const Container = styled.div`
   :hover {
     color: ${theme("palettes.focusColor")};
   }
+
+  @media screen and (max-width: 480px) {
+    margin: 5px;
+  }
 `;
