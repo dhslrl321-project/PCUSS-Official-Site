@@ -11,7 +11,7 @@ export const Container = styled.div`
 
   @media screen and (max-width: 768px) {
     width: 100%;
-  }
+  };
 `;
 
 export const Wrapper = styled.div`
@@ -24,11 +24,13 @@ export const Wrapper = styled.div`
     &:nth-child(n + 4) {
       margin-top: 80px;
     }
-  }
+  };
 
   @media screen and (max-width: 768px) {
     & + &:not(&:nth-child(2n - 1)) {
       margin-left: 20px;
     }
-  }
+  };
+
+  
 `;
