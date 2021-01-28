@@ -33,7 +33,7 @@ const Suggestion = ({ data }) => {
       <SectionHeader title="정보보안 직무에는 무엇이 있을까요?" description="아래 태그중 흥미로운 단어나 키워드를 선택해보세요!" />
       <JobGroup data={data} handleJobCardOnClick={handleJobCardOnClick} />
       <S.SuggestionTextWrapper>
-        <Label styleType="PrimaryLabel">{carrerLabel}</Label>
+        <Label styleType="Label" size="1.3">{carrerLabel}</Label>
       </S.SuggestionTextWrapper>
     </S.Container>
   )

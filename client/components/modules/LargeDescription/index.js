@@ -13,7 +13,7 @@ const LargeDescription = ({ data }) => {
         <div>
           {descs.map(desc =>
             <S.LabelWrapper>
-              <Label key={desc.id} styleType="SecondaryDescription">
+              <Label key={desc.id} styleType="Description">
                 {desc.content}
               </Label>
             </S.LabelWrapper>
@@ -24,7 +24,7 @@ const LargeDescription = ({ data }) => {
         </S.ImageWrapper>
 
         <S.SourceWrapper isImg={isImg}>
-          <Label styleType="PrimaryDescription" size="0.9">{source}</Label>
+          <Label styleType="Description" size="0.9">{source}</Label>
         </S.SourceWrapper>
       </S.DescriptionWrapper>
     </S.Container>
