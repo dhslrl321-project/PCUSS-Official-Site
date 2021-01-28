@@ -7,24 +7,16 @@ export default {
 
 const Template = (args) => <Label {...args} />
 
-export const PrimaryLabelRendering = Template.bind({});
-PrimaryLabelRendering.args = {
-  styleType: "PrimaryLabel",
-  children: "PrimaryLabel"
-}
+export const LabelRendering = Template.bind({});
+LabelRendering.args = {
+  styleType: "Label",
+  size: "1.2",
+  children: "Label"
+};
 
-export const SecondaryLabelRendering = Template.bind({});
-SecondaryLabelRendering.args = {
-  styleType: "SecondaryLabel",
-  children: "SecondaryLabel"
-}
-export const PrimaryDescriptionRendering = Template.bind({});
-PrimaryDescriptionRendering.args = {
-  styleType: "PrimaryDescription",
-  children: "PrimaryDescription"
-}
-export const SecondaryDescriptionRendering = Template.bind({});
-SecondaryDescriptionRendering.args = {
-  styleType: "SecondaryDescription",
-  children: "SecondaryDescriptionl"
-}
+export const DescriptionRendering = Template.bind({});
+DescriptionRendering.args = {
+  styleType: "Description",
+  size: "3.0",
+  children: "Description"
+};
