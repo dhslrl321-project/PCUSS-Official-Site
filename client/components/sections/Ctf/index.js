@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import SectionHeader from "../../modules/SectionHeader";
 import ChatGroup from "../../modules/ChatGroup";
+import LargeDescription from "../../modules/LargeDescription";
 import * as S from "./styles";
-import Label from '../../atoms/Label';
+import Label from "../../atoms/Label";
 
-const Qualification = ({ data }) => {
-  const { headerData, chatLabels, chatData } = data;
+const Ctf = ({ data }) => {
+
+  const { headerData, chatLabels, chatData, largeDescriptionData } = data;
   const { title, description } = headerData;
 
   const [chatIndex, setChatIndex] = useState(0);
@@ -29,6 +31,7 @@ const Qualification = ({ data }) => {
   return (
     <S.Container>
       <SectionHeader title={title} description={description} />
+      <LargeDescription data={largeDescriptionData} />
       <S.LabelGroup>
         {labels.map(label =>
           <S.LabelItem key={label.id} active={label.active} onClick={(...args) => handleChatLabelClick(label, ...args)}>
@@ -42,4 +45,4 @@ const Qualification = ({ data }) => {
   )
 }
 
-export default Qualification
+export default Ctf;

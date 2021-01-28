@@ -25,6 +25,10 @@ export const ImageWrapper = styled.div`
   align-items: center;
   width: 300px;
   margin-top: 50px;
+
+  @media screen and (max-width: 480px){
+    width: 200px;
+  }
 `;
 export const SourceWrapper = styled.div`
   display: ${ifProp("isImg", "none", "flex")};
