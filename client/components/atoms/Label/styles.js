@@ -1,39 +1,30 @@
 import styled, { css } from 'styled-components';
-import { theme } from 'styled-tools';
-import { down } from "styled-breakpoints";
+import { prop } from 'styled-tools';
+
 const defaultStyle = css`
   transition: 0.5s ease;
 `;
 
-export const PrimaryLabel = styled.span`
-  font-size: ${theme("fontSize.PrimaryLabel")};
-  ${defaultStyle}
-  @media screen and (max-width: 480px){
-    font-size: ${theme("fontSize.PrimaryLabelM")}
-  }
-`;
+const fontSizeConverter = (size) => {
+  return size;
+};
 
-export const SecondaryLabel = styled.span`
-  font-size: ${theme("fontSize.SecondaryLabel")};
-  ${defaultStyle}
+const commonAttribute = css`
+  @media screen and (min-width: 768px) {
+    font-size: ${prop('size')}rem;
+  }
   
-  @media screen and (max-width: 480px){
-    font-size: ${theme("fontSize.SecondaryLabelM")}
+  ${defaultStyle};
+
+  @media screen and (max-width: 768px) {
+    font-size: calc(${prop('size')}rem - 0.2rem);
   }
 `;
 
-export const PrimaryDescription = styled.p`
-  font-size: ${theme("fontSize.PrimaryDescription")};
-  ${defaultStyle}
-  @media screen and (max-width: 480px){
-    font-size: ${theme("fontSize.PrimaryDescriptionM")}
-  }
+export const Labels = styled.span`
+  ${commonAttribute};
 `;
 
-export const SecondaryDescription = styled.p`
-  font-size: ${theme("fontSize.SecondaryDescription")};
-  ${defaultStyle}
-  @media screen and (max-width: 480px){
-    font-size: ${theme("fontSize.SecondaryDescriptoinM")}
-  }
+export const Description = styled.p`
+  ${commonAttribute};
 `;

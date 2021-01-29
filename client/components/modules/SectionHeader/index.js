@@ -8,7 +8,7 @@ const SectionHeader = ({ title, description }) => {
   return (
     <S.Container>
       <Title styleType="MainTitle">{title}</Title>
-      <Label styleType="PrimaryDescription">{description}</Label>
+      <Label styleType="Description" size="0.9">{description}</Label>
     </S.Container>
   )
 }

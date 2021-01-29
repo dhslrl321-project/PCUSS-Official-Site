@@ -11,8 +11,8 @@ const LectureCard = ({ data }) => {
         <Image src={src} />
       </S.IconColumn>
       <S.TextColumn>
-        <Label styleType="SecondaryLabel">{title}</Label>
-        <Label styleType="SecondaryDescription">{description}</Label>
+        <Label styleType="Label" size="1.2">{title}</Label>
+        <Label styleType="Description" size="0.7">{description}</Label>
       </S.TextColumn>
     </S.Container>
   )

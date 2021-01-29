@@ -11,7 +11,7 @@ const Link = ({ styleType, children, href, to, smooth, duration, spy, exact, off
     spy,
     exact,
     offset,
-    activClass
+    activClass,
   }
   if (styleType === "NextLink") return <NextLink href={href}><S.NextLink>{children}</S.NextLink></NextLink>;
   else if (styleType === "Anchor") return <S.Anchor {...props}>{children}</S.Anchor>

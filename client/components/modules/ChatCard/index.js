@@ -20,7 +20,7 @@ const ChatCard = ({ data }) => {
         <Image src={src} />
       </S.ChatIconWrapper>
       <S.ChatBallon isQuestions={isQuestions}>
-        <Label styleType="SecondaryDescription">{chatting}</Label>
+        <Label styleType="Description" size="0.7">{chatting}</Label>
       </S.ChatBallon>
       <S.EmptyColumn />
     </S.Container>

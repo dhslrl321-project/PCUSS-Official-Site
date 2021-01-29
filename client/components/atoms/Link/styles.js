@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 import { theme } from 'styled-tools';
 import { Link } from "react-scroll";
+
 export const Styles = css`
   font-size: ${theme("fontSizes.FirstLabel")};
   font-weight: bold;

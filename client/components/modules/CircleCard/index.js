@@ -12,10 +12,10 @@ const CircleCard = ({ data, isVisible }) => {
         <Image src={src} />
       </S.PictureColumn>
       <S.LabelColumn>
-        <Label styleType="SecondaryLabel">{label}</Label>
+        <Label styleType="Label" size="1.2">{label}</Label>
       </S.LabelColumn>
       <S.DescColumn isVisible={isVisible}>
-        <Label styleType="SecondaryDescription">{description}</Label>
+        <Label styleType="Description" size="0.7">{description}</Label>
       </S.DescColumn>
     </S.Container>
   );

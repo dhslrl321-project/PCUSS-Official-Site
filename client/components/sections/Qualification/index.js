@@ -33,7 +33,7 @@ const Qualification = ({ data }) => {
       <S.LabelGroup>
         {labels.map(label =>
           <S.LabelItem key={label.id} active={label.active} onClick={(...args) => handleChatLabelClick(label, ...args)}>
-            <Label styleType="SecondaryLabel" >{label.label}</Label>
+            <Label styleType="Label" size="1.2">{label.label}</Label>
           </S.LabelItem>)}
       </S.LabelGroup>
       <S.ChatWrapper>
