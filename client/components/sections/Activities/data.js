@@ -9,4 +9,4 @@ export const data = {
       { id: 2, label: "컨퍼런스", description: "컨퍼런스에 대한 설명을 뭐라고 해야할지 모르겠어서 장황하게 쓸데없이 끄적이고 있는 개발자가 존재합니다.", src: "/picture/2.svg" }
     ]
   }
-}
+};

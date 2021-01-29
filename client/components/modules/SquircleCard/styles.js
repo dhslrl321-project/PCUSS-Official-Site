@@ -5,7 +5,6 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 `;
 
 export const PictureColumn = styled.div`
@@ -15,7 +14,7 @@ export const PictureColumn = styled.div`
   
   transition: 0.5s ease;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     width: 120px;
     height: 80px;
     border-radius: 10px;
@@ -26,4 +25,16 @@ export const PictureColumn = styled.div`
 
 export const LabelColumn = styled.div`
   margin-top: 10px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.2rem;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    font-size: 0.8rem;
+  }
+
+  @media screen and (max-width: 479px) {
+    font-size: 0.6rem;
+  }
 `;
