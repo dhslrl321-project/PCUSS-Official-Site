@@ -5,9 +5,9 @@ export const data = {
   },
   cardData: {
     cards: [
-      { id: 1, label: "소모임 및 연구실", description: null, src: "/picture/1.svg" },
-      { id: 2, label: "학생과 교수 사이의 관계", description: null, src: "/picture/2.svg" },
-      { id: 3, label: "대회 참여", description: null, src: "/picture/3.svg" }
+      { id: 1, label: "소모임 및 연구실", description: null, src: "/handsup.jpg" },
+      { id: 2, label: "학생과 교수 사이의 관계", description: null, src: "/handsup.jpg" },
+      { id: 3, label: "대회 참여", description: null, src: "/handsup.jpg" }
     ]
   }
 };
