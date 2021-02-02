@@ -2,7 +2,6 @@ import React from 'react';
 import * as S from './styles';
 import SectionHeader from '../../modules/SectionHeader';
 import CircleGroup from '../../modules/CircleGroup';
-import Label from '../../atoms/Label';
 
 const Activities = ({ data, isVisible }) => {
   const { headerData, cardData } = data;

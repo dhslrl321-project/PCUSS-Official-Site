@@ -5,10 +5,6 @@ const defaultStyle = css`
   transition: 0.5s ease;
 `;
 
-const fontSizeConverter = (size) => {
-  return size;
-};
-
 const commonAttribute = css`
   @media screen and (min-width: 768px) {
     font-size: ${prop('size')}rem;

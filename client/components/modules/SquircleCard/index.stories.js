@@ -2,7 +2,7 @@ import SquircleCard from '.';
 
 const data = {
   label: "보안 컨설팅 전문가 홍길동",
-  src: "/picture/1.svg"
+  src: "/interview1.jpg"
 };
 
 export default {

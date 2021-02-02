@@ -5,13 +5,13 @@ const data = {
     id: 1,
     label: "소모임 및 연구실",
     description: null,
-    src: "/picture/1.svg"
+    src: "/handsup.jpg"
   },
   isTrue: {
     id: 1,
     label: "학술 세미나",
     description: "학술 세미나에 대한 설명을 뭐라고 해야할지 모르겠어서 장황하게 쓸데없이 끄적이고 있는 개발자가 존재한다고 합니다.",
-    src: "/picture/1.svg"
+    src: "/handsup.jpg"
   }
 };
 
