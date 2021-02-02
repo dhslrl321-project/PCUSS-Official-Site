@@ -10,15 +10,19 @@ export const Container = styled.div`
 
 export const PictureColumn = styled.div`
   width: 250px;
-  border-radius: 125px;
-
+  height: 250px;
+  & > img {
+    border-radius: 50%;
+  }
   margin-bottom: 40px;
   
   transition: 0.5s ease;
   @media screen and (max-width: 768px) {
     width: 180px;
-    border-radius: 90px;
-
+    height: 180px;
+    & > img {
+      border-radius: 50%;
+    }
     margin-bottom: 20px;
   }
 `;
