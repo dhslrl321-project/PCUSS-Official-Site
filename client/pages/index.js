@@ -1,17 +1,17 @@
 import Navbar from "../components/modules/Navbar";
-import Footer from "../components/modules/Footer"
-import Qualification from "../components/sections/Qualification";
+import Footer from "../components/modules/Footer";
 import Hero from "../components/sections/Hero";
+import Merit from "../components/sections/Merit";
+import { data as meritData } from "../components/sections/Merit/data";
+import Qualification from "../components/sections/Qualification";
 import { data as qualificationData } from "../components/sections/Qualification/data";
 
 export default function Home() {
   return (
-    <div>
-      <Navbar toggle={false} />
+    <main>
       <Hero />
-      {/* <Merit data={meritData} /> */}
+      <Merit data={meritData} />
       <Qualification data={qualificationData} />
-      <Footer />
-    </div>
+    </main>
   )
 }

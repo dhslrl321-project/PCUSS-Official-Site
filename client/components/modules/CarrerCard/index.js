@@ -12,7 +12,7 @@ const CarrerCard = ({ data }) => {
       </S.ImageWrapper>
       <S.TextWrapper>
         <Title styleType="SubTitle">{carrerTitle}</Title>
-        <Label styleType="Description" size="0.7">{carrerDescription}</Label>
+        <Label styleType="Description" size="0.8">{carrerDescription}</Label>
       </S.TextWrapper>
     </S.Container>
   )
