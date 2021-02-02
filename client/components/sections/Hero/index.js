@@ -1,7 +1,7 @@
 import React from 'react'
 import * as S from "./styles";
 
-const Home = () => {
+const Hero = () => {
   return (
     <S.Container>
       <S.TitleWrapper>배재대학교</S.TitleWrapper>
@@ -10,4 +10,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Hero

@@ -3,6 +3,7 @@ import { theme } from 'styled-tools';
 
 export const Container = styled.div`
   ${theme("shortcuts.flexCenterColumn")};
+  margin-top: -80px;
   width: 100vw;
   height: 100vh;
 `;
