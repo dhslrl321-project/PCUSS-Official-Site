@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { theme } from 'styled-tools';
+import { theme, ifProp } from 'styled-tools';
 
 export const Container = styled.aside`
   position: fixed;
@@ -31,30 +31,17 @@ export const SidebarWrapper = styled.div`
   color: #fff;
 `;
 
-export const SidebarMenu = styled.ul`
+export const SidebarMenu = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  a {
+  li {
     margin: 20px;
   }
 `;
 
 export const SidebarLink = styled.li`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  text-decoration: none;
   list-style: none;
-  transition: 0.2s ease-in-out;
-  text-decoration: none;
-  color: #fff;
-  cursor: pointer;
-
-  &:hover {
-    color: #01bf71;
-    transition: 0.2s ease-in-out;
-  }
+  color: ${ifProp("isFocus", theme("palettes.focusColor"), "none")};
 `;
