@@ -25,7 +25,7 @@ export const HeaderWrapper = styled.div`
 `;
 
 export const TitleColumn = styled.div`
-  padding: 20px;
+  padding: 35px;
   display: flex;
   align-items: center;
   justify-content: center;

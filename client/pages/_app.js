@@ -8,8 +8,25 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Navbar from '../components/modules/Navbar';
 import Footer from '../components/modules/Footer';
+import Sidebar from "../components/modules/Sidebar";
 
 export default class RootApp extends App {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      isSidebarOpen: false
+    }
+  }
+
+  handleSidebarToggle = () => {
+    console.log(this.state.isSidebarOpen);
+    this.setState({
+      isSidebarOpen: !this.state.isSidebarOpen
+    })
+  }
+
+
   render() {
     const { Component, ...other } = this.props;
     return (
@@ -19,7 +36,8 @@ export default class RootApp extends App {
           <title>Test</title>
         </Head>
         <ThemeProvider theme={theme}>
-          <Navbar />
+          <Navbar handleSidebarToggle={this.handleSidebarToggle} />
+          <Sidebar isSidebarOpen={this.state.isSidebarOpen} handleSidebarToggle={this.handleSidebarToggle} />
           <Component {...other} />
           <Footer />
         </ThemeProvider>

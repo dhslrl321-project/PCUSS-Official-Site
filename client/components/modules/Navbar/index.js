@@ -4,7 +4,7 @@ import Dropdown from "../Dropdown";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import { FaBars } from "react-icons/fa";
 import Link from "../../atoms/Link/";
-const Navbar = ({ toggle }) => {
+const Navbar = ({ handleSidebarToggle }) => {
 
   const [dropdown, setDropdown] = useState(false);
   const [hideOnScroll, setHideOnScroll] = useState(true)
@@ -29,7 +29,7 @@ const Navbar = ({ toggle }) => {
         <S.TitleColumn>
           <li><S.Link styleType="NextLink" href="/">배재대학교 정보보안학과</S.Link></li>
         </S.TitleColumn>
-        <S.MobileIcon onClick={toggle}>
+        <S.MobileIcon onClick={handleSidebarToggle}>
           <FaBars />
         </S.MobileIcon>
         <S.LinkColumn onMouseOver={menuMouseOver} onMouseLeave={menuMouseLeave}>

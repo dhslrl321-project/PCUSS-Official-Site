@@ -12,9 +12,9 @@ export const Container = styled.aside`
   align-items: center;
   top: 0;
   left: 0;
-  transition: 0.3s ease-in-out;
-  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
-  top: ${({ isOpen }) => (isOpen ? "0" : '-100%')};
+  transition: 0.5s ease-in-out;
+  opacity: ${({ isSidebarOpen }) => (isSidebarOpen ? "100%" : "0")};
+  top: ${({ isSidebarOpen }) => (isSidebarOpen ? "0" : '-100%')};
 `;
 
 export const Icon = styled.div`

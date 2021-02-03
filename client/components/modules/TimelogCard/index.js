@@ -10,7 +10,7 @@ import Label from "../../atoms/Label";
 
 const TimelogCard = ({ year, content, isLeft }) => {
   const aosProp = isLeft ? "zoom-in-right" : "zoom-in-left";
-  const timelineProp = isLeft ? "primary" : "gray";
+  const timelineProp = isLeft ? "primary" : "grey";
 
   return (
     <TimelineItem>
