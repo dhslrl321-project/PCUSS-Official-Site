@@ -5,8 +5,8 @@ import Merit from "../components/sections/Merit";
 import { data as meritData } from "../components/sections/Merit/data";
 import Qualification from "../components/sections/Qualification";
 import { data as qualificationData } from "../components/sections/Qualification/data";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import Timelog from "../components/sections/Timelog";
+import { data as timelogData } from "../components/sections/Timelog/data";
 
 export default function Home() {
   return (
@@ -14,6 +14,7 @@ export default function Home() {
       <Hero />
       <Merit data={meritData} />
       <Qualification data={qualificationData} />
+      <Timelog data={timelogData} />
     </main>
   )
 }
