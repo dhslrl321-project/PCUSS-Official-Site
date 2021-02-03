@@ -29,7 +29,7 @@ const TimelogGroup = ({ data }) => {
 
         <TimelineItem>
           <TimelineSeparator data-aos="fade-left">
-            <TimelineDot variant="outlined" color="gray" data-aos="fade-up" />
+            <TimelineDot variant="outlined" color="grey" data-aos="fade-up" />
           </TimelineSeparator>
           <TimelineContent data-aos="fade-in-left">진행중</TimelineContent>
         </TimelineItem>

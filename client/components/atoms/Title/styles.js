@@ -3,6 +3,7 @@ import { theme } from "styled-tools";
 
 const defaultStyle = css`
   font-weight: bold;
+  letter-spacing: 0.5px;
 `;
 export const MainTitle = styled.h1`
    ${defaultStyle}

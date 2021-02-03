@@ -25,7 +25,7 @@ export const HeaderWrapper = styled.div`
 `;
 
 export const TitleColumn = styled.div`
-  padding: 20px;
+  padding: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,7 +39,7 @@ export const MobileIcon = styled.div`
     display: flex;
     align-items: center;
     position: absolute;
-    top: 0;
+    top: 15px;
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.6rem;
