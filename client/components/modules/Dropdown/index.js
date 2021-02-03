@@ -14,24 +14,24 @@ const Dropdown = ({ show }) => {
     <S.Container show={isOpen}>
       <S.NavColumn>
         <S.NavItem>
-          <Link styleType="NextLink" href="/">커리큘럼</Link>
+          <Link styleType="NextLink" href="/curriculum">커리큘럼</Link>
         </S.NavItem>
         <S.NavItem>
-          <Link styleType="NextLink" href="/">졸업 후 진로</Link>
+          <Link styleType="NextLink" href="/carrer">졸업 후 진로</Link>
         </S.NavItem>
         <S.NavItem>
-          <Link styleType="NextLink" href="/">선배의 인터뷰</Link>
+          <Link styleType="NextLink" href="/interview">선배의 인터뷰</Link>
         </S.NavItem>
       </S.NavColumn>
       <S.NavColumn>
         <S.NavItem>
-          <Link styleType="NextLink" href="/">CTF</Link>
+          <Link styleType="NextLink" href="/activity">CTF</Link>
         </S.NavItem>
         <S.NavItem>
-          <Link styleType="NextLink" href="/">세미나</Link>
+          <Link styleType="NextLink" href="/activity">세미나</Link>
         </S.NavItem>
         <S.NavItem>
-          <Link styleType="NextLink" href="/">컨퍼런스</Link>
+          <Link styleType="NextLink" href="/activity">컨퍼런스</Link>
         </S.NavItem>
       </S.NavColumn>
       <S.NavColumn>

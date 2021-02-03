@@ -9,8 +9,8 @@ export const Container = styled.div`
 `;
 
 export const PictureColumn = styled.div`
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   & > img {
     border-radius: 50%;
   }

@@ -36,10 +36,10 @@ const Navbar = ({ toggle }) => {
           {dropdown && <Dropdown show={dropdown} />}
 
           <S.LinkItem>
-            <Link styleType="NextLink" href="/">교육</Link>
+            <Link styleType="NextLink" href="/curriculum">교육</Link>
           </S.LinkItem>
           <S.LinkItem>
-            <Link styleType="NextLink" href="/">활동</Link>
+            <Link styleType="NextLink" href="/activity">활동</Link>
           </S.LinkItem>
           <S.LinkItem>
             <Link styleType="NextLink" href="/">구성원</Link>
