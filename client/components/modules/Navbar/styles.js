@@ -39,7 +39,7 @@ export const MobileIcon = styled.div`
     display: flex;
     align-items: center;
     position: absolute;
-    top: 0;
+    top: 15px;
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.6rem;

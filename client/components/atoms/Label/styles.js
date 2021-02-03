@@ -3,6 +3,7 @@ import { prop } from 'styled-tools';
 
 const defaultStyle = css`
   transition: 0.5s ease;
+  letter-spacing: 0.5px;
 `;
 
 const commonAttribute = css`
