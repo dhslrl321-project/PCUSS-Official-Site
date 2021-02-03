@@ -10,5 +10,5 @@ export const Container = styled.div`
     margin-bottom: 85px;
   }
 
-  height: 100vh;
+  /* height: 100vh; */
 `;

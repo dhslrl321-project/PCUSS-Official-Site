@@ -8,6 +8,10 @@ export const Container = styled.div`
   
   width: 1000px;
 
+  @media screen and (max-width: 999px) {
+    width: 800px;
+  }
+
   @media screen and (max-width: 767px) {
     width: 500px;
   };
@@ -18,7 +22,7 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 999px) {
     & + &:not(:nth-child(4)) {
       margin-left: 100px;
     }
@@ -28,17 +32,17 @@ export const Wrapper = styled.div`
     }
   };
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    & + &:not(:nth-child(4)) {
-      margin-left: 20px;
+  @media screen and (min-width: 768px) and (max-width: 999px) {
+    & + &:not(:nth-child(2n - 1)) {
+      margin-left: 100px;
     }
 
-    &:nth-child(n + 4) {
-      margin-top: 20px;
+    &:nth-child(n + 3) {
+      margin-top: 60px;
     }
   }
 
-  @media screen and (max-width: 479px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     & + &:not(:nth-child(2n - 1)) {
       margin-left: 30px;
     }
@@ -46,5 +50,9 @@ export const Wrapper = styled.div`
     &:nth-child(n + 3) {
       margin-top: 20px;
     }
+  }
+
+  @media screen and (max-width: 479px) {
+    margin-top: 20px;
   };
 `;
