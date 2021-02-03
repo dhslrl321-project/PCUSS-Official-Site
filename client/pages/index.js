@@ -5,6 +5,8 @@ import Merit from "../components/sections/Merit";
 import { data as meritData } from "../components/sections/Merit/data";
 import Qualification from "../components/sections/Qualification";
 import { data as qualificationData } from "../components/sections/Qualification/data";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Home() {
   return (
