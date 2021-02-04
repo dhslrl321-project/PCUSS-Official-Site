@@ -7,6 +7,7 @@ export const Header = styled.header`
   height: 80px;
   margin-bottom: 80px;
   list-style: none;
+  background: transparent;
 `;
 
 export const HeaderWrapper = styled.div`
@@ -18,7 +19,7 @@ export const HeaderWrapper = styled.div`
   height: -80px;
   transition: 0.5s ease;
   transform: ${ifProp("show", "translate(0, 0);", "translate(0, -100%)")};
-  background: black;
+  background: transparent;
   z-index: 10;
 `;
 
