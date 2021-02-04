@@ -14,20 +14,37 @@ export const InfoColumn = styled.div`
   flex-direction: column;
 
   & > :nth-child(n + 2) {
-    margin-top: 8px;
+    margin-top: 16px;
   }
   
-  margin-right: 30px;
+  margin-right: 60px;
+
+  @media screen and (max-width: 479px) {
+    & > :nth-child(n + 2) {
+      margin-top: 8px;
+    }
+    
+    margin-right: 30px;
+  }
 `;
 
 export const PictureColumn = styled.div`
-  width: 100px;
-  height: 120px;
+  width: 200px;
+  height: 240px;
 
   & > img {
-    border-radius: 10px;
+    border-radius: 20px;
   }
 
+  @media screen and (max-width: 479px) {
+    width: 100px;
+    height: 120px;
+
+    & > img {
+      border-radius: 10px;
+    }
+  }
+  
 `;
 
 export const DetailColumn = styled.div`
@@ -37,11 +54,20 @@ export const DetailColumn = styled.div`
   flex-direction: column;
 
   & > :nth-child(n + 2) {
-    margin-top: 12px;
+    margin-top: 24px;
   }
 
   & > :nth-child(n + 4) {
-    margin-top: 5px;
+    margin-top: 10px;
   }
 
+  @media screen and (max-width: 479px) {
+    & > :nth-child(n + 2) {
+      margin-top: 12px;
+    }
+
+    & > :nth-child(n + 4) {
+      margin-top: 5px;
+    }
+  }
 `;
