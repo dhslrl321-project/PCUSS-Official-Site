@@ -5,4 +5,6 @@ export const Container = styled.section`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  /* height: 100vh; */
 `;

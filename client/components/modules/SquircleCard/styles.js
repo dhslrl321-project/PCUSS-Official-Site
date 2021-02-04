@@ -16,9 +16,18 @@ export const PictureColumn = styled.div`
   
   transition: 0.5s ease;
 
-  @media screen and (max-width: 767px) {
-    width: 120px;
-    height: 80px;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 200px;
+    height: 120px;
+    & > img {
+      border-radius: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 479px) {
+    width: 160px;
+    height: 100px;
     & > img {
       border-radius: 10px;
     }
