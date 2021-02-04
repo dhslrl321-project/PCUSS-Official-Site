@@ -7,9 +7,9 @@ const data = [
     email: "injune@pcu.ac.kr",
     finalEducation: "공학 박사",
     fields: [
-      "정보 보호",
-      "컴퓨터 네트워크",
-      "전산 조직 응용"
+      { id: 1, field: "정보 보호" },
+      { id: 2, field: "컴퓨터 네트워크"},
+      { id: 3, field: "전산 조직 응용"}
     ],
     src: "/professor/pro01.jpg"
   },
@@ -19,8 +19,8 @@ const data = [
     email: "bylee@pcu.ac.kr",
     finalEducation: "공학 박사",
     fields: [
-      "정보 보호",
-      "컴퓨터 네트워크"
+      { id: 1, field: "정보 보호" },
+      { id: 2, field: "컴퓨터 네트워크" },
     ],
     src: "/professor/pro02.jpg"
   },
@@ -30,9 +30,9 @@ const data = [
     email: "aham@pcu.ac.kr",
     finalEducation: "공학 박사",
     fields: [
-      "정보 보호",
-      "네트워크 보안",
-      "사물 인터넷"
+      { id: 1, field: "정보 보호" },
+      { id: 2, field: "네트워크 보안" },
+      { id: 3, field: "사물 인터넷" }
     ],
     src: "/professor/pro08.jpg"
   }

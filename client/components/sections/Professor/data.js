@@ -11,9 +11,9 @@ export const data = {
         email: "injune@pcu.ac.kr",
         finalEducation: "공학 박사",
         fields: [
-          "정보 보호",
-          "컴퓨터 네트워크",
-          "전산 조직 응용"
+          { id: 1, field: "정보 보호" },
+          { id: 2, field: "컴퓨터 네트워크" },
+          { id: 3, field: "전산 조직 응용" }
         ],
         src: "/professor/pro01.jpg"
       },
@@ -23,8 +23,8 @@ export const data = {
         email: "bylee@pcu.ac.kr",
         finalEducation: "공학 박사",
         fields: [
-          "정보 보호",
-          "컴퓨터 네트워크"
+          { id: 1, field: "정보 보호" },
+          { id: 2, field: "컴퓨터 네트워크" }
         ],
         src: "/professor/pro02.jpg"
       },
@@ -34,9 +34,9 @@ export const data = {
         email: "aham@pcu.ac.kr",
         finalEducation: "공학 박사",
         fields: [
-          "정보 보호",
-          "네트워크 보안",
-          "사물 인터넷"
+          { id: 1, field: "정보 보호" },
+          { id: 2, field: "네트워크 보안" },
+          { id: 3, field: "사물 인터넷" }
         ],
         src: "/professor/pro08.jpg"
       },
@@ -46,11 +46,11 @@ export const data = {
         email: "knj0125@pcu.ac.kr",
         finalEducation: "공학 박사",
         fields: [
-          "빅데이터 처리",
-          "기계학습 및 딥러닝",
-          "HCI",
-          "객체 인식",
-          "멀티미디어 신호 처리"
+          { id: 1, field: "빅데이터 처리" },
+          { id: 2, field: "기계학습 및 딥러닝" },
+          { id: 3, field: "HCI" },
+          { id: 4, field: "객체 인식" },
+          { id: 5, field: "멀티미디어 신호 처리" }
         ],
         src: "/professor/pro09.jpg"
       },
@@ -60,10 +60,10 @@ export const data = {
         email: "shseo@pcu.ac.kr",
         finalEducation: "공학 박사",
         fields: [
-          "머신러닝",
-          "딥러닝",
-          "차세대 보안 기술",
-          "미래 예측"
+          { id: 1, field: "머신러닝" },
+          { id: 2, field: "딥러닝" },
+          { id: 3, field: "차세대 보안 기술" },
+          { id: 4, field: "미래 예측" }
         ],
         src: "/professor/pro10.jpg"
       },
@@ -73,9 +73,9 @@ export const data = {
         email: "yjsin@pcu.ac.kr",
         finalEducation: "공학 박사",
         fields: [
-          "정보 보호 정책(법률)",
-          "개인정보보호",
-          "신기술역기능"
+          { id: 1, field: "정보 보호 정책(법률)" },
+          { id: 2, field: "개인정보보호" },
+          { id: 3, field: "신기술역기능" }
         ],
         src: "/professor/pro04.jpg"
       },
@@ -85,8 +85,8 @@ export const data = {
         email: "ejkim@pcu.ac.kr",
         finalEducation: "공학 박사",
         fields: [
-          "물리 보안",
-          "전기 전자 공학"
+          { id: 1, field: "물리 보안" },
+          { id: 2, field: "전기 전자 공학" }
         ],
         src: "/professor/pro06.jpg"
       }
