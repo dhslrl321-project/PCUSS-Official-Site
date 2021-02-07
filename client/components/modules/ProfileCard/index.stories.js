@@ -10,7 +10,7 @@ const data = {
     { id: 3, field:"전산 조직 응용" }
   ],
   src: "/professor/pro01.jpg"
-};q
+};
 
 export default {
   title: "modules / ProfileCard",

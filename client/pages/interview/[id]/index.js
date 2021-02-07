@@ -1,11 +1,15 @@
-import React from 'react'
+import React from 'react';
+import InterviewDetail from '../../../components/sections/InterviewDetail';
+import { useRouter } from 'next/router';
+import { data as interviewDetailData } from '../../../components/sections/InterviewDetail/data';
 
-const index = () => {
+const Index = () => {
+  const router = useRouter();
+  const pageNumber = Number(router.query.id);
+
   return (
-    <div>
-      인터뷰 디테일
-    </div>
-  )
-}
+    <InterviewDetail data={interviewDetailData} pageNumber={pageNumber - 1} />
+  );
+};
 
-export default index
+export default Index;
