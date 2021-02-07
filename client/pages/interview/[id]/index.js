@@ -5,7 +5,9 @@ import { data as interviewDetailData } from '../../../components/sections/Interv
 const Index = ( props ) => {
 
   return (
-    <InterviewDetail data={props.pageProps} />
+    <main>
+      <InterviewDetail data={props.pageProps} />
+    </main>
   );
 };
 
