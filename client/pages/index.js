@@ -1,4 +1,3 @@
-import { useRouter } from "next/router";
 import Hero from "../components/sections/Hero";
 import Merit from "../components/sections/Merit";
 import { data as meritData } from "../components/sections/Merit/data";
@@ -10,11 +9,11 @@ import { data as timelogData } from "../components/sections/Timelog/data";
 export default function Home() {
 
   return (
-    <main>
+    <>
       <Hero />
       <Merit data={meritData} />
       <Qualification data={qualificationData} />
       <Timelog data={timelogData} />
-    </main>
+    </>
   )
 }

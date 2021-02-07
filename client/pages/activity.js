@@ -4,9 +4,9 @@ import Activities from "../components/sections/Activities";
 import { data as activitiesData } from "../components/sections/Activities/data";
 export default function () {
   return (
-    <main>
+    <>
       <Ctf data={ctfData} />
       <Activities data={activitiesData} />
-    </main>
+    </>
   );
 }

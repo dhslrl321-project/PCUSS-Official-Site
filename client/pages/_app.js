@@ -35,12 +35,14 @@ export default class RootApp extends App {
         <Head>
           <title>Test</title>
         </Head>
-        <ThemeProvider theme={theme}>
-          <Navbar handleSidebarToggle={this.handleSidebarToggle} />
-          <Sidebar isSidebarOpen={this.state.isSidebarOpen} handleSidebarToggle={this.handleSidebarToggle} />
-          <Component {...other} />
-          <Footer />
-        </ThemeProvider>
+        <main>
+          <ThemeProvider theme={theme}>
+            <Navbar handleSidebarToggle={this.handleSidebarToggle} />
+            <Sidebar isSidebarOpen={this.state.isSidebarOpen} handleSidebarToggle={this.handleSidebarToggle} />
+            <Component {...other} />
+            <Footer />
+          </ThemeProvider>
+        </main>
       </>
     );
   }
