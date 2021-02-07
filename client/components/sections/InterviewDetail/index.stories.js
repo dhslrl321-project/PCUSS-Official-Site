@@ -11,5 +11,4 @@ const Template = (args) => <InterviewDetail {...args} />;
 export const Rendering = Template.bind({});
 Rendering.args = {
   data,
-  pageNumber: 0,
 };

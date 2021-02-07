@@ -1,15 +1,19 @@
 import React from 'react';
 import InterviewDetail from '../../../components/sections/InterviewDetail';
-import { useRouter } from 'next/router';
 import { data as interviewDetailData } from '../../../components/sections/InterviewDetail/data';
 
-const Index = () => {
-  const router = useRouter();
-  const pageNumber = Number(router.query.id);
+const Index = ( props ) => {
 
   return (
-    <InterviewDetail data={interviewDetailData} pageNumber={pageNumber - 1} />
+    <InterviewDetail data={props.pageProps} />
   );
+};
+
+Index.getInitialProps = ({ query }) => {
+  return {
+    headerData: interviewDetailData.headerData,
+    pageData: interviewDetailData.pageData[query.id - 1]
+  }
 };
 
 export default Index;

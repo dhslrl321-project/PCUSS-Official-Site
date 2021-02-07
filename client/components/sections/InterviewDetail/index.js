@@ -4,9 +4,9 @@ import SectionHeader from '../../modules/SectionHeader';
 import SquircleCard from '../../modules/SquircleCard';
 import QnAGroup from '../../modules/QnAGroup';
 
-const InterviewDetail = ({ data, pageNumber }) => {
+const InterviewDetail = ({ data }) => {
   const { headerData, pageData } = data;
-  const { cardData, qnaData } = pageData[pageNumber];
+  const { cardData, qnaData } = pageData;
   const { title, titleDescription } = headerData;
 
   return (
@@ -19,4 +19,3 @@ const InterviewDetail = ({ data, pageNumber }) => {
 };
 
 export default InterviewDetail;
-
