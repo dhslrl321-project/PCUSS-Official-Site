@@ -5,12 +5,12 @@ const data = {
   email: "injune@pcu.ac.kr",
   finalEducation: "공학 박사",
   fields: [
-    "정보 보호",
-    "Computer Network",
-    "전산 조직 응용"
+    { id: 1, field: "정보 보호" },
+    { id: 2, field: "Computer Network" },
+    { id: 3, field:"전산 조직 응용" }
   ],
   src: "/professor/pro01.jpg"
-};q
+};
 
 export default {
   title: "modules / ProfileCard",

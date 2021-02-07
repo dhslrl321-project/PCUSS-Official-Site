@@ -8,7 +8,7 @@ const SquircleGroup = ({ data }) => {
     <S.Container>
       {data.map(item => (
         <S.Wrapper key={item.id}>
-          <SquircleCard data={item} />
+          <SquircleCard data={item} as={item.id}/>
         </S.Wrapper>
       ))}
     </S.Container>

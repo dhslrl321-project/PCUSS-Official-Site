@@ -20,7 +20,7 @@ const ProfileCard = ({ data }) => {
         <Label styleType="Label" size="1.0">{finalEducationFrame + finalEducation}</Label>
         <Label styleType="Label" size="1.0">{fieldFrame}</Label>
         {fields.map(item => (
-          <Label styleType="Description" size="0.7">{" - " + item}</Label>
+          <Label key={item.id} styleType="Description" size="0.7">{" - " + item.field}</Label>
         ))}
       </S.DetailColumn>
     </S.Container>
