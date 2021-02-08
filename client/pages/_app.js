@@ -4,7 +4,6 @@ import React from 'react';
 import { ThemeProvider } from "styled-components"; // common theme
 import theme from "../commons/theme";
 import Reset from "../commons/reset";
-import AOS from "aos";
 import "aos/dist/aos.css";
 import Navbar from '../components/modules/Navbar';
 import Footer from '../components/modules/Footer';

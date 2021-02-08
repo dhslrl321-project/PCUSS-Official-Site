@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { theme } from 'styled-tools';
 
 export const Container = styled.section`
   display: flex;
@@ -10,6 +9,4 @@ export const Container = styled.section`
   & > div:nth-child(2) {
     margin-bottom: 85px;
   }
-
-  background: ${theme("palettes.background")};
 `;
