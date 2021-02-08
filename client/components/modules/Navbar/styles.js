@@ -5,9 +5,8 @@ export const Header = styled.header`
   font-size: 1.2rem;
   font-weight: bolder;
   height: 80px;
-  margin-bottom: 80px;
   list-style: none;
-  background: transparent;
+  background: ${theme("palettes.background")};
 `;
 
 export const HeaderWrapper = styled.div`
