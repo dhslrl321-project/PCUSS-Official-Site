@@ -12,7 +12,7 @@ export const RootWrapper = styled.div`
   justify-content: center;
   align-items: center;
   max-width: 1100px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 `;
 
 export const LinkContainer = styled.div`
