@@ -46,7 +46,7 @@ const Navbar = ({ handleSidebarToggle }) => {
             <Link styleType="NextLink" href="/activity">활동</Link>
           </S.LinkItem>
           <S.LinkItem isFocus={pathname === "/professor" || pathname === "/lab" ? true : false}>
-            <Link styleType="NextLink" href="/">구성원</Link>
+            <Link styleType="NextLink" href="/professor">구성원</Link>
           </S.LinkItem>
         </S.LinkColumn>
       </S.HeaderWrapper>
