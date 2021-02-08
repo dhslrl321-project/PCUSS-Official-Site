@@ -3,4 +3,5 @@ import { theme } from 'styled-tools';
 
 export const Container = styled.section`
   ${theme("shortcuts.flexCenterColumn")};
+  background: ${theme("palettes.background")};
 `;
