@@ -9,28 +9,28 @@ export const Container = styled.div`
 `;
 
 export const PictureColumn = styled.div`
-  width: ${ifProp("isDetail", "400px;", "240px;")};
-  height: ${ifProp("isDetail", "240px;", "135px;")};
+  width: ${ifProp("isDetail", "400px", "240px")};
+  height: ${ifProp("isDetail", "240px", "135px")};
   & > img {
-    border-radius: ${ifProp("isDetail", "24px;", "16px;")};
+    border-radius: ${ifProp("isDetail", "24px", "16px")};
   }
   
   transition: 0.5s ease;
 
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
-    width: ${ifProp("isDetail", "280px;", "200px;")};
-    height: ${ifProp("isDetail", "200px;", "120px;")};
+    width: ${ifProp("isDetail", "280px", "200px")};
+    height: ${ifProp("isDetail", "200px", "120px")};
     & > img {
-      border-radius: ${ifProp("isDetail", "14px;", "10px;")};
+      border-radius: ${ifProp("isDetail", "14px", "10px")};
     }
   }
   
   @media screen and (max-width: 479px) {
-    width: ${ifProp("isDetail", "240px;", "160px;")};
-    height: ${ifProp("isDetail", "160px;", "100px;")};
+    width: ${ifProp("isDetail", "240px", "160px")};
+    height: ${ifProp("isDetail", "160px", "100px")};
     & > img {
-      border-radius: ${ifProp("isDetail", "14px;", "10px;")};
+      border-radius: ${ifProp("isDetail", "14px", "10px")};
     }
   }
 `;
