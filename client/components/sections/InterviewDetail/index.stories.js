@@ -1,5 +1,5 @@
 import InterviewDetail from '.';
-import { data } from './data';
+import { storyData } from './data';
 
 export default {
   title: "sections / InterviewDetail",
@@ -10,5 +10,5 @@ const Template = (args) => <InterviewDetail {...args} />;
 
 export const Rendering = Template.bind({});
 Rendering.args = {
-  data,
+  data: storyData
 };
