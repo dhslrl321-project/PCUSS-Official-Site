@@ -5,4 +5,5 @@ export const Container = styled.section`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: ${theme("margin.lastSectionMargin")};
 `;

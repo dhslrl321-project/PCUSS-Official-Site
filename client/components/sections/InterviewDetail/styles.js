@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { theme } from 'styled-tools';
 export const Container = styled.section`
   display: flex;
   justify-content: center;
@@ -9,4 +9,6 @@ export const Container = styled.section`
   & > div:nth-child(2) {
     margin-bottom: 85px;
   }
+
+  margin: ${theme("margin.firstSectionMargin")};
 `;

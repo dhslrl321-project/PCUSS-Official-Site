@@ -13,7 +13,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: 35px;
-  background: #1D1D20;
+  background: ${theme("palettes.cardBg")};
   margin: 10px;
   padding: 0 20px;
   border-radius: 18px;

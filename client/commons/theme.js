@@ -1,21 +1,21 @@
 const theme = {
   fontSize: {
-    MainTitle: "2rem;",
-    SubTitle: "1.4rem;",
+    MainTitle: "2rem",
+    SubTitle: "1.4rem",
 
-    PrimaryLabel: "1.3rem;",
-    SecondaryLabel: "1.2rem;",
-    PrimaryDescription: "0.9rem;",
-    SecondaryDescription: "0.7rem;",
+    PrimaryLabel: "1.3rem",
+    SecondaryLabel: "1.2rem",
+    PrimaryDescription: "0.9rem",
+    SecondaryDescription: "0.7rem",
 
     /* Mobile */
-    MainTitleM: "1.5rem;",
-    SubTitleM: "1.2rem;",
+    MainTitleM: "1.5rem",
+    SubTitleM: "1.2rem",
 
-    PrimaryLabelM: "1.0rem;",
-    SecondaryLabelM: "0.9rem;",
-    PrimaryDescriptionM: "0.8rem;",
-    SecondaryDescriptionM: "0.7rem;"
+    PrimaryLabelM: "1.0rem",
+    SecondaryLabelM: "0.9rem",
+    PrimaryDescriptionM: "0.8rem",
+    SecondaryDescriptionM: "0.7rem"
   },
   shortcuts: {
     flexCenter: `
@@ -33,9 +33,14 @@ const theme = {
   palettes: {
     title: "#fff",
     background: "#0F1218",
-    cardBg: "#2F373C",
+    cardBg: "#1D1D20",
     focusColor: "#0050FF",
-    sourceColor: "#B4B4B4"
+    sourceColor: "#B4B4B4",
+  },
+  margin: {
+    sectionMargin: "250px 0",
+    firstSectionMargin: "50px 0 250px 0",
+    lastSectionMargin: "250px 0 100px 0",
   }
 }
 
