@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import SectionHeader from "../../modules/SectionHeader";
 import ChatGroup from "../../modules/ChatGroup";
 import LargeDescription from "../../modules/LargeDescription";
