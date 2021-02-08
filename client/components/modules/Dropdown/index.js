@@ -36,14 +36,14 @@ const Dropdown = ({ show }) => {
       </S.NavColumn>
       <S.NavColumn>
         <S.NavItem>
-          <Link styleType="NextLink" href="/">교수진</Link>
+          <Link styleType="NextLink" href="/professor">교수진</Link>
         </S.NavItem>
-        <S.NavItem>
+        {/* <S.NavItem>
           <Link styleType="NextLink" href="/">랩실</Link>
         </S.NavItem>
         <S.NavItem>
           <Link styleType="NextLink" href="/">소모임</Link>
-        </S.NavItem>
+        </S.NavItem> */}
       </S.NavColumn>
     </S.Container>
   )
