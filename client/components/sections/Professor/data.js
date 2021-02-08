@@ -23,8 +23,8 @@ export const data = {
         email: "bylee@pcu.ac.kr",
         finalEducation: "공학 박사",
         fields: [
-          { id: 1, field: "정보 보호" },
-          { id: 2, field: "컴퓨터 네트워크" }
+          { id: 1, field: "데이터베이스" },
+          { id: 2, field: "지능 정보 시스템" }
         ],
         src: "/professor/pro02.jpg"
       },
@@ -71,7 +71,7 @@ export const data = {
         id: 6,
         name: "신영진 부교수",
         email: "yjsin@pcu.ac.kr",
-        finalEducation: "공학 박사",
+        finalEducation: "행정학 박사",
         fields: [
           { id: 1, field: "정보 보호 정책(법률)" },
           { id: 2, field: "개인정보보호" },
