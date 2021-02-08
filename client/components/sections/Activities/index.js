@@ -8,7 +8,7 @@ const Activities = ({ data, isVisible }) => {
   const { cards } = cardData;
 
   return (
-    <S.Container data-aos="zoom-in-up">
+    <S.Container data-aos="zoom-in-up" id="seminar">
       <SectionHeader title={title} description={titleDescription} />
       <CircleGroup data={cards} isVisible={isVisible} />
     </S.Container>

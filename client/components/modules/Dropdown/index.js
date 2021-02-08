@@ -28,10 +28,10 @@ const Dropdown = ({ show }) => {
           <Link styleType="NextLink" href="/activity">CTF</Link>
         </S.NavItem>
         <S.NavItem>
-          <Link styleType="NextLink" href="/activity">세미나</Link>
+          <Link styleType="NextLink" href="/activity/#seminar">세미나</Link>
         </S.NavItem>
         <S.NavItem>
-          <Link styleType="NextLink" href="/activity">컨퍼런스</Link>
+          <Link styleType="NextLink" href="/activity/#seminar">컨퍼런스</Link>
         </S.NavItem>
       </S.NavColumn>
       <S.NavColumn>

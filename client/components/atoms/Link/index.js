@@ -2,16 +2,9 @@ import React from 'react'
 import * as S from "./styles";
 import NextLink from "next/link";
 
-const Link = ({ styleType, children, href, to, smooth, duration, spy, exact, offset, activeClass, as }) => {
+const Link = ({ styleType, children, href, as }) => {
   const props = {
     href,
-    to,
-    smooth,
-    duration,
-    spy,
-    exact,
-    offset,
-    activeClass,
     as,
   }
   if (styleType === "NextLink") return <NextLink href={href} as={as}><S.NextLink>{children}</S.NextLink></NextLink>;
