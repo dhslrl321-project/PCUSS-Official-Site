@@ -12,7 +12,7 @@ const InterviewDetail = ({ data }) => {
   return (
     <S.Container>
       <SectionHeader title={title} description={titleDescription} />
-      <SquircleCard data={cardData} />
+      <SquircleCard data={cardData} isDetail={true} />
       <QnAGroup data={qnaData} />
     </S.Container>
   );

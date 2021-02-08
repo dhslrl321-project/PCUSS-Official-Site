@@ -11,7 +11,7 @@ const Interview = ({ data }) => {
   return (
     <S.Container>
       <SectionHeader title={title} description={titleDescription} />
-      <SquircleGroup data={cards} />
+      <SquircleGroup data={cards} isDetail={false} />
     </S.Container>
   );
 };
