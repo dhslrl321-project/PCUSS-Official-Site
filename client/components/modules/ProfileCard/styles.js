@@ -29,16 +29,16 @@ export const InfoColumn = styled.div`
 `;
 
 export const PictureColumn = styled.div`
-  width: 200px;
-  height: 240px;
+  width: 150px;
+  height: 180px;
 
   & > img {
     border-radius: 20px;
   }
 
   @media screen and (max-width: 479px) {
-    width: 100px;
-    height: 120px;
+    width: 80px;
+    height: 100px;
 
     & > img {
       border-radius: 10px;

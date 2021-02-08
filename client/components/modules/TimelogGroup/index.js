@@ -1,22 +1,12 @@
-import React, { useEffect } from 'react'
-import * as S from "./styles";
-import TimelogCard from "../TimelogCard";
-import TimelineItem from "@material-ui/lab/TimelineItem";
-import TimelineSeparator from "@material-ui/lab/TimelineSeparator";
-import TimelineConnector from "@material-ui/lab/TimelineConnector";
+import Timeline from "@material-ui/lab/Timeline";
 import TimelineContent from "@material-ui/lab/TimelineContent";
 import TimelineDot from "@material-ui/lab/TimelineDot";
-import Timeline from "@material-ui/lab/Timeline";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import TimelineItem from "@material-ui/lab/TimelineItem";
+import TimelineSeparator from "@material-ui/lab/TimelineSeparator";
+import TimelogCard from "../TimelogCard";
+import * as S from "./styles";
 
 const TimelogGroup = ({ data }) => {
-
-  useEffect(() => {
-    AOS.init({
-      duration: 2000,
-    });
-  })
   return (
     <S.Container>
       <Timeline align="alternate">

@@ -7,7 +7,7 @@ import * as S from "./styles";
 const LargeDescription = ({ data }) => {
   const { title, descs, source, isImg, src } = data;
   return (
-    <S.Container>
+    <S.Container data-aos="zoom-in">
       <Title styleType="SubTitle">{title}</Title>
       <S.DescriptionWrapper>
         <div>

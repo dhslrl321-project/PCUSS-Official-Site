@@ -10,7 +10,7 @@ const InterviewDetail = ({ data }) => {
   const { title, titleDescription } = headerData;
 
   return (
-    <S.Container>
+    <S.Container data-aos="zoom-in-up">
       <SectionHeader title={title} description={titleDescription} />
       <SquircleCard data={cardData} isDetail={true} />
       <QnAGroup data={qnaData} />

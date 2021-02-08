@@ -7,7 +7,7 @@ const ProfileGroup = ({ data }) => {
   return (
     <S.Container>
       {data.map(item => (
-        <S.Wrapper key={item.id}>
+        <S.Wrapper data-aos="zoom-in" key={item.id}>
           <ProfileCard data={item} />
         </S.Wrapper>
       ))}

@@ -1,16 +1,9 @@
-import React, { useEffect } from 'react'
 import * as S from "./styles";
 import Image from "../../atoms/Image";
 import Label from '../../atoms/Label';
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const ChatCard = ({ data }) => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  })
+
   const { src, chatting, isQuestions } = data;
   const aosProps = isQuestions ? "fade-right" : "fade-left";
 

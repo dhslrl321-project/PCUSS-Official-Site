@@ -31,7 +31,7 @@ const Ctf = ({ data }) => {
   return (
     <S.Container>
       <SectionHeader title={title} description={description} />
-      <LargeDescription data={largeDescriptionData} />
+      <LargeDescription data-aos="zoom-in" data={largeDescriptionData} />
       <S.LabelGroup>
         {labels.map(label =>
           <S.LabelItem key={label.id} active={label.active} onClick={(...args) => handleChatLabelClick(label, ...args)}>

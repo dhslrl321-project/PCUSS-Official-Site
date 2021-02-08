@@ -8,7 +8,7 @@ const Carrer = ({ data }) => {
   const { title, description } = headerData;
 
   return (
-    <S.Container>
+    <S.Container data-aos="zoom-in-up">
       <SectionHeader title={title} description={description} />
       <CarrerGroup data={carrerData} />
       <LargeDescription data={largeDescriptionData} />

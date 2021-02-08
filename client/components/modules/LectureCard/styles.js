@@ -17,15 +17,14 @@ export const Container = styled.div`
 
 export const IconColumn = styled.div`
   ${theme("shortcuts.flexCenter")};
-  margin-left: 20px;
-  width: 60px;
+  margin: 0 20px;
+  width: 40px;
   height: auto;
 
   @media screen and (max-width: 768px){
-    margin-left: 15px;
+    margin: 0 15px;
     width: 40px;
   }
-  
 `;
 
 export const TextColumn = styled.div`
