@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { theme } from 'styled-tools';
 
 export const Container = styled.section`
   display: flex;
@@ -10,5 +11,5 @@ export const Container = styled.section`
     margin-bottom: 85px;
   }
 
-  /* height: 100vh; */
+  background: ${theme("palettes.background")};
 `;

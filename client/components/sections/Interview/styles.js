@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { theme } from 'styled-tools';
 
 export const Container = styled.section`
   display: flex;
@@ -6,5 +7,5 @@ export const Container = styled.section`
   align-items: center;
   flex-direction: column;
 
-  /* height: 100vh; */
+  background-color: ${theme("palettes.background")};
 `;
