@@ -14,27 +14,36 @@ export const data = {
     {
       id: 1,
       conversations: [
-        { id: 1, src: "/chat/junior.svg", chatting: "정보보안학과에선 어떤 능력을 요구하나요?", isQuestions: true },
-        { id: 2, src: "/chat/senior.svg", chatting: "기본적으로 컴퓨터에 대한 흥미가 있어야 합니다. 컴퓨터에 대한 흥미가 없더라도 걱정하지 마세요. 컴퓨터의 세계는 아주 흥미롭거든요.", isQuestions: false },
-        { id: 3, src: "/chat/junior.svg", chatting: "벌써부터 흥미로워요! 자세히 말해주세요!", isQuestions: true },
-        { id: 4, src: "/chat/senior.svg", chatting: "기본적으로 모든 것에 궁금증을 갖고 탐구하는 제세가 필요합니다. 탐구하는 자세를 겸비하기 위해서는 다양한 활동을 다양한 시각에서 체험해야 하죠.", isQuestions: false },
+        { id: 1, src: "/chat/junior.svg", chatting: "웹 해킹이란 무엇인가요?", isQuestions: true },
+        { id: 2, src: "/chat/senior.svg", chatting: "웹 해킹이란 웹 사이트의 취약점을 공격하는 기술이에요.", isQuestions: false },
+        { id: 4, src: "/chat/junior.svg", chatting: "오.. 어떤 문제가 나오나요?", isQuestions: true },
+        { id: 5, src: "/chat/senior.svg", chatting: "웹 해킹 분야에서는 하나의 웹 페이지가 주어질거에요", isQuestions: false },
+        { id: 6, src: "/chat/senior.svg", chatting: "그럼 그 웹에 여러분들이 시도할 수 있는 모든 것들을 이용해 해킹을 수행하고 깃발을 찾으면 점수를 얻습니다.", isQuestions: false },
+        { id: 7, src: "/chat/junior.svg", chatting: "하지만 저는 웹 해킹에 대해서 아는게 없는걸요?", isQuestions: true },
+        { id: 8, src: "/chat/senior.svg", chatting: "걱정하지 마세요! Java 프로그래밍언어나 1학년 때 배운 기초 웹 프로그래밍을 통해 기본기를 쌓고 네트워크 보안을 통해서 다양한 해킹 기법들을 공부할 수 있습니다!", isQuestions: false },
       ]
     },
     {
       id: 2,
       conversations: [
-        { id: 1, src: "/chat/junior.svg", chatting: "끈기있는 자세란 무엇을 의미하나요?", isQuestions: true },
-        { id: 2, src: "/chat/senior.svg", chatting: "해킹이라는 것은 많은 시간이 걸립니다. 그에 따라서 당연하게 끈기가 없다면, 내가 직면한 문제를 해결하지 못해요.", isQuestions: false },
-        { id: 3, src: "/chat/senior.svg", chatting: "최고의 보안인재가 되기 위해서는 끈기있는 자세는 필수 덕목이에요.", isQuestions: false },
-        { id: 4, src: "/chat/senior.svg", chatting: "끈기가 생기려면 우선 흥미가 생겨야 합니다. 제가 장담하는데 컴퓨터의 세계에 빠지면 흥미롭지 않을 수가 없어요!", isQuestions: false }]
+        { id: 1, src: "/chat/junior.svg", chatting: "암호학은 무엇이죠? 암호학?", isQuestions: true },
+        { id: 2, src: "/chat/senior.svg", chatting: "암호학은 보안에서 어딜가나 빠지지 않는 것입니다. 암호학은 보안에 있어서 가장 중요한 역할을 수행하죠.", isQuestions: false },
+        { id: 3, src: "/chat/senior.svg", chatting: "쉽게 말 해서 암호학은 평문을 암호문으로 바꾸는 행위를 말하는데, CTF에서도 암호학이 출제돼요!", isQuestions: false },
+        { id: 4, src: "/chat/junior.svg", chatting: "암호학이라.. 저에게 암호학은 너무 어렵지 않을까요?", isQuestions: true },
+        { id: 5, src: "/chat/senior.svg", chatting: "걱정하지 마세요! 2학년 때 배우는 암호학개론부터 시작해서 컴퓨터 기초와 네트워크 보안을 수강한다면 여러분도 충분히 해결할 수 있을거에요 ㅎㅎ", isQuestions: false },
+        { id: 6, src: "/chat/senior.svg", chatting: "저희가 도와드릴게요!", isQuestions: false }
+      ]
     },
     {
       id: 3,
       conversations: [
-        { id: 1, src: "/chat/junior.svg", chatting: "그럼 어떤 것을 도전해야 하죠?", isQuestions: true },
-        { id: 2, src: "/chat/senior.svg", chatting: "도전할 수 있는 분야는 아주 무궁무진해요!", isQuestions: false },
-        { id: 3, src: "/chat/senior.svg", chatting: "웹 해킹, 드론 해킹, 딥러닝 알고리즘을 적용한 데이터 분석, 블록체인을 활용한 공동 지갑, 트래픽 분석등등 실제로 현재 선배들이 연구하고 있는 분야에요!", isQuestions: false },
-        { id: 4, src: "/chat/junior.svg", chatting: "과연 제가 할 수 있을까요?... 걱정돼요..", isQuestions: true },
+        { id: 1, src: "/chat/junior.svg", chatting: "포렌식! 포렌식은 들어본적 있는것 같아요!", isQuestions: true },
+        { id: 2, src: "/chat/junior.svg", chatting: "증거인멸을 시도한 범죄자의 휴대폰을 포렌식 했다. 라는 기사를 본 적 있어요", isQuestions: true },
+        { id: 3, src: "/chat/senior.svg", chatting: "정답입니다. 포렌식은 사이버 수사대나 법을 다루는 곳에서 데이터를 분석하고 증거를 수집하는데에 쓰여요", isQuestions: false },
+        { id: 4, src: "/chat/senior.svg", chatting: "하드디스크나 네트워크 통신 이력, 메모리 캡쳐등이 주어지며 데이터 분석 및 증거를 수집하라는 문제로 출제돼요", isQuestions: false },
+        { id: 5, src: "/chat/junior.svg", chatting: "어떤 수업을 들어야 풀 수 있을까요?", isQuestions: true },
+        { id: 6, src: "/chat/senior.svg", chatting: "해킹 실무나, 보안 프로젝트와 비슷한 실제 사용되는 해킹을 다루는 수업을 듣는다면 충분히 해결할 수 있습니다.", isQuestions: false },
+        { id: 7, src: "/chat/senior.svg", chatting: "화이팅!", isQuestions: false },
       ]
     },
     {
