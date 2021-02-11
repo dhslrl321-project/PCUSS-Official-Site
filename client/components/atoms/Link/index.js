@@ -7,8 +7,7 @@ const Link = ({ styleType, children, href, as }) => {
     href,
     as,
   }
-  if (styleType === "NextLink") return <NextLink href={href} as={as}><S.NextLink>{children}</S.NextLink></NextLink>;
-  else if (styleType === "Anchor") return <S.Anchor {...props}>{children}</S.Anchor>;
+  if (styleType === "NextLink") return <NextLink {...props}><S.NextLink>{children}</S.NextLink></NextLink>;
   else return <></>;
 
 }
