@@ -8,28 +8,65 @@ export const Root = styled.div`
 export const Container = styled.div`
   ${theme("shortcuts.flexCenterColumn")};
   width: 100%;
-  max-width: 960px;
-  /* max-width: 1100px; */
+  max-width: 940px;
 `;
 
 export const LectureWrapper = styled.div`
   ${theme("shortcuts.flexCenter")};
-  justify-content: center;
-  flex-wrap: wrap;
+
   position: relative;
   margin: 50px 0;
+  flex-direction: column;
+
   @media screen and (max-width: 768px){
     flex-wrap: nowrap;
     flex-direction: column;
   }
 `;
 
-export const LectureWrap = styled.div`
-  margin: 10px;
+export const TitleWrap = styled.div`
+  width: 920px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+
+  @media screen and (max-width: 768px) {
+    width: 550px;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 275px;
+  }
 `;
 
-export const TitleWrap = styled.div`
-  position: absolute;
-  top: -25px;
-  left: 10px;
+export const LectureWrap = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+  @media screen and (min-width: 481px) {
+    margin-top: 10px;
+
+    & > :nth-child(n + 3) {
+      margin-top: 20px;
+    }
+
+    & > :nth-child(2n) {
+      margin-left: 20px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    & > :nth-child(1) {
+      margin-top: 10px;
+    }
+
+    & > :nth-child(n + 2) {
+      margin-top: 20px;
+    }
+  }
 `;
