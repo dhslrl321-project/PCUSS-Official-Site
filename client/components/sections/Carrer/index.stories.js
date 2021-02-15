@@ -1,5 +1,5 @@
 import Carrer from ".";
-import { data } from "./data";
+import { data } from "../../../datas/CarrerData";
 export default {
   title: "sections / Carrer",
   component: Carrer
