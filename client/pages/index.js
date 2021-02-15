@@ -1,11 +1,10 @@
 import Hero from "../components/sections/Hero";
 import Merit from "../components/sections/Merit";
-import { data as meritData } from "../components/sections/Merit/data";
+import { data as meritData } from "../datas/MeritData";
 import Qualification from "../components/sections/Qualification";
-import { data as qualificationData } from "../components/sections/Qualification/data";
+import { data as qualificationData } from "../datas/QualificationData";
 import Timelog from "../components/sections/Timelog";
-import { data as timelogData } from "../components/sections/Timelog/data";
-
+import { data as timelogData } from "../datas/TimelogData";
 export default function Home() {
 
   return (
