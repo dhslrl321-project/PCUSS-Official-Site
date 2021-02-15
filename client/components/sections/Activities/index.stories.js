@@ -1,5 +1,5 @@
 import Activities from '.';
-import { data } from './data';
+import { data } from "../../../datas/ActivitiesData";
 
 export default {
   title: "sections / Activities",

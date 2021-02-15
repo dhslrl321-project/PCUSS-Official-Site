@@ -1,5 +1,5 @@
 import Professor from '.';
-import { data } from './data';
+import { data } from "../../../datas/ProfessorData";
 
 export default {
   title: "sections / Professor",
@@ -12,3 +12,4 @@ export const Rendering = Template.bind({});
 Rendering.args = {
   data,
 };
+

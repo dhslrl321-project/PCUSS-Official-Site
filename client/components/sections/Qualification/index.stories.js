@@ -1,5 +1,7 @@
 import Qualification from ".";
-import { data } from "./data";
+
+import { data } from "../../../datas/QualificationData";
+
 export default {
   title: "sections / Qualification",
   component: Qualification

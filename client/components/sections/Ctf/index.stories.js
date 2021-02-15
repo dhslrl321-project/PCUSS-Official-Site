@@ -1,5 +1,5 @@
 import Ctf from ".";
-import { data } from "./data";
+import { data } from "../../../datas/CtfData";
 
 export default {
   title: "sections / CTF",
