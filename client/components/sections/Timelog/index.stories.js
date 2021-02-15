@@ -1,5 +1,5 @@
 import Timelog from ".";
-import { data } from "./data";
+import { data } from "../../../datas/TimelogData";
 
 export default {
   title: "sections / Timelog",
