@@ -1,6 +1,5 @@
 import Curriculum from ".";
-import { data } from "./data";
-
+import { data } from "../../../datas/CurriculumData";
 export default {
   title: "sections / Curriculum",
   component: Curriculum

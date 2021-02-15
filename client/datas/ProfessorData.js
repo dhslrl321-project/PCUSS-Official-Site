@@ -5,8 +5,8 @@ export const data = {
   },
   cardData: {
     cards: [
-      { 
-        id: 1, 
+      {
+        id: 1,
         name: "조인준 교수",
         email: "injune@pcu.ac.kr",
         finalEducation: "공학 박사",
@@ -17,7 +17,7 @@ export const data = {
         ],
         src: "/professor/pro01.jpg"
       },
-      { 
+      {
         id: 2,
         name: "이병엽 교수",
         email: "bylee@pcu.ac.kr",
@@ -28,8 +28,8 @@ export const data = {
         ],
         src: "/professor/pro02.jpg"
       },
-      { 
-        id: 3, 
+      {
+        id: 3,
         name: "함형민 조교수",
         email: "aham@pcu.ac.kr",
         finalEducation: "공학 박사",
@@ -40,7 +40,7 @@ export const data = {
         ],
         src: "/professor/pro08.jpg"
       },
-      { 
+      {
         id: 4,
         name: "곽내정 조교수",
         email: "knj0125@pcu.ac.kr",
@@ -54,7 +54,7 @@ export const data = {
         ],
         src: "/professor/pro09.jpg"
       },
-      { 
+      {
         id: 5,
         name: "서상훈 객원 교수",
         email: "shseo@pcu.ac.kr",
@@ -67,7 +67,7 @@ export const data = {
         ],
         src: "/professor/pro10.jpg"
       },
-      { 
+      {
         id: 6,
         name: "신영진 부교수",
         email: "yjsin@pcu.ac.kr",
@@ -79,7 +79,7 @@ export const data = {
         ],
         src: "/professor/pro04.jpg"
       },
-      { 
+      {
         id: 7,
         name: "김은중 겸임 교원",
         email: "ejkim@pcu.ac.kr",

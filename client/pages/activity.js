@@ -1,7 +1,7 @@
 import Ctf from "../components/sections/Ctf";
-import { data as ctfData } from "../components/sections/Ctf/data";
+import { data as ctfData } from "../datas/CtfData";
 import Activities from "../components/sections/Activities";
-import { data as activitiesData } from "../components/sections/Activities/data";
+import { data as activitiesData } from "../datas/ActivitiesData";
 
 export default function activity() {
   return (

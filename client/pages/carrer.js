@@ -1,7 +1,7 @@
 import Carrer from "../components/sections/Carrer";
-import { data as carrerData } from "../components/sections/Carrer/data";
+import { data as carrerData } from "../datas/CarrerData";
 import Suggestion from "../components/sections/Suggestion";
-import { data as suggestionData } from "../components/sections/Suggestion/data";
+import { data as suggestionData } from "../datas/SuggestionData";
 
 export default function carrer() {
   return (
