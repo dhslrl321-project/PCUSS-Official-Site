@@ -29,7 +29,7 @@ const Suggestion = ({ data }) => {
   }
 
   return (
-    <S.Container>
+    <S.Container data-aos="zoom-in-up">
       <SectionHeader title="정보보안 직무에는 무엇이 있을까요?" description="아래 태그중 흥미로운 단어나 키워드를 선택해보세요!" />
       <JobGroup data={data} handleJobCardOnClick={handleJobCardOnClick} />
       <S.SuggestionTextWrapper>

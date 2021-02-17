@@ -1,5 +1,6 @@
 import Suggestion from ".";
-import { data } from "./data";
+
+import { data } from "../../../datas/SuggestionData";
 
 export default {
   title: "sections / Suggestion",

@@ -4,16 +4,23 @@ import Link from '../../atoms/Link';
 import Image from '../../atoms/Image';
 import Label from '../../atoms/Label';
 
-const SquircleCard = ({ data }) => {
+const SquircleCard = ({ data, as, isDetail }) => {
   const { label, src } = data;
-  
+  const path = `/interview/${as}`;
+
+  const link =  <Link styleType="NextLink" href="/interview/[id]" as={path}>
+                  <S.PictureColumn isDetail={isDetail}>
+                    <Image src={src} />
+                  </S.PictureColumn>
+                </Link>;
+
+  const picture = <S.PictureColumn isDetail={isDetail}>
+                    <Image src={src} />
+                  </S.PictureColumn>;
+
   return (
     <S.Container>
-      <Link styleType="NextLink" href="#">
-        <S.PictureColumn>
-          <Image src={src} />
-        </S.PictureColumn>
-      </Link>
+      {isDetail ? picture : link}
       <S.LabelColumn>
         <Label styleType="Label">{label}</Label>
       </S.LabelColumn>

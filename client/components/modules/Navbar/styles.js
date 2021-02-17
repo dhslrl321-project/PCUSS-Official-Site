@@ -1,14 +1,12 @@
 import styled from 'styled-components';
-
+import { theme, ifProp } from 'styled-tools';
 export const Header = styled.header`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  ${theme("shortcuts.flexCenter")};
   font-size: 1.2rem;
   font-weight: bolder;
   height: 80px;
-  margin-bottom: 80px;
   list-style: none;
+  background: ${theme("palettes.background")};
 `;
 
 export const HeaderWrapper = styled.div`
@@ -19,13 +17,13 @@ export const HeaderWrapper = styled.div`
   max-width: 1100px;
   height: -80px;
   transition: 0.5s ease;
-  transform: ${({ show }) => show ? "translate(0, 0);" : "translate(0, -100%);"};
-  background: black;
+  transform: ${ifProp("show", "translate(0, 0);", "translate(0, -100%)")};
+  background: transparent;
   z-index: 10;
 `;
 
 export const TitleColumn = styled.div`
-  padding: 20px;
+  padding: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,7 +37,7 @@ export const MobileIcon = styled.div`
     display: flex;
     align-items: center;
     position: absolute;
-    top: 0;
+    top: 15px;
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.6rem;
@@ -62,9 +60,9 @@ export const LinkColumn = styled.div`
 export const LinkItem = styled.li`
   margin: 0 20px;
   padding: 30px 10px;
-  :active{
-    border-bottom: 3px solid #3C59FD;
-  }
+
+  border-bottom: ${ifProp("isFocus", "3px solid", "none")};
+  color: ${ifProp("isFocus", theme("palettes.focusColor"), "none")};
 `;
 
 export const Link = styled.a`

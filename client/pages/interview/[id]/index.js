@@ -1,11 +1,19 @@
-import React from 'react'
+import React from 'react';
+import InterviewDetail from '../../../components/sections/InterviewDetail';
+import { data as interviewDetailData } from '../../../datas/InterviewDetailData';
 
-const index = () => {
+const Index = ( props ) => {
+
   return (
-    <div>
-      인터뷰 디테일
-    </div>
-  )
-}
+    <InterviewDetail data={props.pageProps} />
+  );
+};
 
-export default index
+Index.getInitialProps = ({ query }) => {
+  return {
+    headerData: interviewDetailData.headerData,
+    pageData: interviewDetailData.pageData[query.id - 1]
+  }
+};
+
+export default Index;

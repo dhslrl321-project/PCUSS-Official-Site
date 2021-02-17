@@ -9,7 +9,7 @@ const Club = ({ data }) => {
   const { cards } = cardData;
 
   return (
-    <S.Container>
+    <S.Container data-aos="zoom-in-up">
       <SectionHeader title={title} description={titleDescription} />
       <CircleGroup data={cards} />
     </S.Container>

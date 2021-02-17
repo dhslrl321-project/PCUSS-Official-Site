@@ -23,25 +23,25 @@ const Footer = () => {
             <S.LinkItems>
               <S.LinkTitle>See More</S.LinkTitle>
               <S.LinkWrap>
-                <Link styleType="NextLink" href="/">커리큘럼</Link>
+                <Link styleType="NextLink" href="/curriculum">커리큘럼</Link>
               </S.LinkWrap>
               <S.LinkWrap>
-                <Link styleType="NextLink" href="/">졸업 후 진로</Link>
+                <Link styleType="NextLink" href="/carrer">졸업 후 진로</Link>
               </S.LinkWrap>
               <S.LinkWrap>
-                <Link styleType="NextLink" href="/">교수진</Link>
+                <Link styleType="NextLink" href="/professor">교수진</Link>
               </S.LinkWrap>
               <S.LinkWrap>
-                <Link styleType="NextLink" href="/">선배의 인터뷰</Link>
+                <Link styleType="NextLink" href="/interview">선배의 인터뷰</Link>
               </S.LinkWrap>
             </S.LinkItems>
             <S.LinkItems>
               <S.LinkTitle>Activities</S.LinkTitle>
               <S.LinkWrap>
-                <Link styleType="NextLink" href="/">세미나</Link>
+                <Link styleType="NextLink" href="/activity">세미나</Link>
               </S.LinkWrap>
               <S.LinkWrap>
-                <Link styleType="NextLink" href="/">CTF</Link>
+                <Link styleType="NextLink" href="/activity">CTF</Link>
               </S.LinkWrap>
               <S.LinkWrap>
                 <Link styleType="NextLink" href="/">랩실</Link>

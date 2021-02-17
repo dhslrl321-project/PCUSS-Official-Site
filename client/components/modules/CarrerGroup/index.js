@@ -7,7 +7,7 @@ const CarrerGroup = ({ data }) => {
   return (
     <S.Container>
       {data.map(carrer =>
-        <S.CardWrapper key={carrer.id}>
+        <S.CardWrapper data-aos="zoom-in" key={carrer.id}>
           <CarrerCard data={carrer} />
         </S.CardWrapper>)}
     </S.Container>

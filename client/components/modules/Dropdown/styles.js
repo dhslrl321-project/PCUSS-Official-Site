@@ -6,12 +6,12 @@ export const Container = styled.div`
   align-items: center;
   position: absolute;
   background: #181818;
-  border-radius: 10px;
+  border-radius: 5px;
   transition: 1s ease;
   top: ${({ show }) => show ? "90%" : "50%"};
   opacity: ${({ show }) => show ? "1" : "0"};
   width: 300px;
-  left: 1px;
+  left: 15px;
   z-index: 1;
 `;
 

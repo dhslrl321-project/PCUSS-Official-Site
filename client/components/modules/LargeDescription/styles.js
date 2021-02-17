@@ -3,6 +3,7 @@ import { theme, ifProp } from 'styled-tools';
 
 export const Container = styled.div`
   ${theme("shortcuts.flexCenterColumn")}
+  margin-top: 50px;
 `;
 export const DescriptionWrapper = styled.div`
   width: 750px;

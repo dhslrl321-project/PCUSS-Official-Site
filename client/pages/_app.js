@@ -1,6 +1,6 @@
 import App from 'next/app';
 import Head from 'next/head';
-import React from 'react';
+import { useEffect } from 'react';
 import { ThemeProvider } from "styled-components"; // common theme
 import theme from "../commons/theme";
 import Reset from "../commons/reset";
@@ -8,8 +8,25 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Navbar from '../components/modules/Navbar';
 import Footer from '../components/modules/Footer';
+import Sidebar from "../components/modules/Sidebar";
 
 export default class RootApp extends App {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      isSidebarOpen: false
+    }
+  }
+
+  handleSidebarToggle = () => {
+    console.log(this.state.isSidebarOpen);
+    this.setState({
+      isSidebarOpen: !this.state.isSidebarOpen
+    })
+  }
+
+
   render() {
     const { Component, ...other } = this.props;
     return (
@@ -18,12 +35,30 @@ export default class RootApp extends App {
         <Head>
           <title>Test</title>
         </Head>
-        <ThemeProvider theme={theme}>
-          <Navbar />
-          <Component {...other} />
-          <Footer />
-        </ThemeProvider>
+        <main>
+          <ThemeProvider theme={theme}>
+            <DefaultContainer>
+              <Navbar handleSidebarToggle={this.handleSidebarToggle} />
+              <Sidebar isSidebarOpen={this.state.isSidebarOpen} handleSidebarToggle={this.handleSidebarToggle} />
+              <Component {...other} />
+              <Footer />
+            </DefaultContainer>
+          </ThemeProvider>
+        </main>
       </>
     );
   }
+}
+
+const DefaultContainer = ({ children }) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  })
+  return (
+    <div>
+      {children}
+    </div>
+  )
 }

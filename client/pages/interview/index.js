@@ -1,10 +1,8 @@
 import Interview from "../../components/sections/Interview";
-import { data as interviewData } from "../../components/sections/Interview/data";
+import { data as interviewData } from "../../datas/InterviewData";
 
 export default function interview() {
   return (
-    <main>
-      <Interview data={interviewData} />
-    </main>
+    <Interview data={interviewData} />
   );
 }

@@ -10,11 +10,11 @@ const LectureGroup = ({ data }) => {
           <S.TitleWrap>
             <Title styleType="SubTitle">{data.lectureTitle}</Title>
           </S.TitleWrap>
-          {data.lectures.map(lecture => (
-            <S.LectureWrap key={lecture.id}>
-              <LectureCard data={lecture} />
-            </S.LectureWrap>
-          ))}
+          <S.LectureWrap>
+            {data.lectures.map(lecture => (
+                <LectureCard key={lecture.id} data={lecture} />
+            ))}
+          </S.LectureWrap>
         </S.LectureWrapper>
       </S.Container>
     </S.Root>
