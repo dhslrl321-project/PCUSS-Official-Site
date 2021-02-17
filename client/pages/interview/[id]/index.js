@@ -1,6 +1,6 @@
 import React from 'react';
 import InterviewDetail from '../../../components/sections/InterviewDetail';
-import { data as interviewDetailData } from '../../../components/sections/InterviewDetail/data';
+import { data as interviewDetailData } from '../../../datas/InterviewDetailData';
 
 const Index = ( props ) => {
 
