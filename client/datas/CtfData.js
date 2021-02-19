@@ -65,7 +65,6 @@ export const data = {
       { id: 4, content: "이런 CTF를 저희 사이버 보안학과에서는 2020년 1회를 시작으로 세미나와 함께 하나의 문화로 자리 잡힌 행사 입니다." },
       { id: 5, content: "본인이 CTF를 처음 하더라도 선배 들의 도움을 받으며 직접 해킹을 해볼 수 있는 기회가 됩니다." }
     ],
-    source: "",
     src: "/ctf/xfff.png"
   }
 }
