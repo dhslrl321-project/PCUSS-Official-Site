@@ -5,7 +5,7 @@ import Label from "../../atoms/Label";
 import * as S from "./styles";
 
 const LargeDescription = ({ data }) => {
-  const { title, descs, source, isImg, src } = data;
+  const { title, descs, source, src } = data;
   return (
     <S.Container data-aos="zoom-in">
       <Title styleType="SubTitle">{title}</Title>
@@ -19,11 +19,11 @@ const LargeDescription = ({ data }) => {
             </S.LabelWrapper>
           )}
         </div>
-        <S.ImageWrapper isImg={isImg}>
+        <S.ImageWrapper isImg={src !== null}>
           <Image src={src} />
         </S.ImageWrapper>
 
-        <S.SourceWrapper isImg={isImg}>
+        <S.SourceWrapper isImg={src === null}>
           <Label styleType="Description" size="0.9">{source}</Label>
         </S.SourceWrapper>
       </S.DescriptionWrapper>
