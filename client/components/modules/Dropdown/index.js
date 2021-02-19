@@ -38,12 +38,12 @@ const Dropdown = ({ show }) => {
         <S.NavItem>
           <Link styleType="NextLink" href="/professor">교수진</Link>
         </S.NavItem>
-        {/* <S.NavItem>
-          <Link styleType="NextLink" href="/">랩실</Link>
+        <S.NavItem>
+          <Link styleType="NextLink" href="/"></Link>
         </S.NavItem>
         <S.NavItem>
-          <Link styleType="NextLink" href="/">소모임</Link>
-        </S.NavItem> */}
+          <Link styleType="NextLink" href="/"></Link>
+        </S.NavItem>
       </S.NavColumn>
     </S.Container>
   )
