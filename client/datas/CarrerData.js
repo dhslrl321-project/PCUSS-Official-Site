@@ -38,7 +38,6 @@ export const data = {
       { id: 4, content: "이런 Insight가 생겨야 시스템을 보고 분석할 수 있는 능력이 생기기 때문에, 패턴이나 공격 기법만 외워서는 절대 보안 전문가로 거듭날 수 없습니다." },
     ],
     source: "(주) SK Infosec 공식 블로그 발췌",
-    src: ""
   }
 }
 
