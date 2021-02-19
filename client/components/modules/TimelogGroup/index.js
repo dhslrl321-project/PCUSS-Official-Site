@@ -15,7 +15,7 @@ const TimelogGroup = ({ data }) => {
             key={item.id}
             year={item.year}
             content={item.content}
-            isLeft={item.isLeft} />)}
+            isLeft={parseInt(item.id) % 2 === 0} />)}
 
         <TimelineItem>
           <TimelineSeparator data-aos="fade-left">
