@@ -66,7 +66,6 @@ export const data = {
       { id: 5, content: "본인이 CTF를 처음 하더라도 선배 들의 도움을 받으며 직접 해킹을 해볼 수 있는 기회가 됩니다." }
     ],
     source: "",
-    isImg: true,
     src: "/ctf/xfff.png"
   }
 }
