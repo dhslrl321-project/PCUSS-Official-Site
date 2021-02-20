@@ -3,7 +3,7 @@ import * as S from './styles';
 import Image from '../../atoms/Image';
 import Label from '../../atoms/Label';
 
-const CircleCard = ({ data, isVisible }) => {
+const CircleCard = ({ data, isDescVisible }) => {
   const { label, description , src } = data;
 
   return (
@@ -14,7 +14,7 @@ const CircleCard = ({ data, isVisible }) => {
       <S.LabelColumn>
         <Label styleType="Label" size="1.2">{label}</Label>
       </S.LabelColumn>
-      <S.DescColumn isVisible={isVisible}>
+      <S.DescColumn isDescVisible={isDescVisible}>
         <Label styleType="Description" size="0.7">{description}</Label>
       </S.DescColumn>
     </S.Container>
@@ -24,5 +24,5 @@ const CircleCard = ({ data, isVisible }) => {
 export default CircleCard;
 
 CircleCard.defaultProps = {
-  isVisible: false,
+  isDescVisible: false,
 };
