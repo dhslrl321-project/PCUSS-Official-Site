@@ -7,7 +7,7 @@ import Label from '../../atoms/Label';
 const LabCard = ({ data }) => {
   const { labMainData, labInfoData } = data;
   return (
-    <S.Container>
+    <S.Container data-aos="zoom-in-up">
       <S.ImageColumn>
         <Image src={labMainData.src} />
         <S.Description>
@@ -18,7 +18,7 @@ const LabCard = ({ data }) => {
       </S.ImageColumn>
       <S.InfoColumn>
         {labInfoData.map(infoData =>
-          <LabInfoCard data={infoData} />)}
+          <LabInfoCard key={infoData.id} data={infoData} />)}
       </S.InfoColumn>
     </S.Container>
   )

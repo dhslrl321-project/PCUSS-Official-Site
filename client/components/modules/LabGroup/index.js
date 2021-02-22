@@ -4,7 +4,7 @@ import LabCard from '../LabCard';
 const LabGroup = ({ data }) => {
   return (
     <S.Container>
-      {data.map(labCard => <LabCard data={labCard.labData} />)}
+      {data.map(labCard => <LabCard key={labCard.id} data={labCard.labData} />)}
     </S.Container>
   )
 }
