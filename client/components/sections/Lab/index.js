@@ -7,7 +7,7 @@ const Lab = ({ data }) => {
   const { headerData, labData } = data;
   const { title, titleDescription } = headerData;
   return (
-    <S.Container>
+    <S.Container id="lab">
       <SectionHeader title={title} description={titleDescription} />
       <LabGroup data={labData} />
     </S.Container>
