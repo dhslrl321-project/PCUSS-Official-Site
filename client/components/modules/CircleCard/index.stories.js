@@ -28,6 +28,6 @@ isFalseRendering.args = {
 export const isTrueRendering = (args) => <CircleCard {...args} />;
 isTrueRendering.args = {
   data: data.isTrue,
-  isVisible: true,
+  isDescVisible: true,
 }
 
