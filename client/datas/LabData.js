@@ -42,7 +42,7 @@ export const data = {
     {
       id: 2, labData: {
         labMainData: {
-          labName: "POC SOC",
+          labName: "PCU SOC",
           labBirth: "연구실 창립일 : 2020.03 ~ 현재",
           labLocation: "연구실 위치 : S103, S202",
           src: "/handsup.jpg"
