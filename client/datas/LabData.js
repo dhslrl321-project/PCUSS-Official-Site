@@ -30,7 +30,7 @@ export const data = {
             ]
           },
           {
-            id: 3, infoTitle: "성과 및 주요 활동", infoDescription: [
+            id: 4, infoTitle: "성과 및 주요 활동", infoDescription: [
               { id: 1, description: "📌 배재대학교 최초 Best Of Best 합격" },
               { id: 2, description: "📌 CTF Power of XX 70팀 중 최종 등수 6등으로 수상" },
               { id: 3, description: "📌 논문 대회 수상" },
@@ -55,13 +55,6 @@ export const data = {
             id: 2,
             infoTitle: "연구 주제 및 과제",
             infoDescription: "보안 관제, 네트워크 패킷 분석"
-          },
-          {
-            id: 3, infoTitle: "성과 및 주요 활동", infoDescription: [
-              { id: 1, description: "📌 배재대학교 최초 Best Of Best 합격" },
-              { id: 2, description: "📌 CTF Power of XX 70팀 중 최종 등수 6등으로 수상" },
-              { id: 3, description: "📌 논문 대회 수상" },
-            ]
           },
           {
             id: 3, infoTitle: "성과 및 주요 활동", infoDescription: [
