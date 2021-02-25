@@ -42,7 +42,7 @@ export const data = {
     {
       id: 2, labData: {
         labMainData: {
-          labName: "POC SOC",
+          labName: "PCU SOC",
           labBirth: "연구실 창립일 : 2020.03 ~ 현재",
           labLocation: "연구실 위치 : S103, S202",
           src: "/handsup.jpg"
@@ -91,7 +91,7 @@ export const data = {
             ]
           },
           {
-            id: 3, infoTitle: "성과 및 주요 활동", infoDescription: [
+            id: 4, infoTitle: "성과 및 주요 활동", infoDescription: [
               { id: 1, description: "📌 배재대학교 최초 Best Of Best 합격" },
               { id: 2, description: "📌 CTF Power of XX 70팀 중 최종 등수 6등으로 수상" },
               { id: 3, description: "📌 논문 대회 수상" },
