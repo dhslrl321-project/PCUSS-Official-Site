@@ -39,10 +39,6 @@ export const TextColumn = styled.div`
   align-items: flex-start;
   margin-left: 10px;
 
-  /* @media screen and (max-width: 480px){
-    margin-left: 10px;
-  } */
-
   /* Label */
   span {
     margin-bottom: 15px;
@@ -58,18 +54,7 @@ export const TextColumn = styled.div`
 
     @media screen and (min-width: 1101px) {
       width: 220px;
-    }
-
-      
-    /* @media screen and (max-width: 768px) {
-      width: 210px;
-    }
-  
-    @media screen and (max-width: 480px) {
-      width: 100%;
-      margin-bottom: 5px;
-    } */
-   
+    }   
   }
 
   /* Description */
@@ -85,16 +70,5 @@ export const TextColumn = styled.div`
     @media screen and (min-width: 1101px) {
       width: 300px;
     }
-    
-    /* @media screen and (max-width: 768px) {
-      margin-right: 5px;
-      width: 180px;
-    }
-    
-    @media screen and (max-width: 480px) {
-      padding-right: 5px;
-      padding-bottom: 5px;
-      width: 190px;
-    } */
   }
 `

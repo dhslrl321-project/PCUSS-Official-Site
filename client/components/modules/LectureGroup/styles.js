@@ -44,14 +44,6 @@ export const TitleWrap = styled.div`
   @media screen and (min-width: 1101px) {
     width: 920px;
   }
-
-  /* @media screen and (max-width: 768px) {
-    width: 550px;
-  }
-
-  @media screen and (max-width: 480px) {
-    width: 275px;
-  } */
 `;
 
 export const LectureWrap = styled.div`
