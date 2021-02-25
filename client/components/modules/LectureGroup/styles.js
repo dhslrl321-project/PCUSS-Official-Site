@@ -7,8 +7,14 @@ export const Root = styled.div`
 
 export const Container = styled.div`
   ${theme("shortcuts.flexCenterColumn")};
-  width: 100%;
-  max-width: 940px;
+
+  @media screen and (max-width: 1100px) {
+    width: 100vw;
+  }
+
+  @media screen and (min-width: 1101px) {
+    width: 1100px;
+  }
 `;
 
 export const LectureWrapper = styled.div`
@@ -25,20 +31,27 @@ export const LectureWrapper = styled.div`
 `;
 
 export const TitleWrap = styled.div`
-  width: 920px;
+  /* width: 920px; */
 
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
 
+  @media screen and (max-width: 1100px) {
+    width: calc(81.8vw + 20px);
+  }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 1101px) {
+    width: 920px;
+  }
+
+  /* @media screen and (max-width: 768px) {
     width: 550px;
   }
 
   @media screen and (max-width: 480px) {
     width: 275px;
-  }
+  } */
 `;
 
 export const LectureWrap = styled.div`
