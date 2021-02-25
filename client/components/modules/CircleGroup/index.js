@@ -2,13 +2,13 @@ import React from 'react';
 import * as S from './styles';
 import CircleCard from '../CircleCard';
 
-const CircleGroup = ({ data, isVisible }) => {
+const CircleGroup = ({ data, isDescVisible }) => {
 
   return (
     <S.Container>
       {data.map(item => (
         <S.Wrapper key={item.id}>
-          <CircleCard data={item} isVisible={isVisible}/>
+          <CircleCard data={item} isDescVisible={isDescVisible}/>
         </S.Wrapper>
       ))}
     </S.Container>
@@ -18,5 +18,5 @@ const CircleGroup = ({ data, isVisible }) => {
 export default CircleGroup;
 
 CircleGroup.defaultProps = {
-  isVisible: false,
+  isDescVisible: false,
 };
