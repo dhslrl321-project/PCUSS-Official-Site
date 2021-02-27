@@ -17,7 +17,7 @@ const Dropdown = ({ show }) => {
           <Link styleType="NextLink" href="/curriculum">커리큘럼</Link>
         </S.NavItem>
         <S.NavItem>
-          <Link styleType="NextLink" href="/carrer">졸업 후 진로</Link>
+          <Link styleType="NextLink" href="/carrer">졸업 후 진로</Link>
         </S.NavItem>
         <S.NavItem>
           <Link styleType="NextLink" href="/interview">선배의 인터뷰</Link>
