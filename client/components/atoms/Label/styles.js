@@ -14,7 +14,7 @@ const commonAttribute = css`
   ${defaultStyle};
 
   @media screen and (max-width: 768px) {
-    font-size: calc(${prop('size')}rem - 0.2rem);
+    font-size: calc(${prop('size')}rem - 0.1rem);
   }
 `;
 

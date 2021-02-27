@@ -17,7 +17,7 @@ const Dropdown = ({ show }) => {
           <Link styleType="NextLink" href="/curriculum">커리큘럼</Link>
         </S.NavItem>
         <S.NavItem>
-          <Link styleType="NextLink" href="/carrer">졸업 후 진로</Link>
+          <Link styleType="NextLink" href="/carrer">졸업 후 진로</Link>
         </S.NavItem>
         <S.NavItem>
           <Link styleType="NextLink" href="/interview">선배의 인터뷰</Link>
@@ -38,12 +38,12 @@ const Dropdown = ({ show }) => {
         <S.NavItem>
           <Link styleType="NextLink" href="/professor">교수진</Link>
         </S.NavItem>
-        {/* <S.NavItem>
-          <Link styleType="NextLink" href="/">랩실</Link>
+        <S.NavItem>
+          <Link styleType="NextLink" href="/member/#lab">연구실</Link>
         </S.NavItem>
         <S.NavItem>
-          <Link styleType="NextLink" href="/">소모임</Link>
-        </S.NavItem> */}
+          <Link styleType="NextLink" href="/member/#club">소모임</Link>
+        </S.NavItem>
       </S.NavColumn>
     </S.Container>
   )

@@ -26,8 +26,7 @@ export const TitleColumn = styled.div`
   padding: 35px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  
+  justify-content: center;  
 `;
 
 export const MobileIcon = styled.div`
