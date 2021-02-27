@@ -33,7 +33,7 @@ export default class RootApp extends App {
       <>
         <Reset />
         <Head>
-          <title>Test</title>
+          <title>배재대학교 정보보안학과</title>
         </Head>
         <main>
           <ThemeProvider theme={theme}>
