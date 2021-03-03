@@ -6,7 +6,7 @@ export const data = {
   cardData: {
     cards: [
       { id: 1, label: "농구 팀 AIR", description: null, src: "/club/ClubBasketBall.JPG" },
-      { id: 2, label: "축구 팀 적토마", description: null, src: "/ClubFootball.JPG" },
+      { id: 2, label: "축구 팀 적토마", description: null, src: "/club/ClubFootball.JPG" },
     ]
   }
 };

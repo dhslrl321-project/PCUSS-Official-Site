@@ -21,13 +21,13 @@ export const ImageWrapper = styled.div`
 export const TextWrapper = styled.div`
   ${theme("shortcuts.flexCenter")};
   flex-direction: column;
-  width: 400px;
   margin: 20px 100px;
+  width: 450px;
   h3:first-child {
     margin: 15px;
+    width: 90%;
   }
   @media screen and (max-width: 480px) {
-    width: 300px;
     margin: 20px 0px;
   }
 `;

@@ -16,6 +16,7 @@ const GlobalStyles = createGlobalStyle`
     background: #0F1218;
     color: white;
     overflow-x: hidden;
+    line-height: 130%;
   }
 `
 

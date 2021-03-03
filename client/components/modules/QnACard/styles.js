@@ -1,12 +1,12 @@
 import styled from 'styled-components';
+import { theme } from 'styled-tools';
 
 export const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: start;
-
+  ${theme("shortcuts.flexCenterColumn")};
+  align-items: flex-start;
   p {
-    margin-top: 8px;
+    line-height: 180%;
+    margin-top: 10px;
+    font-weight: 300;
   }
 `;

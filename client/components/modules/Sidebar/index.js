@@ -6,7 +6,9 @@ import { FaTimes } from "react-icons/fa";
 const Sidebar = ({ isSidebarOpen, handleSidebarToggle }) => {
 
   const router = useRouter();
+
   const { pathname } = router;
+
 
   return (
     <S.Container isSidebarOpen={isSidebarOpen} onClick={handleSidebarToggle}>
@@ -30,20 +32,20 @@ const Sidebar = ({ isSidebarOpen, handleSidebarToggle }) => {
           <S.SidebarLink isFocus={pathname === "/activity" ? true : false}>
             <Link styleType="NextLink" href="/activity">CTF</Link>
           </S.SidebarLink>
-          <S.SidebarLink isFocus={pathname === "/activity" ? true : false}>
-            <Link styleType="NextLink" href="/activity">세미나</Link>
+          <S.SidebarLink isFocus={false}>
+            <Link styleType="NextLink" href="/activity#seminar">세미나</Link>
           </S.SidebarLink>
-          <S.SidebarLink isFocus={pathname === "/activity" ? true : false}>
-            <Link styleType="NextLink" href="/activity">대외 활동</Link>
+          <S.SidebarLink isFocus={false}>
+            <Link styleType="NextLink" href="/activity/#seminar">컨퍼런스</Link>
           </S.SidebarLink>
           <S.SidebarLink isFocus={pathname === "/professor" ? true : false}>
             <Link styleType="NextLink" href="/professor">교수진</Link>
           </S.SidebarLink>
-          <S.SidebarLink isFocus={pathname === "/lab" ? true : false}>
-            <Link styleType="NextLink" href="/lab">랩실</Link>
+          <S.SidebarLink isFocus={pathname === "/member" ? true : false}>
+            <Link styleType="NextLink" href="/member#lab">연구실 / 랩실</Link>
           </S.SidebarLink>
-          <S.SidebarLink isFocus={pathname === "/lab" ? true : false}>
-            <Link styleType="NextLink" href="/lab">소모임</Link>
+          <S.SidebarLink isFocus={false}>
+            <Link styleType="NextLink" href="/member#club">소모임</Link>
           </S.SidebarLink>
         </S.SidebarMenu>
       </S.SidebarWrapper>

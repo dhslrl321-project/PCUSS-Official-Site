@@ -4,21 +4,23 @@ import { theme, ifProp } from 'styled-tools';
 export const Container = styled.div`
   ${theme("shortcuts.flexCenterColumn")}
   margin-top: 50px;
+  width: 90%;
 `;
 export const DescriptionWrapper = styled.div`
-  width: 750px;
+  /* width: 750px; */
+  width: 80%;
   margin-top: 50px;
   ${theme("shortcuts.flexCenterColumn")}
   @media screen and (max-width: 768px) {
-    width: 430px;
+    /* width: 430px; */
   }
   @media screen and (max-width: 480px) {
-    width: 300px;
+    /* width: 250px; */
   }
 `;
 
 export const LabelWrapper = styled.div`
-  margin: 10px 0;
+  margin: 18px 0;
 `;
 export const ImageWrapper = styled.div`
   display: ${ifProp("isImg", "flex", "none")};

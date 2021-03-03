@@ -10,7 +10,7 @@ export const data = {
       { id: 3, label: "모의해킹 전문가 김도언", src: "/interview/Interview3.JPG" },
       { id: 4, label: "보안 솔루션 개발자 송태기", src: "/interview/Interview4.JPG" },
       { id: 5, label: "보안 솔루션 운영 김영수", src: "/interview/Interview5.JPG" },
-      { id: 6, label: "안랩 보안 어쩌구", src: "/interview/Interview6.JPG" },
+      { id: 6, label: "안랩 윤정호", src: "/interview/Interview6.JPG" },
     ]
   }
 };
