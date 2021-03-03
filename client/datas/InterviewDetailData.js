@@ -6,7 +6,7 @@ export const data = {
   pageData: [
     {
       cardData: {
-        label: "보안 컨설팅 전문 이재랑", src: "/interview1.jpg"
+        label: "보안 컨설팅 전문 이재랑", src: "/interview/Interview1.JPG"
       },
       qnaData: {
         list: [
@@ -30,7 +30,7 @@ export const data = {
     },
     {
       cardData: {
-        label: "정보보안 담당자 박지훈", src: "/interview1.jpg"
+        label: "정보보안 담당자 박지훈", src: "/interview/Interview2.JPG"
       },
       qnaData: {
         list: [
@@ -54,7 +54,7 @@ export const data = {
     },
     {
       cardData: {
-        label: "모의해킹 전문가 김도언", src: "/interview1.jpg"
+        label: "모의해킹 전문가 김도언", src: "/interview/Interview3.JPG"
       },
       qnaData: {
         list: [
@@ -78,7 +78,7 @@ export const data = {
     },
     {
       cardData: {
-        label: "보안 솔루션 개발자 송태기", src: "/interview1.jpg"
+        label: "보안 솔루션 개발자 송태기", src: "/interview/Interview4.JPG"
       },
       qnaData: {
         list: [
@@ -102,7 +102,7 @@ export const data = {
     },
     {
       cardData: {
-        label: "보안 솔루션 운영 김영수", src: "/interview1.jpg"
+        label: "보안 솔루션 운영 김영수", src: "/interview/Interview5.JPG"
       },
       qnaData: {
         list: [
@@ -126,7 +126,7 @@ export const data = {
     },
     {
       cardData: {
-        label: "안렙 보안 어쩌구", src: "/interview1.jpg"
+        label: "안렙 보안 어쩌구", src: "/interview/Interview.JPG"
       },
       qnaData: {
         list: [
@@ -158,7 +158,7 @@ export const storyData = {
   },
   pageData: {
     cardData: {
-      label: "보안 컨설팅 전문 이재랑", src: "/interview1.jpg"
+      label: "보안 컨설팅 전문 이재랑", src: "/interview/Interview6.JPG"
     },
     qnaData: {
       list: [
