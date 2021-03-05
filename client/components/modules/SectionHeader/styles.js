@@ -7,6 +7,6 @@ export const Container = styled.div`
     margin-bottom: 20px;
   }  
   margin-bottom: 100px;
-  width: 270px;
-  text-align: center;
+  width: 90%;
+  
 `;

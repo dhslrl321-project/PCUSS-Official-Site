@@ -31,9 +31,9 @@ export const InfoColumn = styled.div`
 export const PictureColumn = styled.div`
   width: 150px;
   height: 180px;
-
   & > img {
     border-radius: 20px;
+    box-shadow: 0px 0px 10px 6px black;
   }
 
   @media screen and (max-width: 479px) {

@@ -5,15 +5,16 @@ export const Container = styled.div`
   justify-content: flex-start;
   align-items: center;
   position: absolute;
-  background: #181818;
+  /* background: #181818; */
   border-radius: 5px;
   transition: 1s ease;
-  top: ${({ show }) => show ? "90%" : "50%"};
+  top: ${({ show }) => show ? "90%" : "60%"};
   opacity: ${({ show }) => show ? "1" : "0"};
   left: 18px;
   z-index: 1;
-  height: 80px;
-  width: 260px;
+  height: 120px;
+  width: 245px;
+  line-height: 100%;
 `;
 
 export const NavColumn = styled.div`

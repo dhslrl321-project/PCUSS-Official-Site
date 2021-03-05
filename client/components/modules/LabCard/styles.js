@@ -4,22 +4,20 @@ import { theme } from 'styled-tools';
 export const Container = styled.div`
   ${theme("shortcuts.flexCenter")};
   align-items: flex-start;
-
   @media screen and (max-width: 768px) {
     flex-direction: column;
     align-items: center;
   }
-
   margin: 50px 0;
 `;
 
 export const ImageColumn = styled.div`
   ${theme("shortcuts.flexCenter")};
   flex-direction: column;
-  width: 240px;
+  width: 300px;
   img {
     border-radius: 10px;
-    /* box-shadow: 8px 8px 20px 1px gray; */
+    box-shadow: 0px 0px 10px 6px black;
   }
   margin: 10px 40px;
   @media screen and (max-width: 768px) {

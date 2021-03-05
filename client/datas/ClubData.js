@@ -5,8 +5,9 @@ export const data = {
   },
   cardData: {
     cards: [
-      { id: 1, label: "농구 팀 AIR", description: null, src: "/handsup.jpg" },
-      { id: 2, label: "축구 팀 적토마", description: null, src: "/handsup.jpg" },
+      { id: 1, label: "농구 팀 AIR", description: null, src: "/club/ClubBasketBall.JPG" },
+      { id: 2, label: "창업 동아리 EU", description: null, src: "/club/ClubTeamEU.JPG" },
+      { id: 3, label: "축구 팀 적토마", description: null, src: "/club/ClubFootball.JPG" },
     ]
   }
 };
