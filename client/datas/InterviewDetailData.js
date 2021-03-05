@@ -78,7 +78,7 @@ export const data = {
     },
     {
       cardData: {
-        label: "보안 솔루션 개발자 송태기", src: "/interview/Interview4.JPG"
+        label: "보안 솔루션 개발자 송태기", src: "/interview/Interview4.jpg"
       },
       qnaData: {
         list: [
@@ -102,7 +102,7 @@ export const data = {
     },
     {
       cardData: {
-        label: "보안 솔루션 운영 김영수", src: "/interview/Interview5.JPG"
+        label: "보안 솔루션 운영 김영수", src: "/interview/Interview5.jpg"
       },
       qnaData: {
         list: [
@@ -126,7 +126,7 @@ export const data = {
     },
     {
       cardData: {
-        label: "안렙 보안 어쩌구", src: "/interview/Interview.JPG"
+        label: "보안 전문가 윤정호", src: "/interview/Interview6.jpg"
       },
       qnaData: {
         list: [

@@ -11,7 +11,7 @@ export const data = {
           labName: "LOCS (Lab Of CyberSecurity)",
           labBirth: "연구실 창립일 : 2014.03 ~ 현재",
           labLocation: "연구실 위치 : S103, S202",
-          src: "/lab/Lab103.jpg"
+          src: "/lab/Lab103.JPG"
         }, labInfoData: [
           {
             id: 1, infoTitle: "LOCS란?",
@@ -38,7 +38,7 @@ export const data = {
           labName: "PCU SOC",
           labBirth: "연구실 창립일 : 2020.03 ~ 현재",
           labLocation: "연구실 위치 : S103, S202",
-          src: "/lab/Lab104.jpg"
+          src: "/lab/Lab104.JPG"
         }, labInfoData: [
           {
             id: 1, infoTitle: "POC SOC란?",
@@ -64,7 +64,7 @@ export const data = {
           labName: "와이어쇼크",
           labBirth: "연구실 창립일 : 2021.03 ~ 현재",
           labLocation: "연구실 위치 : S103, S202",
-          src: "/lab/Lab105.jpg"
+          src: "/lab/Lab105.JPG"
         }, labInfoData: [
           {
             id: 1, infoTitle: "와이어쇼크란?",
@@ -74,13 +74,6 @@ export const data = {
             id: 2,
             infoTitle: "연구 주제 및 과제",
             infoDescription: "각종 네트워크 패킷 분석 및 침해 사고 대응"
-          },
-          {
-            id: 3, infoTitle: "성과 및 주요 활동", infoDescription: [
-              { id: 1, description: "📌 배재대학교 최초 Best Of Best 합격" },
-              { id: 2, description: "📌 CTF Power of XX 70팀 중 최종 등수 6등으로 수상" },
-              { id: 3, description: "📌 논문 대회 수상" },
-            ]
           },
           {
             id: 4, infoTitle: "성과 및 주요 활동", infoDescription: [
