@@ -7,16 +7,10 @@ export const Container = styled.div`
   width: 90%;
 `;
 export const DescriptionWrapper = styled.div`
-  /* width: 750px; */
+  ${theme("shortcuts.flexCenterColumn")};
   width: 80%;
   margin-top: 50px;
-  ${theme("shortcuts.flexCenterColumn")}
-  @media screen and (max-width: 768px) {
-    /* width: 430px; */
-  }
-  @media screen and (max-width: 480px) {
-    /* width: 250px; */
-  }
+  font-weight: 300;
 `;
 
 export const LabelWrapper = styled.div`

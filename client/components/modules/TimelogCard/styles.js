@@ -10,9 +10,10 @@ export const TextWrapper = styled.div`
   ${theme("shortcuts.flexCenterColumn")};
   text-align: center;
   span:first-child {
-    font-weight: bold;
+    font-weight: 500;
   }
   span {
-    margin: 3px;
+    margin: 10px;
+    font-weight: 300;
   }
 `;

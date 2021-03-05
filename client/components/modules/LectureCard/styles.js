@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 85px;
+  height: 90px;
   background: ${theme("palettes.cardBg")};
   border-radius: 10px;
 
@@ -38,7 +38,6 @@ export const TextColumn = styled.div`
   ${theme("shortcuts.flexCenterColumn")};
   align-items: flex-start;
   margin-left: 10px;
-
   /* Label */
   span {
     margin-bottom: 15px;
@@ -56,11 +55,13 @@ export const TextColumn = styled.div`
       width: 220px;
     }   
   }
-
   /* Description */
   p {
+
+    font-weight: 300;
+
     @media screen and (max-width: 480px) {
-      width: 70vw;
+      width: 60vw;
     }
 
     @media screen and (min-width: 481px) and (max-width: 1100px) {

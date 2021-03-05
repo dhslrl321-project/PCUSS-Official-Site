@@ -13,7 +13,6 @@ export const ImageWrapper = styled.div`
   width: 200px;
   margin: 20px 100px;
   @media screen and (max-width: 480px) {
-    margin: 40px; 
     margin: 20px 0px;
   }
 `;

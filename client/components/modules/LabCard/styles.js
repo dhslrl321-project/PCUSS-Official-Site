@@ -15,11 +15,9 @@ export const ImageColumn = styled.div`
   ${theme("shortcuts.flexCenter")};
   flex-direction: column;
   width: 300px;
-  height: 200px;
   img {
     border-radius: 10px;
-    /* box-shadow: 8px 8px 20px 1px gray; */
-    width: 100%;
+    box-shadow: 0px 0px 10px 6px black;
   }
   margin: 10px 40px;
   @media screen and (max-width: 768px) {

@@ -20,7 +20,7 @@ const TimelogCard = ({ year, content, isLeft }) => {
       </TimelineSeparator>
       <TimelineContent data-aos={aosProp}>
         <S.TextWrapper>
-          <Label styleType="Label" size="0.9">{year}</Label>
+          <Label styleType="Label" size="1">{year}</Label>
           <Label styleType="Label" size="1">{content}</Label>
         </S.TextWrapper>
       </TimelineContent>
