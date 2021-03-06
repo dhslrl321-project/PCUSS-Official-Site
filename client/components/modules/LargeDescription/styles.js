@@ -3,12 +3,11 @@ import { theme, ifProp } from 'styled-tools';
 
 export const Container = styled.div`
   ${theme("shortcuts.flexCenterColumn")}
-  margin-top: 50px;
   width: 90%;
 `;
 export const DescriptionWrapper = styled.div`
   ${theme("shortcuts.flexCenterColumn")};
-  width: 80%;
+  width: ${ifProp("isOnlyDescription", "110%", "80%")};
   margin-top: 50px;
   font-weight: 300;
 `;
