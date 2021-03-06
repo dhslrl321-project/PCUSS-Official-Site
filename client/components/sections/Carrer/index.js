@@ -11,7 +11,7 @@ const Carrer = ({ data }) => {
     <S.Container data-aos="zoom-in-up">
       <SectionHeader title={title} description={description} />
       <CarrerGroup data={carrerData} />
-      <LargeDescription data={largeDescriptionData} />
+      <LargeDescription data={largeDescriptionData} styleType="WithQuotation" />
     </S.Container>
   )
 }
