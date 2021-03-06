@@ -3,7 +3,7 @@ import * as S from './styles';
 import SectionHeader from '../../modules/SectionHeader';
 import CircleGroup from '../../modules/CircleGroup';
 
-const Merit = ({ data }) => {
+const Merit = ({ data, isDescVisible }) => {
   const { headerData, cardData } = data;
   const { title, titleDescription } = headerData;
   const { cards } = cardData;
@@ -11,9 +11,13 @@ const Merit = ({ data }) => {
   return (
     <S.Container data-aos="zoom-in-up">
       <SectionHeader title={title} description={titleDescription} />
-      <CircleGroup data={cards} />
+      <CircleGroup data={cards} isDescVisible={isDescVisible} />
     </S.Container>
   );
 };
 
 export default Merit;
+
+Merit.defaultProps = {
+  isDescVisible: true,
+};
