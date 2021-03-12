@@ -1,8 +1,8 @@
 import { qnaData as KimDoUnQna } from "./InterviewQnA/KimDoUn";
-import { qnaData as SongTaeGiQna } from "./InterviewQna/SongTaeGi";
-import { qnaData as ParkJiHunQna } from "./InterviewQna/ParkJiHun";
-import { qnaData as LeeJaeRangQna } from "./InterviewQna/LeeJaeRang";
-import { qnaData as YunJungHoQna } from "./InterviewQna/YunJungHo";
+import { qnaData as SongTaeGiQna } from "./InterviewQnA/SongTaeGi";
+import { qnaData as ParkJiHunQna } from "./InterviewQnA/ParkJiHun";
+import { qnaData as LeeJaeRangQna } from "./InterviewQnA/LeeJaeRang";
+import { qnaData as YunJungHoQna } from "./InterviewQnA/YunJungHo";
 import { qnaData as KimWhaRimQna } from "./InterviewQnA/KimWhaRim";
 
 export const data = {
