@@ -7,8 +7,8 @@ const QnACard = ({ data }) => {
   const { label, largeDescriptionData } = data;
 
   return (
-    <S.Container>
-      <Label styleType="Label" size="1.1">Q. {label}</Label>
+    <S.Container data-aos="zoom-in">
+      <Label styleType="Label" size="1.2">Q. {label}</Label>
       <LargeDescription data={largeDescriptionData} styleType="OnlyDescription" />
     </S.Container>
   );

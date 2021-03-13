@@ -8,7 +8,7 @@ export const Container = styled.div`
 export const DescriptionWrapper = styled.div`
   ${theme("shortcuts.flexCenterColumn")};
   width: ${ifProp("isOnlyDescription", "110%", "80%")};
-  margin-top: 50px;
+  margin-top: ${ifProp("isOnlyDescription", "0px", "50px")};
   font-weight: 300;
 `;
 
