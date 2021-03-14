@@ -1,7 +1,7 @@
 import App from 'next/app';
 import Head from 'next/head';
 import { useEffect } from 'react';
-import { ThemeProvider } from "styled-components"; // common theme
+import { ThemeProvider, css } from "styled-components"; // common theme
 import theme from "../commons/theme";
 import Reset from "../commons/reset";
 import AOS from "aos";
