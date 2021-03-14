@@ -4,7 +4,7 @@ import Image from '../../atoms/Image';
 import Label from '../../atoms/Label';
 
 const CircleCard = ({ data, isDescVisible }) => {
-  const { label, description , src } = data;
+  const { label, description, src } = data;
 
   return (
     <S.Container>
@@ -15,7 +15,7 @@ const CircleCard = ({ data, isDescVisible }) => {
         <Label styleType="Label" size="1.2">{label}</Label>
       </S.LabelColumn>
       <S.DescColumn isDescVisible={isDescVisible}>
-        <Label styleType="Description" size="0.7">{description}</Label>
+        <Label styleType="Description" size="0.8">{description}</Label>
       </S.DescColumn>
     </S.Container>
   );

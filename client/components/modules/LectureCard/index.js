@@ -12,7 +12,7 @@ const LectureCard = ({ data }) => {
       </S.IconColumn>
       <S.TextColumn>
         <Label styleType="Label" size="1.2">{title}</Label>
-        <Label styleType="Description" size="0.7">{description}</Label>
+        <Label styleType="Description" size="0.8">{description}</Label>
       </S.TextColumn>
     </S.Container>
   )
