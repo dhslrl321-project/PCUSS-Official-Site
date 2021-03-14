@@ -22,7 +22,7 @@ const SquircleCard = ({ data, as, isDetail }) => {
     <S.Container>
       {isDetail ? picture : link}
       <S.LabelColumn>
-        <Label styleType="Label">{label}</Label>
+        <Label styleType="Label" size="0.95">{label}</Label>
       </S.LabelColumn>
     </S.Container>
   );
