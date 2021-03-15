@@ -13,7 +13,7 @@ export const Container = styled.div`
   left: 18px;
   z-index: 1;
   height: 120px;
-  width: 245px;
+  width: 260px;
   line-height: 100%;
 `;
 
