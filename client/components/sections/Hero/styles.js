@@ -7,6 +7,7 @@ export const Container = styled.div`
   width: 100vw;
   height: 100vh;
   margin: ${theme("margin.firstSectionMargin")};
+  padding-bottom: 180px;
 `;
 
 export const TitleWrapper = styled.div`
