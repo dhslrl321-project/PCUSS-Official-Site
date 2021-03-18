@@ -28,7 +28,7 @@ export const data = {
               { id: 2, description: "📌 학과 최초 Best Of Best 합격" },
               { id: 3, description: "📌 CTF Power of XX 70팀 중 최종 등수 6등으로 수상" },
               { id: 4, description: "📌 배재대학교 정보보안학과 홈페이지 개발" },
-              { id: 5, description: "📌 KISA 취약점 제보 (KVE-2021-xx5x)" },
+              { id: 5, description: "📌 KISA 취약점 제보 (KVE-2021-xxxx)" },
             ]
           },
         ]
