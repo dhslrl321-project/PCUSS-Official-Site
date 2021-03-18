@@ -21,6 +21,7 @@ export const data = {
         { id: 6, src: "/chat/senior.svg", chatting: "그럼 그 웹에 여러분들이 시도할 수 있는 모든 것들을 이용해 해킹을 수행하고 깃발을 찾으면 점수를 얻습니다.", isQuestions: false },
         { id: 7, src: "/chat/junior.svg", chatting: "하지만 저는 웹 해킹에 대해서 아는게 없는걸요?", isQuestions: true },
         { id: 8, src: "/chat/senior.svg", chatting: "걱정하지 마세요! Java 프로그래밍언어나 1학년 때 배운 기초 웹 프로그래밍을 통해 기본기를 쌓고 네트워크 보안을 통해서 다양한 해킹 기법들을 공부할 수 있습니다!", isQuestions: false },
+        { id: 9, src: "/chat/senior.svg", chatting: "랩실중 LOCS 라는 랩실이 웹 개발과 웹 취약점 분석에 대해서 전문적으로 연구를 하고 있으니 참고하세요 😜", isQuestions: false },
       ]
     },
     {
@@ -49,10 +50,12 @@ export const data = {
     {
       id: 4,
       conversations: [
-        { id: 1, src: "/chat/junior.svg", chatting: "저는 사교성이 좋아서 빨리 선후배와 친해지고 싶어요!", isQuestions: true },
-        { id: 2, src: "/chat/senior.svg", chatting: "오! 정말 다행이네요. 기본적으로 IT 분야는 서로 소통하는 협업의 문화가 아주 중요하답니다.", isQuestions: false },
-        { id: 3, src: "/chat/senior.svg", chatting: "저희는 실제로 기업이 사용하는 협업 도구인 Github, Jira Confluence, Bitbucket 등 다양한 협업 도구를 사용하고 있답니다.", isQuestions: false },
-        { id: 4, src: "/chat/junior.svg", chatting: "과연 제가 할 수 있을까요?... 걱정돼요..", isQuestions: true },
+        { id: 1, src: "/chat/junior.svg", chatting: "MISC는 뭔가요? 미스크..?", isQuestions: true },
+        { id: 2, src: "/chat/senior.svg", chatting: "MISC는 Miscellaneous 의 약어로 뜻은 여러 가자 종류의, 잡다한의 뜻을 갖고 있습니다. CTF에서는 주로 '기타'에 해당하겠네요", isQuestions: false },
+        { id: 3, src: "/chat/senior.svg", chatting: "MISC는 CTF 출제율이 1순위 문제로 다른 문제들보다 진입 장벽이 낮지만 센스를 요구하는 문제들이 많아서 정말 재밌는 분야입니다.", isQuestions: false },
+        { id: 4, src: "/chat/junior.svg", chatting: "센스를 요구한다고 하셨는데, 센스는 어떻게 키우죠?", isQuestions: true },
+        { id: 5, src: "/chat/senior.svg", chatting: "센스는 정말 많은 문제들을 풀어보고 분석해보면서 추측을 하는 능력이라고 할 수 있습니다.", isQuestions: false },
+        { id: 5, src: "/chat/senior.svg", chatting: "저희들이 정말 많은 푼제들을 풀어보고 정리하고 있으니 걱정마세요! 잘 정리해서 알려드릴게요 ㅎㅎ", isQuestions: false },
       ]
     }
   ],

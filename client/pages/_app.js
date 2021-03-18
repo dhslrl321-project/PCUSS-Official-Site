@@ -1,7 +1,7 @@
 import App from 'next/app';
 import Head from 'next/head';
 import { useEffect } from 'react';
-import { ThemeProvider, css } from "styled-components"; // common theme
+import { ThemeProvider } from "styled-components"; // common theme
 import theme from "../commons/theme";
 import Reset from "../commons/reset";
 import AOS from "aos";
@@ -34,6 +34,7 @@ export default class RootApp extends App {
         <Reset />
         <Head>
           <title>배재대학교 정보보안학과</title>
+          <link rel="shortcut icon" href="/favicon.ico" />
         </Head>
         <main>
           <ThemeProvider theme={theme}>

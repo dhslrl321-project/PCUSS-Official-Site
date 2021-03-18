@@ -18,15 +18,15 @@ export const HeaderWrapper = styled.div`
   height: -80px;
   transition: 0.5s ease;
   transform: ${ifProp("show", "translate(0, 0);", "translate(0, -100%)")};
-  background: transparent;
   z-index: 10;
+  background: ${theme("palettes.background")};
 `;
 
 export const TitleColumn = styled.div`
   padding: 35px;
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
 `;
 
 export const MobileIcon = styled.div`

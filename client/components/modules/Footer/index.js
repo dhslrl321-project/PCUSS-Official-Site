@@ -1,7 +1,7 @@
 import React from 'react'
 import * as S from "./styles";
 import Link from "../../atoms/Link";
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaGithub, FaYoutube } from "react-icons/fa";
 const Footer = () => {
   return (
     <S.Container>
@@ -55,19 +55,19 @@ const Footer = () => {
 
         <S.SocialMediaContainer>
           <S.SocialMediaWrap>
-            <S.WebsiteRights>배재대학교 정보보안학과 LOCS All rights reserved.</S.WebsiteRights>
+            <S.WebsiteRights>© 2021. LOCS All rights reserved.</S.WebsiteRights>
             <S.SocialIcons>
-              <S.SocialIconLink href="/" arial-label="facebook">
+              <S.SocialIconLink href="https://www.facebook.com/배재대학교-사이버보안학과-366863963663450" arial-label="facebook">
                 <FaFacebook />
               </S.SocialIconLink>
-              <S.SocialIconLink href="/" arial-label="facebook">
+              <S.SocialIconLink href="https://www.instagram.com" arial-label="instagram">
                 <FaInstagram />
               </S.SocialIconLink>
-              <S.SocialIconLink href="/" arial-label="facebook">
+              <S.SocialIconLink href="https://www.youtube.com/channel/UCooRkW1fWFWMPJvuRbJt4eA" arial-label="facebook">
                 <FaYoutube />
               </S.SocialIconLink>
               <S.SocialIconLink href="/" arial-label="facebook">
-                <FaTwitter />
+                <FaGithub />
               </S.SocialIconLink>
             </S.SocialIcons>
           </S.SocialMediaWrap>
