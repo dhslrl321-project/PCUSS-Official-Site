@@ -11,8 +11,8 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
   body {
-    font-family: cafe24-air;
-    /* font-family: sans-serif; */
+    /* font-family: cafe24-air; */
+    font-family: sans-serif;
     font-size: 14px;
     background: #0F1218;
     color: white;
