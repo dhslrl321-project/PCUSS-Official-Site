@@ -38,16 +38,16 @@ const Footer = () => {
             <S.LinkItems>
               <S.LinkTitle>Activities</S.LinkTitle>
               <S.LinkWrap>
-                <Link styleType="NextLink" href="/activity">세미나</Link>
+                <Link styleType="NextLink" href="/activity#seminar">세미나</Link>
               </S.LinkWrap>
               <S.LinkWrap>
                 <Link styleType="NextLink" href="/activity">CTF</Link>
               </S.LinkWrap>
               <S.LinkWrap>
-                <Link styleType="NextLink" href="/">랩실</Link>
+                <Link styleType="NextLink" href="/member">랩실</Link>
               </S.LinkWrap>
               <S.LinkWrap>
-                <Link styleType="NextLink" href="/">소모임</Link>
+                <Link styleType="NextLink" href="/member#club">소모임</Link>
               </S.LinkWrap>
             </S.LinkItems>
           </S.LinkWrapper>

@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 95px;
+  height: 100px;
   background: ${theme("palettes.cardBg")};
   border-radius: 10px;
 

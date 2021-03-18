@@ -24,9 +24,11 @@ export const data = {
           },
           {
             id: 3, infoTitle: "성과 및 주요 활동", infoDescription: [
-              { id: 1, description: "📌 배재대학교 최초 Best Of Best 합격" },
-              { id: 2, description: "📌 CTF Power of XX 70팀 중 최종 등수 6등으로 수상" },
-              { id: 3, description: "📌 배재대학교 정보보안학과 홈페이지 개발" },
+              { id: 1, description: "📌 2014 한국정보보호학회 우수논문상 수상" },
+              { id: 2, description: "📌 학과 최초 Best Of Best 합격" },
+              { id: 3, description: "📌 CTF Power of XX 70팀 중 최종 등수 6등으로 수상" },
+              { id: 4, description: "📌 배재대학교 정보보안학과 홈페이지 개발" },
+              { id: 5, description: "📌 OO 대학교 로그인 관련 취약점 KISA 제보" },
             ]
           },
         ]
@@ -36,23 +38,25 @@ export const data = {
       id: 2, labData: {
         labMainData: {
           labName: "PCU SOC",
-          labBirth: "연구실 창립일 : 2020.03 ~ 현재",
-          labLocation: "연구실 위치 : S103, S202",
-          src: "/lab/Lab104.JPG"
+          labBirth: "연구실 창립일 : 2018.02 ~ 현재",
+          labLocation: "연구실 위치 : S104",
+          src: "/lab/Lab104.png"
         }, labInfoData: [
           {
-            id: 1, infoTitle: "POC SOC란?",
-            infoDescription: "주로 네트워크 보안에 대해서 연구하는 연구실입니다. 다양한 보안 장비들이 있습니다"
+            id: 1, infoTitle: "PCU SOC란?",
+            infoDescription: "실제 현업에서 사용하고 있는 보안장비를 통해 관제와 해킹 그리고 더 나아가 개발까지 공부하고 있는 동아리 입니다."
           },
           {
             id: 2,
             infoTitle: "연구 주제 및 과제",
-            infoDescription: "보안 관제, 네트워크 패킷 분석"
+            infoDescription: "보안 관제, 네트워크 패킷 분석, 취약점 분석"
           },
           {
             id: 3, infoTitle: "성과 및 주요 활동", infoDescription: [
-              { id: 1, description: "📌 보안 관제 센터 설립" },
-              { id: 2, description: "📌 CTF 대회 개최 및 문제 출제" },
+              { id: 1, description: "📌 주기적인 실무 강의" },
+              { id: 2, description: "📌 CTF 서버 자체 개발 및 관제" },
+              { id: 2, description: "📌 국내 대학 DB 취약점 제보" },
+              { id: 2, description: "📌 취약점 제보 (NAVER, Github, Netflix, KISA)" },
             ]
           },
         ]
@@ -77,9 +81,9 @@ export const data = {
           },
           {
             id: 4, infoTitle: "성과 및 주요 활동", infoDescription: [
-              { id: 1, description: "📌 배재대학교 최초 Best Of Best 합격" },
-              { id: 2, description: "📌 CTF Power of XX 70팀 중 최종 등수 6등으로 수상" },
-              { id: 3, description: "📌 드론 해킹 연구 및 발표" },
+              { id: 1, description: "📌 " },
+              { id: 2, description: "📌 " },
+              { id: 3, description: "📌 " },
             ]
           },
         ]

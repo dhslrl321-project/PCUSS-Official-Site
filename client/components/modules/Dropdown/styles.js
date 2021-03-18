@@ -12,7 +12,7 @@ export const Container = styled.div`
   opacity: ${({ show }) => show ? "1" : "0"};
   left: 18px;
   z-index: 1;
-  height: 120px;
+  height: 100px;
   width: 260px;
   line-height: 100%;
 `;
