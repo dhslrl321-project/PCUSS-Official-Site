@@ -1,20 +1,21 @@
 import styled from 'styled-components';
+import { theme } from 'styled-tools';
 
 export const Container = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
   position: absolute;
-  /* background: #181818; */
   border-radius: 5px;
-  transition: 1s ease;
+  transition: 0.6s ease;
   top: ${({ show }) => show ? "90%" : "60%"};
   opacity: ${({ show }) => show ? "1" : "0"};
   left: 18px;
   z-index: 1;
-  height: 120px;
-  width: 245px;
+  height: 100px;
+  width: 260px;
   line-height: 100%;
+  background: ${theme("palettes.background")};
 `;
 
 export const NavColumn = styled.div`

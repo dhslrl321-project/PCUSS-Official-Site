@@ -5,6 +5,7 @@ import Dropdown from "../Dropdown";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import { FaBars } from "react-icons/fa";
 import Link from "../../atoms/Link/";
+
 const Navbar = ({ handleSidebarToggle }) => {
 
   const router = useRouter();
@@ -39,18 +40,18 @@ const Navbar = ({ handleSidebarToggle }) => {
         <S.LinkColumn onMouseOver={menuMouseOver} onMouseLeave={menuMouseLeave}>
           {dropdown && <Dropdown show={dropdown} />}
 
-          <S.LinkItem isFocus={pathname === "/curriculum" || pathname === "/carrer" || pathname === "/interview" ? true : false}>
+          <S.LinkItem isFocus={pathname === "/curriculum" || pathname === "/carrer" || pathname.includes("/interview")}>
             <Link styleType="NextLink" href="/curriculum">교육</Link>
           </S.LinkItem>
           <S.LinkItem isFocus={pathname === "/activity" ? true : false}>
             <Link styleType="NextLink" href="/activity">활동</Link>
           </S.LinkItem>
-          <S.LinkItem isFocus={pathname === "/professor" || pathname === "/lab" ? true : false}>
+          <S.LinkItem isFocus={pathname === "/professor" || pathname.includes("/member")}>
             <Link styleType="NextLink" href="/professor">구성원</Link>
           </S.LinkItem>
         </S.LinkColumn>
       </S.HeaderWrapper>
-    </S.Header >
+    </S.Header>
   )
 }
 

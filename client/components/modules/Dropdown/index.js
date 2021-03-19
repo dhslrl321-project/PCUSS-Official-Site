@@ -39,7 +39,7 @@ const Dropdown = ({ show }) => {
           <Link styleType="NextLink" href="/professor">교수진</Link>
         </S.NavItem>
         <S.NavItem>
-          <Link styleType="NextLink" href="/member/#lab">연구실</Link>
+          <Link styleType="NextLink" href="/member">연구실</Link>
         </S.NavItem>
         <S.NavItem>
           <Link styleType="NextLink" href="/member/#club">소모임</Link>

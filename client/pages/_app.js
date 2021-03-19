@@ -34,6 +34,7 @@ export default class RootApp extends App {
         <Reset />
         <Head>
           <title>배재대학교 정보보안학과</title>
+          <link rel="shortcut icon" href="/favicon.ico" />
         </Head>
         <main>
           <ThemeProvider theme={theme}>

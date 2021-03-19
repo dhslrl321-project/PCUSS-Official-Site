@@ -21,7 +21,8 @@ export const TextWrapper = styled.div`
   ${theme("shortcuts.flexCenter")};
   flex-direction: column;
   margin: 20px 100px;
-  width: 450px;
+  max-width: 450px;
+  width: 80%;
   h3:first-child {
     margin: 15px;
     width: 90%;
