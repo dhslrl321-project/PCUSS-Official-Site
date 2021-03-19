@@ -1,9 +1,6 @@
 import { qnaData as KimDoUnQna } from "./InterviewQnA/KimDoUn";
 import { qnaData as SongTaeGiQna } from "./InterviewQnA/SongTaeGi";
 import { qnaData as ParkJiHunQna } from "./InterviewQnA/ParkJiHun";
-import { qnaData as LeeJaeRangQna } from "./InterviewQnA/LeeJaeRang";
-import { qnaData as YunJungHoQna } from "./InterviewQnA/YunJungHo";
-import { qnaData as KimWhaRimQna } from "./InterviewQnA/KimWhaRim";
 
 export const data = {
   headerData: {
@@ -13,39 +10,21 @@ export const data = {
   pageData: [
     {
       cardData: {
-        label: "모의 해킹 전문가 김도언 선배님 (14학번)", src: "/interview/Interview1.JPG"
-      },
-      qnaData: KimDoUnQna
-    },
-    {
-      cardData: {
-        label: "정보보안 담당자 송태기 선배님 (14학번)", src: "/interview/Interview2.JPG"
+        label: "정보보안 담당자 송태기 선배님 (14학번)", src: "/interview/Interview1.JPG"
       },
       qnaData: SongTaeGiQna
     },
     {
       cardData: {
-        label: "보안 전문가 윤정호 선배님 (14학번)", src: "/interview/Interview3.JPG"
+        label: "모의 해킹 전문가 김도언 선배님 (14학번)", src: "/interview/Interview2.JPG"
       },
-      qnaData: YunJungHoQna
+      qnaData: KimDoUnQna
     },
     {
       cardData: {
-        label: "보안 컨설팅 전문가 이재랑 선배님 (15학번)", src: "/interview/Interview4.jpg"
-      },
-      qnaData: LeeJaeRangQna
-    },
-    {
-      cardData: {
-        label: "사이버위협분석 전문가 박지훈 선배님 (15학번)", src: "/interview/Interview5.jpg"
+        label: "사이버위협분석 전문가 박지훈 선배님 (15학번)", src: "/interview/Interview3.PG"
       },
       qnaData: ParkJiHunQna
-    },
-    {
-      cardData: {
-        label: "리버싱 엔지니어 김화림 선배님 (16학번)", src: "/interview/Interview6.jpg"
-      },
-      qnaData: KimWhaRimQna
     }
   ]
 };

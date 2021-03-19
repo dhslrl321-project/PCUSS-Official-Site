@@ -67,7 +67,7 @@ export const data = {
         labMainData: {
           labName: "와이어쇼크",
           labBirth: "연구실 창립일 : 2021.03 ~ 현재",
-          labLocation: "연구실 위치 : S103, S202",
+          labLocation: "연구실 위치 : S105",
           src: "/lab/Lab105.JPG"
         }, labInfoData: [
           {
@@ -81,9 +81,9 @@ export const data = {
           },
           {
             id: 4, infoTitle: "성과 및 주요 활동", infoDescription: [
-              { id: 1, description: "📌 " },
-              { id: 2, description: "📌 " },
-              { id: 3, description: "📌 " },
+              { id: 1, description: "📌 와이어 샤크 학생 기반 메뉴얼 작성" },
+              { id: 2, description: "📌 드론 해킹 실습 및 보고서" },
+              { id: 3, description: "📌 리눅스 해킹 툴 분석" },
             ]
           },
         ]

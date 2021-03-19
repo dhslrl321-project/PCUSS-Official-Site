@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /
+User-agent: Yeti
+Allow: /
+Sitemap: http://cyber.pcu.ac.kr/sitemap.xml
