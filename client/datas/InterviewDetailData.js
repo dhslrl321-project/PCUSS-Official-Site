@@ -1,6 +1,7 @@
 import { qnaData as KimDoUnQna } from "./InterviewQnA/KimDoUn";
 import { qnaData as SongTaeGiQna } from "./InterviewQnA/SongTaeGi";
 import { qnaData as ParkJiHunQna } from "./InterviewQnA/ParkJiHun";
+import { qnaData as YunJungHo } from "./InterviewQnA/YunJungHo";
 
 export const data = {
   headerData: {
@@ -22,9 +23,15 @@ export const data = {
     },
     {
       cardData: {
-        label: "사이버위협분석 전문가 박지훈 선배님 (15학번)", src: "/interview/Interview3.PG"
+        label: "사이버위협분석 전문가 박지훈 선배님 (15학번)", src: "/interview/Interview3.JPG"
       },
       qnaData: ParkJiHunQna
+    },
+    {
+      cardData: {
+        label: "네트워크 분석 전문가 윤OO 선배님 (11학번)", src: "/interview/Interview4.jpg"
+      },
+      qnaData: YunJungHo
     }
   ]
 };
