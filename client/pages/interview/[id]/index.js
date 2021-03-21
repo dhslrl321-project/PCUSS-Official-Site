@@ -2,7 +2,7 @@ import React from 'react';
 import InterviewDetail from '../../../components/sections/InterviewDetail';
 import { data as interviewDetailData } from '../../../datas/InterviewDetailData';
 
-const Index = ( props ) => {
+const Index = (props) => {
 
   return (
     <InterviewDetail data={props.pageProps} />
