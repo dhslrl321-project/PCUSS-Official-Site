@@ -35,7 +35,9 @@ export default class RootApp extends App {
         <Head>
           <title>배재대학교 정보보안학과</title>
           <link rel="shortcut icon" href="/favicon.ico" />
-          <meta name="description" content="배재대학교 정보보안학과 자체적으로 운영하는 홈페이지 입니다." />
+          <meta name="description" content="배재대학교 지능 SW 공학부 정보보안학과 자체 홈페이지" />
+          <meta property="og:title" content="배재대학교 정보보안학과" />
+          <meta property="og:description" content="배재대학교 지능 SW 공학부 정보보안학과 자체 홈페이지" />
         </Head>
         <main>
           <ThemeProvider theme={theme}>
