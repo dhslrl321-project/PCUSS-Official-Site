@@ -4,9 +4,9 @@ import Title from "../../atoms/Title";
 import Label from "../../atoms/Label";
 import Image from "../../atoms/Image";
 const CarrerCard = ({ data }) => {
-  const { carrerTitle, carrerDescription, src, isLeft } = data;
+  const { id, carrerTitle, carrerDescription, src } = data;
   return (
-    <S.Container isLeft={isLeft}>
+    <S.Container isLeft={parseInt(id) % 2 != 0}>
       <S.ImageWrapper>
         <Image src={src} />
       </S.ImageWrapper>

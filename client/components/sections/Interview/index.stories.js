@@ -1,5 +1,5 @@
 import Interview from '.';
-import { data } from './data';
+import { data } from "../../../datas/InterviewData";
 
 export default {
   title: "sections / Interview",

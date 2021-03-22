@@ -1,5 +1,5 @@
 import Merit from '.';
-import { data } from './data';
+import { data } from "../../../datas/MeritData";
 
 export default {
   title: "sections / Merit",

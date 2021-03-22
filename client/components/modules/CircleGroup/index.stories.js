@@ -25,5 +25,5 @@ NormalRendering.args = {
 export const ActivitiesRendring = (args) => <CircleGroup {...args} />;
 ActivitiesRendring.args = {
   data: ActivitiesData,
-  isVisible: true,
+  isDescVisible: true,
 };

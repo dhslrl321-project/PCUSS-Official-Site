@@ -1,14 +1,16 @@
 import styled from 'styled-components';
-
+import { theme } from 'styled-tools';
 export const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  ${theme("shortcuts.flexCenterColumn")};
 `;
 
 export const Wrapper = styled.div`
+  width: 450px;
   & + & {
     margin-top: 50px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 80%;
   }
 `;

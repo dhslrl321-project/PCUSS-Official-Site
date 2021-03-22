@@ -1,15 +1,16 @@
-import Navbar from "../components/modules/Navbar";
-import Footer from "../components/modules/Footer";
-import Suggestion from "../components/sections/Suggestion";
-import { data as suggestionData } from "../components/sections/Suggestion/data";
 import Carrer from "../components/sections/Carrer";
-import { data as carrerData } from "../components/sections/Carrer/data";
+import { data as carrerData } from "../datas/CarrerData";
+import Suggestion from "../components/sections/Suggestion";
+import { data as suggestionData } from "../datas/SuggestionData";
+import withHead from "../commons/withHead";
 
-export default function carrer() {
+const carrer = () => {
   return (
-    <main>
+    <>
       <Suggestion data={suggestionData} />
       <Carrer data={carrerData} />
-    </main>
+    </>
   );
 }
+
+export default withHead(carrer, "졸업 후 진로", "정보보안학과를 졸업한다면 어떤 직무를 갖게 될까요? 4대 직무를 통해 알아봅시다.");

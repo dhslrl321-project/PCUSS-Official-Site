@@ -1,17 +1,16 @@
-import React from 'react';
 import * as S from './styles';
 import SectionHeader from '../../modules/SectionHeader';
 import CircleGroup from '../../modules/CircleGroup';
 
-const Activities = ({ data, isVisible }) => {
+const Activities = ({ data, isDescVisible }) => {
   const { headerData, cardData } = data;
   const { title, titleDescription } = headerData;
   const { cards } = cardData;
-  
+
   return (
-    <S.Container>
+    <S.Container data-aos="zoom-in-up" id="seminar">
       <SectionHeader title={title} description={titleDescription} />
-      <CircleGroup data={cards} isVisible={isVisible} />
+      <CircleGroup data={cards} isDescVisible={isDescVisible} />
     </S.Container>
   );
 };
@@ -19,5 +18,5 @@ const Activities = ({ data, isVisible }) => {
 export default Activities;
 
 Activities.defaultProps = {
-  isVisible: true,
+  isDescVisible: true,
 };

@@ -1,98 +1,145 @@
-### 사용 기술
+🔐 💻 🖥
 
-- React.js
-- React Hooks
-- Next.js
-- Css In Js
-- Storybook.js
+### 배포 링크
 
-### Npm Packages
+[cyber.pcu.ac.kr](http://cyber.pcu.ac.kr/) 에서 배재대학교 정보보안학과 자체 홈페이지를 확인해보세요.
 
-- `create-next-app`
-- `styled-components`
-- `styled-tools`
-- `styled-breakpoints`
-- `react-icons`
-- `react-scroll`
-- `@storybook/cli`
+> 혹은 검색 엔진(naver, google) 을 통해 `배재대학교 정보보안학과`를 검색하세요.
 
-### Gitflow
+---
 
-1. Develop Branch 생성
+# 💻 배재대학교 정보보안학과 자체 홈페이지 🖥 🔐
 
-```
-$ git branch develop
-> now: master
+# 📝 목차
 
-$ git checkout develop
-> now: master/develpo
-```
+1. ### [팀원 소개](#-팀원-소개)
+2. ### [기획 배경 및 필요셩](#-기획-배경-및-필요성)
 
-2. 특정 기능 생성 feature branch 추가.
-   ex) Login 기능 생성
+- - 2-1 [기회 의도](#-기획-의도)
+- - 2-2 [서비스 목적](#-서비스-목적)
 
-```
-$ git branch feature-login
-> now: master/develop
+3. ### [What is Challenging](#-What-is-Challenging)
 
-$ git checkout feature-login
-> now: develop/feature-login
-```
+- - 3-1 [SEO를 위한 Next js의 도입](#-SEO-검색-엔진-최적화)
+- - 3-2 [Atomic Design Pattern과 Storybook](#-Nginx-와-무중단-배포)
+- - 3-3 [Reverse Proxy를 더 잘 사용하기](#-Aws-S3)
 
-3. 특쟁 기능 개발 완료
+4. ### [프로젝트 소개](#-프로젝트-소개)
 
-```
-> now: develop/feature-login
-> 개발 끝.
-$ git add & commit
-$ git checkout develop
-> now: master/develop
+- - 4-1 [사용 기술](#-사용-기술)
+- - 4-3 [배포 구조](#-배포-구조)
 
-$ git merge feature-login
-> now: master/develop
-```
+5. ### [User Interface](#-User-Interface)
 
-여기까지 오면 develop에 feature-login 기능이 개발 완료 된 시점
+- - 5-1 [Contents List](#-Contents-List)
+- - 5-2 [UI Prototype By Adobe XD](#-UI-Prototype)
 
-4. pull request
+6. ### [Contributors](#-Contributors)
 
-```
-> now: master/develop
-$ git checkout master
-> now: master
+- - 6-1 [Contents List](#-Contents-List)
 
-$ git merge develop
-> now: master
+# 👨‍👩‍👧‍👦 팀원 소개
 
-$ git add & commit
-$ git push origin
-```
+|     👨‍👨‍👧      |                                                             개발자                                                             |                                                      개발자                                                       |
+| :---------: | :----------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: |
+|  **Name**   |                                                          🧑‍💼 장원익                                                          |                                                   🧑‍💻 최재웅                                                    |
+| **Contact** | [기술 블로그](https://wonit.tistory.com), [Github](https://github.com/dhslrl321), [회고 블로그](https://velog.io/@programador) | [Notion](https://www.notion.so/Portfolio-f256664356314ae8b0ef0112aadc30ce), [Github](https://github.com/CJW-MAPU) |
 
-5. master branch 동기화
+# 🔖 기획 배경 및 필요성
 
-```
-> now: master
-$ git checkout develop
-> now: master/develop
-$ git merge master
-```
+### 📌 기획 의도
 
-#### gitflow others...
+- 학교에서 제공하는 홈페이지가 아닌 학과 자체 홈페이지를 운영하기 위함
 
-**branch 삭제하기**
+### 📌 서비스 목적
 
-```
-$ git branch -d
-```
+- 다음과 같은 사용자에게 서비스를 제공하기 위함
+  - 정보보안학과 진학을 희망하는 예비 대학생
+  - 보안 인력이 되고싶어 하는 10대
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-> 모든 feature 개발 후에는 삭제요망 add
-=======
-> 모든 feature 개발 후에는 삭제요망 my test
->>>>>>> upstream/master
-=======
+# 👩🏻‍💻 What is Challenging
 
-> 모든 feature 개발 후에는 삭제요망 my test check
+### SEO 를 위한 Next js의 도입
 
->>>>>>> develop
+- `Create-React-App` 을 이용한 개발의 단점
+- SPA 에서 SEO 안되는 문제 해결
+
+### Atomic Design Pattern 과 Storybook
+
+- Atomic Design Pattern과 Storybook
+- 재사용을 목적으로 한 컴포넌트
+- 컴포넌트 UI 테스트
+
+### Reverse Proxy
+
+- 무중단 배포를 위한 로드밸런싱
+- 아쉬웠던 Reverse Proxy
+  - 단지 무중단 배포를 위한 로드밸런싱으로만 사용했던 용도가 아쉬움
+  - 보안적인 측면에서도 이용 예정
+  - 다양한 설정 적용 예정
+
+# ⛳️ 프로젝트 소개
+
+### 📌 사용 기술
+
+![기술 스택 사진](https://github.com/dhslrl321-project/PCUSS-Official-Site/blob/master/assets/tech.png)
+
+- **Front-End**
+  - Next.js
+  - React.js
+  - **Testing Library**
+    - Storybook.js
+    - Jest
+- **Back-End**
+  - Spring boot
+  - Spring Security
+  - Spring Data JPA
+  - Spring Hateoas
+  - Spring REST Docs
+  - **Testing Library**
+    - JUnit5
+- **Infrastructure**
+  - Nginx
+  - Docker
+  - Docker-Compose
+  - Ubuntu
+- **Etc**
+  - Git / Github
+  - Gitflow
+  - hub.docker.com
+  - Adobe XD
+
+### 📌 배포 구조
+
+![배포 구조]()
+
+# 📐 User Interface
+
+### 📌 Contents List
+
+1. 홈 `/`
+2. 커리큘럼 `/curriculum`
+3. 졸업 후 진로 `/carrer`
+4. 선배의 인터뷰 `/interview`
+5. 학과 활동 `/activity`
+6. 교수진 `/professor`
+7. 학과 구성원 `/member`
+
+### 📌 UI Prototype
+
+Adobe XD를 이용하여 UI 프로토타입을 제작하였습니다.
+
+![UI](https://github.com/dhslrl321-project/PCUSS-Official-Site/blob/master/assets/ui-adobe.png)
+
+# 👨‍👩‍👧‍👦 Contributors
+
+해당 서비스가 잘 유지되기 위해서는 여러 사람들이 도움을 주었습니다.
+
+### 📌 Contributors
+
+> 삭제 요망
+
+| 이름, 닉네임 |            Github, Blog, Gmail            |    내용     |
+| :----------: | :---------------------------------------: | :---------: |
+|    장원익    | [dhslrl321](https://github.com/dhslrl321) | 메인 개발자 |
+|    최재웅    |  [CJW-MAPu](https://github.com/CJW-MAPU)  | 메인 개발자 |

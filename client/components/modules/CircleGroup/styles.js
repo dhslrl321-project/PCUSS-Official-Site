@@ -13,7 +13,7 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
   & + & {
-    margin-left: 40px;
+    margin-left: 70px;
   }
 
   @media screen and (max-width: 768px) {

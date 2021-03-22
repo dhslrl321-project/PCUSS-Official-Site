@@ -4,28 +4,31 @@ import Image from "../../atoms/Image";
 import Label from "../../atoms/Label";
 import * as S from "./styles";
 
-const LargeDescription = ({ data }) => {
-  const { title, descs, source, isImg, src } = data;
+const LargeDescription = ({ data, styleType }) => {
+  const { title, descs, quotation, src } = data;
   return (
-    <S.Container>
-      <Title styleType="SubTitle">{title}</Title>
-      <S.DescriptionWrapper>
+    <S.Container data-aos="zoom-in">
+      {styleType === "OnlyDescription" ? <></> : <Title styleType="SubTitle">{title}</Title>}
+      <S.DescriptionWrapper isOnlyDescription={styleType === "OnlyDescription"}>
         <div>
           {descs.map(desc =>
-            <S.LabelWrapper>
-              <Label key={desc.id} styleType="Description">
+            <S.LabelWrapper key={desc.id}>
+              <Label styleType="Description">
                 {desc.content}
               </Label>
             </S.LabelWrapper>
           )}
         </div>
-        <S.ImageWrapper isImg={isImg}>
-          <Image src={src} />
-        </S.ImageWrapper>
-
-        <S.SourceWrapper isImg={isImg}>
-          <Label styleType="Description" size="0.9">{source}</Label>
-        </S.SourceWrapper>
+        {styleType === "OnlyDescription" ?
+          (<></>) :
+          (<>
+            <S.ImageWrapper isImg={src !== null}>
+              <Image src={src} />
+            </S.ImageWrapper>
+            <S.SourceWrapper isImg={quotation === null}>
+              <Label styleType="Description" size="0.9">{quotation}</Label>
+            </S.SourceWrapper>
+          </>)}
       </S.DescriptionWrapper>
     </S.Container>
   )

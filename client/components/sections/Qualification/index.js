@@ -27,7 +27,7 @@ const Qualification = ({ data }) => {
   }
 
   return (
-    <S.Container>
+    <S.Container data-aos="zoom-in-up">
       <SectionHeader title={title} description={description} />
       <S.LabelGroup>
         {labels.map(label =>

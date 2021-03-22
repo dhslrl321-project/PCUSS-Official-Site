@@ -1,17 +1,16 @@
 import styled from 'styled-components';
-import { theme, ifProp } from 'styled-tools';
-import { down } from 'styled-breakpoints';
+import { ifProp, theme } from 'styled-tools';
 
 export const Container = styled.section`
   ${theme("shortcuts.flexCenterColumn")};
+  margin: ${theme("margin.firstSectionMargin")};
 `;
 
 export const LabelGroup = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  ${down("sm")} {
+  @media screen and (max-width: 480px){
     flex-wrap: wrap;
   }
 `;

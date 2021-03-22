@@ -1,11 +1,10 @@
-import Navbar from "../components/modules/Navbar";
-import Footer from "../components/modules/Footer";
 import Curriculum from "../components/sections/Curriculum";
-import { data as curriculumData } from "../components/sections/Curriculum/data";
-export default function curriculum() {
+import { data as curriculumData } from "../datas/CurriculumData";
+import withHead from "../commons/withHead";
+const curriculum = () => {
   return (
-    <main>
-      <Curriculum datas={curriculumData} />
-    </main>
+    <Curriculum datas={curriculumData} />
   )
 }
+
+export default withHead(curriculum, "커리큘럼", "정보보안 전문가가 되기위해 4년간 배우는 것들을 미리 알아보세요");

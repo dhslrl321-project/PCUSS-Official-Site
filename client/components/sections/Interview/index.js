@@ -9,9 +9,9 @@ const Interview = ({ data }) => {
   const { cards } = cardData;
 
   return (
-    <S.Container>
+    <S.Container data-aos="zoom-in">
       <SectionHeader title={title} description={titleDescription} />
-      <SquircleGroup data={cards} />
+      <SquircleGroup data={cards} isDetail={false} />
     </S.Container>
   );
 };

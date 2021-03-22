@@ -9,10 +9,13 @@ export const Container = styled.div`
 `;
 
 export const PictureColumn = styled.div`
-  width: 250px;
-  height: 250px;
+  width: 180px;
+  height: 180px;
+  
   & > img {
     border-radius: 50%;
+    box-shadow: 0px 0px 10px 6px black;
+
   }
   margin-bottom: 40px;
   
@@ -35,7 +38,7 @@ export const DescColumn = styled.div`
   width: 250px;
   margin-top: 20px;
   text-align: center;
-  display: ${ifProp("isVisible", "block;", "none;")};
+  display: ${ifProp("isDescVisible", "block", "none")};
 
   @media screen and (max-width: 768px) {
     width: 180px;

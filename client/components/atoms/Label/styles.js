@@ -3,6 +3,7 @@ import { prop } from 'styled-tools';
 
 const defaultStyle = css`
   transition: 0.5s ease;
+  letter-spacing: 0.5px;
 `;
 
 const commonAttribute = css`
@@ -13,7 +14,7 @@ const commonAttribute = css`
   ${defaultStyle};
 
   @media screen and (max-width: 768px) {
-    font-size: calc(${prop('size')}rem - 0.2rem);
+    font-size: calc(${prop('size')}rem - 0.1rem);
   }
 `;
 

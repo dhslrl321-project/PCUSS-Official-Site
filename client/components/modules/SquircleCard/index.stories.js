@@ -13,4 +13,5 @@ export default {
 export const Rendering = (args) => <SquircleCard {...args} />;
 Rendering.args = {
   data: data,
+  isDetail: false,
 }
