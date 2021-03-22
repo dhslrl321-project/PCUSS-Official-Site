@@ -68,7 +68,7 @@ export const data = {
           labName: "와이어쇼크",
           labBirth: "연구실 창립일 : 2021.03 ~ 현재",
           labLocation: "연구실 위치 : S105",
-          src: "/lab/Lab105.JPG"
+          src: "/lab/Lab105.jpeg"
         }, labInfoData: [
           {
             id: 1, infoTitle: "와이어쇼크 란?",

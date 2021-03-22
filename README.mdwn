@@ -1,6 +1,6 @@
 🔐 💻 🖥
 
-### 배포 링크 Deploy Link
+### 배포 링크
 
 [cyber.pcu.ac.kr](http://cyber.pcu.ac.kr/) 에서 배재대학교 정보보안학과 자체 홈페이지를 확인해보세요.
 
@@ -20,9 +20,9 @@
 
 3. ### [What is Challenging](#-What-is-Challenging)
 
-- - 3-1 [SEO 검색 엔진 최적화](#-SEO-검색-엔진-최적화)
-- - 3-2 [Nginx와 무중단 배포](#-Nginx-와-무중단-배포)
-- - 3-3 [Aws S3](#-Aws-S3)
+- - 3-1 [SEO를 위한 Next js의 도입](#-SEO-검색-엔진-최적화)
+- - 3-2 [Atomic Design Pattern과 Storybook](#-Nginx-와-무중단-배포)
+- - 3-3 [Reverse Proxy를 더 잘 사용하기](#-Aws-S3)
 
 4. ### [프로젝트 소개](#-프로젝트-소개)
 
@@ -34,9 +34,13 @@
 - - 5-1 [Contents List](#-Contents-List)
 - - 5-2 [UI Prototype By Adobe XD](#-UI-Prototype)
 
+6. ### [Contributors](#-Contributors)
+
+- - 6-1 [Contents List](#-Contents-List)
+
 # 👨‍👩‍👧‍👦 팀원 소개
 
-|     👨‍👨‍👧      |                                                            개발자 1                                                            |                                                     개발자 2                                                      |
+|     👨‍👨‍👧      |                                                             개발자                                                             |                                                      개발자                                                       |
 | :---------: | :----------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: |
 |  **Name**   |                                                          🧑‍💼 장원익                                                          |                                                   🧑‍💻 최재웅                                                    |
 | **Contact** | [기술 블로그](https://wonit.tistory.com), [Github](https://github.com/dhslrl321), [회고 블로그](https://velog.io/@programador) | [Notion](https://www.notion.so/Portfolio-f256664356314ae8b0ef0112aadc30ce), [Github](https://github.com/CJW-MAPU) |
@@ -55,11 +59,21 @@
 
 # 👩🏻‍💻 What is Challenging
 
-- 검색 엔진 최적화를 위한 Nextjs
-  - SPA 특성으로 인해 SEO가 힘들었던 지난 프로젝트
-- 아키텍처 패턴의 도입을 통한 깔끔한 코드 관리 Atomic Design Pattern
-  - 아키텍처의 부재로 유지보수가 힘들던 지난 프로젝트
-- 협업을 위한 Git Branch 전략 Gitflow
+### SEO 를 위한 Next js의 도입
+
+- `Create-React-App` 을 이용한 개발의 단점
+- SPA 해결
+
+### Atomic Design Pattern 과 Storybook
+
+- Atomic Design Pattern과 Storybook
+- 재사용을 목적으로 한 컴포넌트
+- 컴포넌트 UI 테스트
+
+### Reverse Proxy
+
+- 무중단 배포를 위한 로드밸런싱
+-
 - 아쉬웠던 Reverse Proxy
   - 단지 무중단 배포를 위한 로드밸런싱으로만 사용했던 용도가 아쉬움
   - 보안적인 측면에서도 이용 예정
@@ -69,12 +83,22 @@
 
 ### 📌 사용 기술
 
-![기술 스택 사진]()
+![기술 스택 사진](https://github.com/dhslrl321-project/PCUSS-Official-Site/blob/master/assets/tech.png)
 
 - **Front-End**
   - Next.js
   - React.js
-  - Storybook.js
+  - **Testing Library**
+    - Storybook.js
+    - Jest
+- **Back-End**
+  - Spring boot
+  - Spring Security
+  - Spring Data JPA
+  - Spring Hateoas
+  - Spring REST Docs
+  - **Testing Library**
+    - JUnit5
 - **Infrastructure**
   - Nginx
   - Docker
@@ -89,6 +113,8 @@
 ### 📌 배포 구조
 
 ![배포 구조]()
+
+# 📐 User Interface
 
 ### 📌 Contents List
 
@@ -105,3 +131,16 @@
 Adobe XD를 이용하여 UI 프로토타입을 제작하였습니다.
 
 ![UI](https://github.com/dhslrl321-project/PCUSS-Official-Site/blob/master/assets/ui-adobe.png)
+
+# 👨‍👩‍👧‍👦 Contributors
+
+해당 서비스가 잘 유지되기 위해서는 여러 사람들이 도움을 주었습니다.
+
+### 📌 Contributors
+
+> 삭제 요망
+
+| 이름, 닉네임 |            Github, Blog, Gmail            |    내용     |
+| :----------: | :---------------------------------------: | :---------: |
+|    장원익    | [dhslrl321](https://github.com/dhslrl321) | 메인 개발자 |
+|    최재웅    |  [CJW-MAPu](https://github.com/CJW-MAPU)  | 메인 개발자 |
