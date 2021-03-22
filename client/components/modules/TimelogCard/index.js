@@ -9,7 +9,7 @@ import TimelineDot from "@material-ui/lab/TimelineDot";
 import Label from "../../atoms/Label";
 
 const TimelogCard = ({ year, content, isLeft }) => {
-  const aosProp = isLeft ? "zoom-in-right" : "zoom-in-left";
+
   const timelineProp = isLeft ? "primary" : "grey";
 
   return (
@@ -18,9 +18,9 @@ const TimelogCard = ({ year, content, isLeft }) => {
         <TimelineDot data-aos="fade-up" variant="outlined" color={timelineProp} />
         <TimelineConnector data-aos="fade-up" />
       </TimelineSeparator>
-      <TimelineContent data-aos={aosProp}>
+      <TimelineContent data-aos="zoom-in-up">
         <S.TextWrapper>
-          <Label styleType="Label" size="0.9">{year}</Label>
+          <Label styleType="Label" size="1">{year}</Label>
           <Label styleType="Label" size="1">{content}</Label>
         </S.TextWrapper>
       </TimelineContent>

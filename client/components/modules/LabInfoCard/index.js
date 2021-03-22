@@ -16,11 +16,11 @@ const LabInfoCard = ({ data }) => {
         {isListDescription ?
           infoDescription.map(descItem =>
             <S.DescriptionColumn key={descItem.id}>
-              <Label styleType="Description" size="0.8">
+              <Label styleType="Description" size="0.9">
                 {descItem.description}
               </Label>
             </S.DescriptionColumn>) :
-          <Label styleType="Description" size="0.8">
+          <Label styleType="Description" size="0.9">
             {infoDescription}
           </Label>}
       </S.DescriptionColumn>

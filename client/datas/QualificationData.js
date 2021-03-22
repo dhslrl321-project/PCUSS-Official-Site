@@ -19,7 +19,8 @@ export const data = {
         { id: 2, src: "/chat/senior.svg", chatting: "기본적으로 컴퓨터에 대한 흥미가 있어야 합니다. 컴퓨터에 대한 흥미가 없더라도 걱정하지 마세요. 컴퓨터의 세계는 아주 흥미롭거든요.", isQuestions: false },
         { id: 3, src: "/chat/junior.svg", chatting: "벌써부터 흥미로워요! 자세히 말해주세요!", isQuestions: true },
         { id: 4, src: "/chat/senior.svg", chatting: "기본적으로 모든 것에 궁금증을 갖고 탐구하는 제세가 필요합니다. 탐구하는 자세를 겸비하기 위해서는 다양한 활동을 다양한 시각에서 체험해야 하죠.", isQuestions: false },
-        { id: 5, src: "/chat/senior.svg", chatting: "하지만 걱정마세요 저희가 도와드릴게요", isQuestions: false }
+        { id: 5, src: "/chat/senior.svg", chatting: "하지만 걱정마세요 저희가 도와드릴게요", isQuestions: false },
+        { id: 6, src: "/chat/junior.svg", chatting: "감사합니다 선배님!", isQuestions: true }
       ]
     },
     {
@@ -43,7 +44,8 @@ export const data = {
       conversations: [
         { id: 1, src: "/chat/junior.svg", chatting: "저는 사교성이 좋아서 빨리 선후배와 친해지고 싶어요!", isQuestions: true },
         { id: 2, src: "/chat/senior.svg", chatting: "오! 정말 다행이네요. 기본적으로 IT 분야는 서로 소통하는 협업의 문화가 아주 중요하답니다.", isQuestions: false },
-        { id: 3, src: "/chat/senior.svg", chatting: "저희는 실제로 기업이 사용하는 협업 도구인 Github, Jira Confluence, Bitbucket 등 다양한 협업 도구를 사용하고 있답니다.", isQuestions: false }]
+        { id: 3, src: "/chat/senior.svg", chatting: "저희는 실제로 기업이 사용하는 협업 도구인 Github, Jira Confluence, Bitbucket 등 다양한 협업 도구를 사용하고 있답니다.", isQuestions: false }
+      ]
     },
     {
       id: 5,

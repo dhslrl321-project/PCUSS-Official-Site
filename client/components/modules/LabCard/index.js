@@ -11,9 +11,9 @@ const LabCard = ({ data }) => {
       <S.ImageColumn>
         <Image src={labMainData.src} />
         <S.Description>
-          <Label styleType="Label" size="1">{labMainData.labName}</Label>
-          <Label styleType="Label" size="0.8">{labMainData.labBirth}</Label>
-          <Label styleType="Label" size="0.8">{labMainData.labLocation}</Label>
+          <Label styleType="Label" size="1.1">{labMainData.labName}</Label>
+          <Label styleType="Label" size="0.9">{labMainData.labBirth}</Label>
+          <Label styleType="Label" size="0.9">{labMainData.labLocation}</Label>
         </S.Description>
       </S.ImageColumn>
       <S.InfoColumn>

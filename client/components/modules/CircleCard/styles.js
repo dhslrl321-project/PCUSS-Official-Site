@@ -9,10 +9,13 @@ export const Container = styled.div`
 `;
 
 export const PictureColumn = styled.div`
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
+  
   & > img {
     border-radius: 50%;
+    box-shadow: 0px 0px 10px 6px black;
+
   }
   margin-bottom: 40px;
   

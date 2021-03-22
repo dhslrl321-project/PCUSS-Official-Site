@@ -17,6 +17,7 @@ export const ChatBallon = styled.div`
   background: ${ifProp("isQuestions", "#CCCCCC", "#43C670")};
   color: #000;
   padding: 20px;
+  line-height: 120%;
   border-radius: 10px;
   width: 200px;
 `;
@@ -29,6 +30,6 @@ export const EmptyColumn = styled.div`
   }
 
   @media screen and (max-width: 480px){
-    width: 50px;
+    width: 60px;
   }
 `;

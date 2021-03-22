@@ -18,9 +18,13 @@ export const RootWrapper = styled.div`
 export const LinkContainer = styled.div`
   display: flex;
   justify-content: center;
-  
+  margin-left: 150px;
   @media screen and (max-width: 768px){
     padding-top: 32px;
+    margin-left: 50px;
+  }
+  @media screen and (max-width: 480px){
+    margin-left: 30px; 
   }
 `;
 
@@ -33,6 +37,7 @@ export const LinkWrapper = styled.div`
 `;
 
 export const LinkItems = styled.div`
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -49,7 +54,7 @@ export const LinkItems = styled.div`
 `;
 
 export const LinkTitle = styled.h1`
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-bottom: 16px;
 `;
 
@@ -57,6 +62,10 @@ export const LinkWrap = styled.div`
   text-decoration: none;
   font-size: 0.8rem;
   margin-bottom: 0.7rem;
+  
+  a {
+    font-weight: 300;
+  }
 `;
 
 export const SocialMediaContainer = styled.section`

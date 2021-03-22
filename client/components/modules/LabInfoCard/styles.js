@@ -21,6 +21,7 @@ export const TitleColumn = styled.div`
 export const DescriptionColumn = styled.div`
   ${defaultColumnStyle};
   margin: 10px 0;
+  font-weight: 300;
 `;
 export const ListDescriptionWrapper = styled.div`
   display: flex;

@@ -5,6 +5,7 @@ import Qualification from "../components/sections/Qualification";
 import { data as qualificationData } from "../datas/QualificationData";
 import Timelog from "../components/sections/Timelog";
 import { data as timelogData } from "../datas/TimelogData";
+
 export default function Home() {
 
   return (
