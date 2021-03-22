@@ -2,6 +2,7 @@ import { qnaData as KimDoUnQna } from "./InterviewQnA/KimDoUn";
 import { qnaData as SongTaeGiQna } from "./InterviewQnA/SongTaeGi";
 import { qnaData as ParkJiHunQna } from "./InterviewQnA/ParkJiHun";
 import { qnaData as YunJungHo } from "./InterviewQnA/YunJungHo";
+import { qnaData as ParkYoungSu } from "./InterviewQnA/ParkYoungSu";
 
 export const data = {
   headerData: {
@@ -11,19 +12,19 @@ export const data = {
   pageData: [
     {
       cardData: {
-        label: "정보보안 담당자 송태기 선배님 (14학번)", src: "/interview/Interview1.JPG"
+        label: "정보보안 담당자 송OO 선배님 (14학번)", src: "/interview/Interview1.JPG"
       },
       qnaData: SongTaeGiQna
     },
     {
       cardData: {
-        label: "모의 해킹 전문가 김도언 선배님 (14학번)", src: "/interview/Interview2.JPG"
+        label: "모의 해킹 전문가 김OO 선배님 (14학번)", src: "/interview/Interview2.JPG"
       },
       qnaData: KimDoUnQna
     },
     {
       cardData: {
-        label: "사이버위협분석 전문가 박지훈 선배님 (15학번)", src: "/interview/Interview3.JPG"
+        label: "사이버위협분석 전문가 박OO 선배님 (15학번)", src: "/interview/Interview3.JPG"
       },
       qnaData: ParkJiHunQna
     },
@@ -32,7 +33,13 @@ export const data = {
         label: "네트워크 분석 전문가 윤OO 선배님 (11학번)", src: "/interview/Interview4.jpg"
       },
       qnaData: YunJungHo
-    }
+    },
+    {
+      cardData: {
+        label: "풀스택 개발자 박OO 선배님 (14학번)", src: "/interview/Interview5.jpg"
+      },
+      qnaData: ParkYoungSu
+    },
   ]
 };
 

@@ -9,6 +9,7 @@ export const data = {
       { id: 2, label: "모의해킹 전문가 김OO", src: "/interview/Interview2.JPG" },
       { id: 3, label: "사이버위협분석 전문가 박OO", src: "/interview/Interview3.JPG" },
       { id: 4, label: "네트워크 분석 전문가 윤OO", src: "/interview/Interview4.jpg" },
+      { id: 5, label: "풀스택 개발자 박OO", src: "/interview/Interview5.jpg" },
     ]
   }
 };
