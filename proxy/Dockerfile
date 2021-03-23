@@ -1,5 +1,5 @@
-FROM nginx:latest
+FROM nginx
 
-COPY ./sdf ./sdf
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-CMD ["nginx", "-g", "daemon off;"]
+CMD [ "nginx", "-g", "daemon off;" ]
