@@ -36,6 +36,22 @@ const theme = {
     cardBg: "#1D1D20",
     focusColor: "#0050FF",
     sourceColor: "#B4B4B4",
+    // github palettes
+
+    // fonts
+    // default font color : #ADBAC7
+    // placeholder color : #757880
+    // focus font color : #539BF5
+
+    // background
+    // 배경 색 : #22272E (가장 어두움)
+    // input, cardBg 색 : #2D333B (중간 밝음)
+
+    // button
+    // input on cardBg, button 색 : #444C56 (input, cardBg 보다 더 밝음)
+
+    // plus : #37CE43
+    // minus : #FF0000
   },
   margin: {
     sectionMargin: "250px 0",
