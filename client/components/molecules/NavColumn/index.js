@@ -1,10 +1,14 @@
+import Link from "../../atoms/Link";
+
 import * as S from "./styles";
 
-const NavColumn = ({ name }) => {
+const NavColumn = ({ name, href }) => {
   return (
     <S.NavItemContainer>
       <S.NavItem>
-        <span>{name}</span>
+        <Link styleType="NextLink" href={href}>
+          {name}
+        </Link>
       </S.NavItem>
     </S.NavItemContainer>
   )

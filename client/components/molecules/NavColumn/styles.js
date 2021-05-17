@@ -4,5 +4,5 @@ export const NavItemContainer = styled.div`
   display: flex;
 `;
 export const NavItem = styled.div`
-  margin: 0px 24px;
+  margin: 0px 14px;
 `;

@@ -1,7 +1,9 @@
 import { useState } from "react";
 
-import * as S from "./styles";
+import Link from "../../atoms/Link";
 import Dropdown from "../Dropdown";
+
+import * as S from "./styles";
 
 const ExpandableNavColumn = ({ data }) => {
 
@@ -23,7 +25,9 @@ const ExpandableNavColumn = ({ data }) => {
         show={activeDropdown}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}>
-        {name}
+        <Link styleType="NextLink" href="#">
+          {name}
+        </Link>
         <Dropdown data={columnData} />
       </S.ExpandableNavItem>
     </S.ExpandableNavItemContainer>

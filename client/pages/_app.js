@@ -11,6 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Navbar from '../components/organisms/Navbar';
+import Navigation from "../components/organisms/Navigation";
 import Footer from '../components/organisms/Footer';
 import Sidebar from "../components/organisms/Sidebar";
 
@@ -46,7 +47,7 @@ export default class RootApp extends App {
         <main>
           <ThemeProvider theme={theme}>
             <DefaultContainer>
-              <Navbar handleSidebarToggle={this.handleSidebarToggle} />
+              <Navigation handleSidebarToggle={this.handleSidebarToggle} />
               <Sidebar isSidebarOpen={this.state.isSidebarOpen} handleSidebarToggle={this.handleSidebarToggle} />
               <Component {...other} />
               <Footer />

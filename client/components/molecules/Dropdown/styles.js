@@ -7,6 +7,9 @@ export const Container = styled.div`
   align-items: flex-start;
   position: absolute;
   top: 21px;
+
+  font-size: 1rem;
+  background: ${theme("palettes.background")};
 `;
 
 export const DropdownItem = styled.div`
@@ -14,4 +17,7 @@ export const DropdownItem = styled.div`
   transition: 0.5s ease;
   display: flex;
   align-items: center;
+  :first-child {
+    margin-top: 12px;
+  }
 `;
