@@ -6,10 +6,11 @@ export const Container = styled.nav`
   font-size: 1.2rem;
   font-weight: bolder;
   height: 80px;
-  background: ${theme("palettes.background")};
 `;
 
 export const NavWrapper = styled.div`
+  background: ${theme("palettes.background")};
+
   display: flex;
   justify-content: space-between;
   position: fixed;

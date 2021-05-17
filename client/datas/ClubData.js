@@ -30,7 +30,6 @@ export const data = {
         labMainData: {
           labName: "농구 팀 AIR",
           labBirth: "동아리 창립일 : 2015.02 ~ 현재",
-          labLocation: "연구실",
           src: "/club/ClubBasketBall.JPG"
         }, labInfoData: [
           {
@@ -40,7 +39,7 @@ export const data = {
           {
             id: 2,
             infoTitle: "연구 주제 및 과제",
-            infoDescription: "#보안관제, #네트워크패킷분석, #취약점제보, #CTF"
+            infoDescription: "#축구, #풋살, #정기 여행, #술 파티"
           },
         ]
       }
@@ -50,7 +49,6 @@ export const data = {
         labMainData: {
           labName: "축구 및 풋살 팀 적토마",
           labBirth: "동아리 창립일 : 2014.03 ~ 현재",
-          labLocation: "연구실 위치 : S105",
           src: "/club/ClubFootball.JPG"
         }, labInfoData: [
           {

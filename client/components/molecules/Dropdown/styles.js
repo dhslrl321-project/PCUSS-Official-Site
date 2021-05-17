@@ -7,9 +7,10 @@ export const Container = styled.div`
   align-items: flex-start;
   position: absolute;
   top: 21px;
+  left: -10px;
 
   font-size: 1rem;
-  background: ${theme("palettes.background")};
+  width: 110px;
 `;
 
 export const DropdownItem = styled.div`
@@ -20,4 +21,5 @@ export const DropdownItem = styled.div`
   :first-child {
     margin-top: 12px;
   }
+  margin-left: 13px;
 `;

@@ -7,7 +7,7 @@ import * as S from "./styles";
 
 const ExpandableNavColumn = ({ data }) => {
 
-  const { name, data: columnData } = data;
+  const { name, href, data: columnData } = data;
 
   const [activeDropdown, setActiveDropdown] = useState(false);
 
@@ -25,7 +25,7 @@ const ExpandableNavColumn = ({ data }) => {
         show={activeDropdown}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}>
-        <Link styleType="NextLink" href="#">
+        <Link styleType="NextLink" href={href}>
           {name}
         </Link>
         <Dropdown data={columnData} />

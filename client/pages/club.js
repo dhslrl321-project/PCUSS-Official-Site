@@ -4,7 +4,7 @@ import Lab from "../components/sections/Lab";
 const club = () => {
   return (
     <>
-      <Lab datas={clubData} />
+      <Lab data={clubData} />
     </>
   )
 }
