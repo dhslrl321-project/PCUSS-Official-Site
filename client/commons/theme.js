@@ -32,8 +32,8 @@ const theme = {
   },
   palettes: {
     title: "#fff",
-    background: "#0F1218",
-    cardBg: "#1D1D20",
+    background: "#22272E",
+    cardBg: "#2D333B",
     focusColor: "#0050FF",
     sourceColor: "#B4B4B4",
     // github palettes
