@@ -1,17 +1,18 @@
 import { useState } from "react";
 
-import { dropdownData } from "./data";
-
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import { FaBars } from "react-icons/fa";
 
 import NavColumn from "../../molecules/NavColumn";
 import ExpandableNavColumn from "../../molecules/ExpandableNavColumn";
 
+import { data as navigationData } from "../../../datas/NavigationData";
 import * as S from "./styles";
 
 
 const Navigation = ({ handleSidebarToggle }) => {
+
+  const { dropdownData } = navigationData;
 
   const [hideOnScroll, setHideOnScroll] = useState(true);
 
