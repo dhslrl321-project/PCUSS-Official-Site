@@ -1,5 +1,5 @@
-import React from "react";
 import Image from ".";
+
 export default {
   title: "Atoms / Image",
   component: Image
@@ -16,5 +16,5 @@ Picture.args = {
 export const Icon = Template.bind({})
 Icon.args = {
   styleType: "Icon",
-  src: "/lecture/c_icon.svg"
+  src: "/lecture/application.svg"
 }

@@ -1,6 +1,6 @@
 import React from 'react'
-import SectionHeader from '../../modules/SectionHeader';
-import TimelogGroup from '../../modules/TimelogGroup';
+import SectionHeader from '../../organisms/SectionHeader';
+import TimelogGroup from '../../organisms/TimelogGroup';
 import * as S from "./styles";
 
 const Timelog = ({ data }) => {

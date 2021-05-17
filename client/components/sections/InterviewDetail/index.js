@@ -1,8 +1,8 @@
 import React from 'react';
 import * as S from './styles';
-import SectionHeader from '../../modules/SectionHeader';
-import SquircleCard from '../../modules/SquircleCard';
-import QnAGroup from '../../modules/QnAGroup';
+import SectionHeader from '../../organisms/SectionHeader';
+import SquircleCard from '../../molecules/SquircleCard';
+import QnAGroup from '../../organisms/QnAGroup';
 
 const InterviewDetail = ({ data }) => {
   const { headerData, pageData } = data;

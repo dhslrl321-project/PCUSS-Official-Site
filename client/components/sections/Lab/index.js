@@ -1,8 +1,8 @@
 import React from 'react'
 import * as S from "./styles";
 
-import SectionHeader from "../../modules/SectionHeader";
-import LabGroup from "../../modules/LabGroup";
+import SectionHeader from "../../organisms/SectionHeader";
+import LabGroup from "../../organisms/LabGroup";
 const Lab = ({ data }) => {
   const { headerData, labData } = data;
   const { title, titleDescription } = headerData;
