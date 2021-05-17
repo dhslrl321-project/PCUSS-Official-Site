@@ -62,7 +62,7 @@
 ### SEO 를 위한 Next js의 도입
 
 - `Create-React-App` 을 이용한 개발의 단점
-- SPA 해결
+- SPA 에서 SEO 안되는 문제 해결
 
 ### Atomic Design Pattern 과 Storybook
 
@@ -73,7 +73,6 @@
 ### Reverse Proxy
 
 - 무중단 배포를 위한 로드밸런싱
--
 - 아쉬웠던 Reverse Proxy
   - 단지 무중단 배포를 위한 로드밸런싱으로만 사용했던 용도가 아쉬움
   - 보안적인 측면에서도 이용 예정
