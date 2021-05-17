@@ -1,4 +1,3 @@
-import React from 'react'
 import * as S from './styles';
 
 const Label = ({ children, styleType, size }) => {
@@ -6,7 +5,7 @@ const Label = ({ children, styleType, size }) => {
     styleType,
     size,
   };
-  
+
   switch (styleType) {
     case "Label": {
       return <S.Labels {...props}>{children}</S.Labels>;

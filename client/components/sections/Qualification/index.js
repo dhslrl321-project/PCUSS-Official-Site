@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import SectionHeader from "../../modules/SectionHeader";
-import ChatGroup from "../../modules/ChatGroup";
+import SectionHeader from "../../organisms/SectionHeader";
+import ChatGroup from "../../organisms/ChatGroup";
 import * as S from "./styles";
 import Label from '../../atoms/Label';
 

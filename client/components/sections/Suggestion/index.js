@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import * as S from "./styles";
-import SectionHeader from "../../modules/SectionHeader";
-import JobGroup from "../../modules/JobGroup";
+import SectionHeader from "../../organisms/SectionHeader";
+import JobGroup from "../../organisms/JobGroup";
 import Label from '../../atoms/Label';
 
 const Suggestion = ({ data }) => {

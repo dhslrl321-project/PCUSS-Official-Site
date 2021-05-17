@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from './styles';
-import SectionHeader from '../../modules/SectionHeader';
-import CircleGroup from '../../modules/CircleGroup';
+import SectionHeader from '../../organisms/SectionHeader';
+import CircleGroup from '../../organisms/CircleGroup';
 
 const Merit = ({ data }) => {
   const { headerData, cardData } = data;
