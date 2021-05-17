@@ -1,0 +1,26 @@
+# nginx.conf 파일 설정
+
+- worker_precesses
+- error.log
+
+## 블록
+
+- events 블록
+- http 블록
+- server 블록
+
+# 장애 대응
+
+- upstream module을 사용
+  - max_fails, fail_timeout 설정
+    - `max_fails=n` n으로 지정한 횟수만큼 연결 실패가 되면 서버가 다운된 것으로 판단
+    - `fail_timeout=n` : max_fails 가 지정된 상태에서 n 값이 설정 값 만큼 서버가 응답하지 않으면 서버가 다운된 것으로 판단
+- 서버 상태 확인하고 설정 값 초과시 배겁 서비스 활성화
+
+# 로드 밸런싱
+
+- 클러스터에 설정된 서버 정보와 포트를 upstream 모듈을 사용하며 첫 번째 설정된 서버가 우선 처리
+
+# keep alive 제어
+
+# 캐싱
