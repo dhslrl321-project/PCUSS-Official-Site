@@ -3,12 +3,17 @@ import { data as ctfData } from "../datas/CtfData";
 import Activities from "../components/sections/Activities";
 import { data as activitiesData } from "../datas/ActivitiesData";
 import withHead from "../commons/withHead";
+import Section from "../components/atoms/Section";
 
 const activity = () => {
   return (
     <>
-      <Ctf data={ctfData} />
-      <Activities data={activitiesData} />
+      <Section styleType="FirstMargin">
+        <Ctf data={ctfData} />
+      </Section>
+      <Section styleType="LastMargin">
+        <Activities data={activitiesData} />
+      </Section>
     </>
   );
 }
