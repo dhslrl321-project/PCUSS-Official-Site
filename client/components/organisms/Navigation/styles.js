@@ -27,7 +27,7 @@ export const NavWrapper = styled.div`
 export const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     display: flex;
     align-items: center;
     position: absolute;
@@ -44,18 +44,16 @@ export const NavColumnWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px 0;
 `;
 
 export const ExpandableNavColumnWrapper = styled.div`
   font-size: 1.2rem;
   display: flex;
   justify-content: flex-start;
-  margin: 40px 0;
 `;
 
 export const Column = styled.div`
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     display: none;
   }
 `;
