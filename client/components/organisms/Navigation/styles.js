@@ -27,7 +27,7 @@ export const NavWrapper = styled.div`
 export const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 910px) {
     display: flex;
     align-items: center;
     position: absolute;
@@ -53,7 +53,7 @@ export const ExpandableNavColumnWrapper = styled.div`
 `;
 
 export const Column = styled.div`
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 910px) {
     display: none;
   }
 `;

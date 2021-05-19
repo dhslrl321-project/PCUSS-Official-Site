@@ -7,7 +7,7 @@ export const Container = styled.div`
   align-items: flex-start;
   position: absolute;
   top: 80px;
-  left: 0px;
+  left: -8px;
   font-size: 1rem;
 `;
 
