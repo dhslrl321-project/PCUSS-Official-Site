@@ -54,9 +54,10 @@ const theme = {
     // minus : #FF0000
   },
   margin: {
-    sectionMargin: "250px 0",
-    firstSectionMargin: "50px 0 250px 0",
-    lastSectionMargin: "250px 0 100px 0",
+    sectionMargin: "300px 0",
+    firstSectionMargin: "120px 0 250px 0",
+    lastSectionMargin: "250px 0 130px 0",
+    singleMargin: "120px 0 130px 0",
   }
 }
 

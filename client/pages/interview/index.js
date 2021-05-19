@@ -1,9 +1,15 @@
 import Interview from "../../components/sections/Interview";
 import { data as interviewData } from "../../datas/InterviewData";
 import withHead from "../../commons/withHead";
+import Section from '../../components/atoms/Section';
+
 const interview = () => {
   return (
-    <Interview data={interviewData} />
+    <>
+      <Section styleType="SingleMargin">
+        <Interview data={interviewData} />
+      </Section>
+    </>
   );
 }
 

@@ -1,10 +1,14 @@
 import { data as clubData } from "../datas/ClubData";
 import withHead from "../commons/withHead";
 import Lab from "../components/sections/Lab";
+import Section from "../components/atoms/Section";
+
 const club = () => {
   return (
     <>
-      <Lab data={clubData} />
+      <Section styleType="SingleMargin">
+       <Lab data={clubData} />
+      </Section>
     </>
   )
 }

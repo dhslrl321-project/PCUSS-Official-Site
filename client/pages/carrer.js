@@ -3,12 +3,17 @@ import { data as carrerData } from "../datas/CarrerData";
 import Suggestion from "../components/sections/Suggestion";
 import { data as suggestionData } from "../datas/SuggestionData";
 import withHead from "../commons/withHead";
+import Section from "../components/atoms/Section";
 
 const carrer = () => {
   return (
     <>
-      <Suggestion data={suggestionData} />
-      <Carrer data={carrerData} />
+      <Section styleType="FirstMargin">
+        <Suggestion data={suggestionData} />
+      </Section>
+      <Section styleType="LastMargin">
+        <Carrer data={carrerData} />
+      </Section>
     </>
   );
 }

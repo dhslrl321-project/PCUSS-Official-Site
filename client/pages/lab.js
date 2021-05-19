@@ -2,10 +2,14 @@ import Lab from "../components/sections/Lab";
 import { data as labData } from "../datas/LabData";
 import Club from "../components/sections/Club";
 import withHead from "../commons/withHead";
+import Section from '../components/atoms/Section';
+
 const member = () => {
   return (
     <>
-      <Lab data={labData} />
+      <Section styleType="SingleMargin">
+        <Lab data={labData} />
+      </Section>
     </>
   )
 }
