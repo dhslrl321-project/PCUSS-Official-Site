@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { theme } from 'styled-tools';
-export const Container = styled.section`
+export const Container = styled.div`
   ${theme("shortcuts.flexCenterColumn")};
-  margin: ${theme("margin.firstSectionMargin")};
 `;
