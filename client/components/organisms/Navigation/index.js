@@ -40,8 +40,8 @@ const Navigation = ({ handleSidebarToggle }) => {
         </S.Column>
         <S.Column>
           <S.NavColumnWrapper>
-            <NavColumn name="SignIn" href="/#" />
-            <NavColumn name="SignUp" href="/#" />
+            <NavColumn name="Sign In" href="/#" />
+            <NavColumn name="Sign Up" href="/#" />
           </S.NavColumnWrapper>
         </S.Column>
       </S.NavWrapper>

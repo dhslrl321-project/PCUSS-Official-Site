@@ -6,20 +6,14 @@ export const Container = styled.div`
   ${theme("shortcuts.flexCenterColumn")};
   align-items: flex-start;
   position: absolute;
-  top: 21px;
-  left: -10px;
-
+  top: 80px;
+  left: -8px;
   font-size: 1rem;
-  width: 110px;
 `;
 
 export const DropdownItem = styled.div`
-  margin: 4px 0px;
+  margin: 4px 8px;
   transition: 0.5s ease;
   display: flex;
   align-items: center;
-  :first-child {
-    margin-top: 12px;
-  }
-  margin-left: 13px;
 `;
