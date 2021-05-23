@@ -19,8 +19,8 @@ export const data = {
           },
           {
             id: 2,
-            infoTitle: "연구 주제 및 과제",
-            infoDescription: "#개발자 #Spring #React #Next JS #애자일 #머신러닝 #케라스"
+            infoTitle: "활동 키워드",
+            infoDescription: "#개발자, #창업, #애자일, #대회, #스펙, #모바일 앱"
           },
         ]
       }
@@ -38,8 +38,8 @@ export const data = {
           },
           {
             id: 2,
-            infoTitle: "연구 주제 및 과제",
-            infoDescription: "#축구, #풋살, #정기 여행, #술 파티"
+            infoTitle: "활동 키워드",
+            infoDescription: "#3 vs 3 길거리 농구 대회, #농구, #정기 여행, #술 파티"
           },
         ]
       }
@@ -57,8 +57,8 @@ export const data = {
           },
           {
             id: 2,
-            infoTitle: "연구 주제 및 과제",
-            infoDescription: "각종 네트워크 패킷 분석 및 침해 사고 대응"
+            infoTitle: "활동 키워드",
+            infoDescription: "#풋살, #축구, #대회 우승, #MT"
           },
         ]
       }

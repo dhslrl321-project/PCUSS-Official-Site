@@ -14,8 +14,6 @@ export const PictureColumn = styled.div`
   
   & > img {
     border-radius: 50%;
-    box-shadow: 0px 0px 10px 6px black;
-
   }
   margin-bottom: 40px;
   

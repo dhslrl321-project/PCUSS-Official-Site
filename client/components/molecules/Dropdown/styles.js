@@ -8,11 +8,11 @@ export const Container = styled.div`
   position: absolute;
   top: 80px;
   left: -8px;
-  font-size: 1rem;
+  font-size: 0.9rem;
 `;
 
 export const DropdownItem = styled.div`
-  margin: 4px 8px;
+  margin: 4px 16px;
   transition: 0.5s ease;
   display: flex;
   align-items: center;

@@ -17,7 +17,6 @@ export const ImageColumn = styled.div`
   width: 300px;
   img {
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 6px black;
   }
   margin: 10px 40px;
   @media screen and (max-width: 768px) {
