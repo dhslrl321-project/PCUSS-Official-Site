@@ -25,10 +25,7 @@ export const DescriptionColumn = styled.div`
 `;
 export const ListDescriptionWrapper = styled.div`
   display: flex;
-  align-items: center;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  flex-wrap: wrap;
 `;
 
 export const Partition = styled.div`

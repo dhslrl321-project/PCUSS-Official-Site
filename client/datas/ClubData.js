@@ -14,13 +14,15 @@ export const data = {
           src: "/club/ClubTeamEU.JPG"
         }, labInfoData: [
           {
-            id: 1, infoTitle: "EU 는?",
-            infoDescription: "세상의 모든 불편함을 덜자! 라는 각오 아래 약 5차례의 창업 경진 대회에서 수상 경력이 있는 베테랑 창업 동아리 입니다."
+            id: 1,
+            infoTitle: "EU 는?",
+            infoDescription: "세상의 모든 불편함을 덜자! 라는 각오 아래 약 5차례의 창업 경진 대회에서 수상 경력이 있는 베테랑 창업 동아리 입니다.",
+            isTag: false
           },
           {
             id: 2,
             infoTitle: "활동 키워드",
-            infoDescription: "#개발자, #창업, #애자일, #대회, #스펙, #모바일 앱"
+            infoDescription: "#개발자, #창업, #애자일, #대회, #스펙, #모바일 앱",
           },
         ]
       }
@@ -33,7 +35,8 @@ export const data = {
           src: "/club/ClubBasketBall.JPG"
         }, labInfoData: [
           {
-            id: 1, infoTitle: "AIR는 ?",
+            id: 1,
+            infoTitle: "AIR는 ?",
             infoDescription: "농구에 진심인 사람들이 모여 매일 같이 슈팅을 쏩니다."
           },
           {
@@ -52,7 +55,8 @@ export const data = {
           src: "/club/ClubFootball.JPG"
         }, labInfoData: [
           {
-            id: 1, infoTitle: "적토마란?",
+            id: 1,
+            infoTitle: "적토마란?",
             infoDescription: "삼국지에 등장하는 붉은 빛이 도는 털에 토끼처럼 빠른 속도를 자랑하는 적토마를 본받고자 정보보안학과 학생들이 만든 축구 팀입니다."
           },
           {
