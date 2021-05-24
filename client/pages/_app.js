@@ -10,7 +10,6 @@ import Reset from "../commons/reset";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import Navbar from '../components/organisms/Navbar';
 import Navigation from "../components/organisms/Navigation";
 import Footer from '../components/organisms/Footer';
 import Sidebar from "../components/organisms/Sidebar";

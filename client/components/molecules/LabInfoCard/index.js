@@ -1,5 +1,5 @@
 import Label from "../../atoms/Label"
-
+import JobTag from "../JobTag";
 import * as S from "./styles";
 
 const LabInfoCard = ({ data }) => {

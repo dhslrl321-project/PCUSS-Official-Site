@@ -35,7 +35,7 @@ const Navigation = ({ handleSidebarToggle }) => {
 
         <S.Column>
           <S.ExpandableNavColumnWrapper>
-            {dropdownData.map(data => <ExpandableNavColumn data={data} />)}
+            {dropdownData.map(data => <ExpandableNavColumn key={data.id} data={data} />)}
           </S.ExpandableNavColumnWrapper>
         </S.Column>
         <S.Column>
