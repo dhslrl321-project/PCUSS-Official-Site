@@ -21,7 +21,7 @@ export const NavWrapper = styled.div`
   height: -80px;
   transition: 0.5s ease;
   transform: ${ifProp("show", "translate(0, 0);", "translate(0, -270%)")};
-  z-index: 10;
+  z-index: 11;
 `;
 
 export const MobileIcon = styled.div`
