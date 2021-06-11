@@ -1,7 +1,7 @@
 import * as S from "./styles";
 
-const Button = ({ handleOnClick }) => {
-  return <S.Container onClick={handleOnClick}>sasdf</S.Container>;
+const Button = ({ handleOnClick, children }) => {
+  return <S.Container onClick={handleOnClick}>{children}</S.Container>;
 };
 
 export default Button;

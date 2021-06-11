@@ -2,7 +2,7 @@ import * as S from "./style";
 
 const Image = ({ src }) => {
   const props = {
-    src
+    src,
   };
 
   return <S.Image {...props} />;
