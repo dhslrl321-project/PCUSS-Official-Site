@@ -13,7 +13,7 @@ const SnsButton = ({ snsType }) => {
     const redirect_uri = "http://localhost:3000/oauth/kakao";
     const response_type = "code";
 
-    location.href = `https://kauth.kakao.com//oauth/authorize?client_id=${client_id}&redirect_uri=${redirect_uri}&response_type=${response_type}`;
+    location.href = `https://kauth.kakao.com/oauth/authorize?client_id=${client_id}&redirect_uri=${redirect_uri}&response_type=${response_type}`;
   };
 
   let icon;
