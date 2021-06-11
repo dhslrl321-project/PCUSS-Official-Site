@@ -1,6 +1,6 @@
-import React from 'react'
-import * as S from "./styles";
 import NextLink from "next/link";
+
+import * as S from "./styles";
 
 const Link = ({ styleType, children, href, as }) => {
   const props = {

@@ -7,15 +7,15 @@ export default {
 
 const Template = (args) => <Label {...args} />
 
-export const LabelRendering = Template.bind({});
-LabelRendering.args = {
+export const Labels = Template.bind({});
+Labels.args = {
   styleType: "Label",
   size: "1.2",
   children: "Label"
 };
 
-export const DescriptionRendering = Template.bind({});
-DescriptionRendering.args = {
+export const Description = Template.bind({});
+Description.args = {
   styleType: "Description",
   size: "3.0",
   children: "Description"

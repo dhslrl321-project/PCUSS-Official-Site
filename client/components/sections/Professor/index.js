@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from './styles';
-import SectionHeader from '../../modules/SectionHeader';
-import ProfileGroup from '../../modules/ProfileGroup';
+import SectionHeader from '../../organisms/SectionHeader';
+import ProfileGroup from '../../organisms/ProfileGroup';
 
 const Professor = ({ data }) => {
   const { headerData, cardData } = data;
