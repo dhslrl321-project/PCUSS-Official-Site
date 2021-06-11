@@ -9,18 +9,19 @@ import ExpandableNavColumn from "../../molecules/ExpandableNavColumn";
 import { data as navigationData } from "../../../datas/NavigationData";
 import * as S from "./styles";
 
-
 const Navigation = ({ handleSidebarToggle }) => {
-
   const { dropdownData } = navigationData;
 
   const [hideOnScroll, setHideOnScroll] = useState(true);
 
-  useScrollPosition(({ prevPos, currPos }) => {
-    const isShow = currPos.y > prevPos.y
-    if (isShow !== hideOnScroll) setHideOnScroll(isShow)
-    if (currPos.y === 0) setHideOnScroll(true)
-  }, [hideOnScroll])
+  useScrollPosition(
+    ({ prevPos, currPos }) => {
+      const isShow = currPos.y > prevPos.y;
+      if (isShow !== hideOnScroll) setHideOnScroll(isShow);
+      if (currPos.y === 0) setHideOnScroll(true);
+    },
+    [hideOnScroll]
+  );
 
   return (
     <S.Container>
@@ -35,19 +36,21 @@ const Navigation = ({ handleSidebarToggle }) => {
 
         <S.Column>
           <S.ExpandableNavColumnWrapper>
-            {dropdownData.map(data => <ExpandableNavColumn key={data.id} data={data} />)}
+            {dropdownData.map((data) => (
+              <ExpandableNavColumn key={data.id} data={data} />
+            ))}
           </S.ExpandableNavColumnWrapper>
         </S.Column>
-        
+
         <S.Column>
           <S.NavColumnWrapper>
-            <NavColumn name="Sign In" href="/#" />
-            <NavColumn name="Sign Up" href="/#" />
+            <NavColumn name="로그인" href="/sign-in" />
+            <NavColumn name="회원 가입" href="/sign-up" />
           </S.NavColumnWrapper>
         </S.Column>
       </S.NavWrapper>
-    </S.Container >
-  )
-}
+    </S.Container>
+  );
+};
 
-export default Navigation
+export default Navigation;
