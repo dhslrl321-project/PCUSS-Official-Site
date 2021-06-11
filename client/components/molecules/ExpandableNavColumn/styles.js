@@ -6,7 +6,7 @@ export const ExpandableNavItemContainer = styled.div`
 
 export const ExpandableNavItem = styled.div`
   position: relative;
-  padding: 40px 70px 40px 0px;
+  padding: 40px 80px 40px 0px;
   .item-wrapper {
     opacity: ${({ show }) => show ? "1" : "0"};
     background: #2D333B;
