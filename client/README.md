@@ -1,3 +1,15 @@
+# todo
+
+- Btn 아톰 만들기
+  - SnsBtn 은 molecules
+  - btn 에 onClick binding 하기
+  - 기본 버튼 디자인은 회색 배경에 흰색 텍스트
+  - width 는 match-parent 하기
+  - styleType 은 normal 인지, sns 인지
+    - normal 이라면 hover 하면 색이 변하게하고
+    - sns 라면 hover 해도 색이 변하지 않게
+
+
 # 도커 사용법
 
 > 도커 실행시킬 때 ps로 꺼진거 확인하고 실행시키세용~~

@@ -38,6 +38,7 @@ const Navigation = ({ handleSidebarToggle }) => {
             {dropdownData.map(data => <ExpandableNavColumn key={data.id} data={data} />)}
           </S.ExpandableNavColumnWrapper>
         </S.Column>
+        
         <S.Column>
           <S.NavColumnWrapper>
             <NavColumn name="Sign In" href="/#" />
