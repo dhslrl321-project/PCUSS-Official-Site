@@ -8,7 +8,16 @@ import Button from "../../atoms/Button";
 import Image from "../../atoms/Image";
 
 const SnsButton = ({ snsType }) => {
+  const kakaoOauthLogin = () => {
+    const client_id = "ae445ce0b4254d726918cd93c69d199c";
+    const redirect_uri = "http://localhost:3000/oauth/kakao";
+    const response_type = "code";
+
+    location.href = `https://kauth.kakao.com//oauth/authorize?client_id=${client_id}&redirect_uri=${redirect_uri}&response_type=${response_type}`;
+  };
+
   let icon;
+
   if (snsType === "Kakao") {
     icon = (
       <S.IconColumn>
@@ -31,7 +40,7 @@ const SnsButton = ({ snsType }) => {
 
   return (
     <S.Container snsType={snsType}>
-      <Button>
+      <Button handleOnClick={kakaoOauthLogin}>
         <S.ColumnWrapper>
           {icon}
           <S.LabelColumn>
