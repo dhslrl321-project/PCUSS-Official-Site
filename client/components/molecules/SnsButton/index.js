@@ -17,12 +17,22 @@ const SnsButton = ({ snsType }) => {
   };
 
   const naverOauthLogin = () => {
-    const client_id = "ozfkn3o2IlnaAmRRCr62";
+    const client_id = "zxs_Uxd9VYn17b9Aa9oW";
     const redirect_uri = "http://localhost:3000/oauth/naver";
     const response_type = "code";
     const state = "01234567890123456789";
 
     location.href = `https://nid.naver.com/oauth2.0/authorize?client_id=${client_id}&redirect_uri=${redirect_uri}&response_type=${response_type}&state=${state}`;
+  };
+
+  const googleOauthLogin = () => {
+    const client_id =
+      "724675302887-elk3qo3raci5e7q8rl00hf8n53l58djm.apps.googleusercontent.com";
+    const redirect_uri = "http://localhost:3000/oauth/google";
+    const response_type = "code";
+    const scope = "profile";
+
+    location.href = `https://accounts.google.com/o/oauth2/v2/auth?scope=${scope}&client_id=${client_id}&redirect_uri=${redirect_uri}&response_type=${response_type}`;
   };
 
   let icon;
@@ -48,6 +58,7 @@ const SnsButton = ({ snsType }) => {
         <FcGoogle />
       </S.IconColumn>
     );
+    clickType = googleOauthLogin;
   }
 
   return (
