@@ -16,7 +16,17 @@ const SnsButton = ({ snsType }) => {
     location.href = `https://kauth.kakao.com/oauth/authorize?client_id=${client_id}&redirect_uri=${redirect_uri}&response_type=${response_type}`;
   };
 
+  const naverOauthLogin = () => {
+    const client_id = "ozfkn3o2IlnaAmRRCr62";
+    const redirect_uri = "http://localhost:3000/oauth/naver";
+    const response_type = "code";
+    const state = "01234567890123456789";
+
+    location.href = `https://nid.naver.com/oauth2.0/authorize?client_id=${client_id}&redirect_uri=${redirect_uri}&response_type=${response_type}&state=${state}`;
+  };
+
   let icon;
+  let clickType;
 
   if (snsType === "Kakao") {
     icon = (
@@ -24,12 +34,14 @@ const SnsButton = ({ snsType }) => {
         <RiKakaoTalkFill />
       </S.IconColumn>
     );
+    clickType = kakaoOauthLogin;
   } else if (snsType === "Naver") {
     icon = (
       <S.ImageColumn>
         <Image src="/sns/naver.png" />
       </S.ImageColumn>
     );
+    clickType = naverOauthLogin;
   } else if (snsType === "Google") {
     icon = (
       <S.IconColumn>
@@ -40,7 +52,7 @@ const SnsButton = ({ snsType }) => {
 
   return (
     <S.Container snsType={snsType}>
-      <Button handleOnClick={kakaoOauthLogin}>
+      <Button handleOnClick={clickType}>
         <S.ColumnWrapper>
           {icon}
           <S.LabelColumn>
