@@ -1,9 +1,7 @@
-import { useRouter } from "next/router";
-
 import styled from "styled-components";
-// kakao °¡ µ¹·ÁÁÙ authorization_code ¸¦ query parameter ¿¡¼­ ¹Þ±â
-// server ·Î authorization_code ¸¦ Àü¼Û
-// server ·ÎºÎÅÍ ·Î±×ÀÎµÈ µ¥ÀÌÅÍ¸¦ °¡Áö°í react_persist ¿¡ ÀúÀå
+// kakao ê°€ ëŒë ¤ì¤„ authorization_code ë¥¼ query parameter ì—ì„œ ë°›ê¸°
+// server ë¡œ authorization_code ë¥¼ ì „ì†¡
+// server ë¡œë¶€í„° ë¡œê·¸ì¸ëœ ë°ì´í„°ë¥¼ ê°€ì§€ê³  react_persist ì— ì €ìž¥
 
 const kakao = ({ pageProps: { code } }) => {
   console.log(code);
