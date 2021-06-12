@@ -1,5 +1,3 @@
-import { useRouter } from "next/router";
-
 import styled from "styled-components";
 // kakao 가 돌려줄 authorization_code 를 query parameter 에서 받기
 // server 로 authorization_code 를 전송
