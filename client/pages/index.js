@@ -5,10 +5,9 @@ import Qualification from "../components/sections/Qualification";
 import { data as qualificationData } from "../datas/QualificationData";
 import Timelog from "../components/sections/Timelog";
 import { data as timelogData } from "../datas/TimelogData";
-import Section from '../components/atoms/Section';
+import Section from "../components/atoms/Section";
 
 export default function Home() {
-
   return (
     <>
       <Section styleType="FirstMargin">
@@ -24,5 +23,5 @@ export default function Home() {
         <Timelog data={timelogData} />
       </Section>
     </>
-  )
+  );
 }
