@@ -6,6 +6,7 @@ const withAuthentication = (Component) => {
 
     if (!user) {
       console.log("사용자가 리덕스 스토어에 존재하지 않음");
+      // location.herf = "/sign-in"
     } else {
       console.log("사용자가 리덕스 스토어에 존재함!!!");
     }

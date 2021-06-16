@@ -1,5 +1,4 @@
 export const data = {
-
   dropdownData: [
     {
       id: 1,
@@ -9,7 +8,7 @@ export const data = {
         { id: 1, name: "교수진", href: "/professor" },
         { id: 2, name: "학생들", href: "/#" },
         { id: 3, name: "선배의 인터뷰", href: "/interview" },
-      ]
+      ],
     },
     {
       id: 2,
@@ -18,7 +17,7 @@ export const data = {
       data: [
         { id: 1, name: "행사 및 활동", href: "/activity" },
         { id: 2, name: "동아리", href: "/club" },
-      ]
+      ],
     },
     {
       id: 3,
@@ -28,7 +27,7 @@ export const data = {
         { id: 1, name: "커리큘럼", href: "/curriculum" },
         { id: 2, name: "졸업 후 진로", href: "/carrer" },
         { id: 3, name: "연구실", href: "/lab" },
-      ]
+      ],
     },
     {
       id: 4,
@@ -37,7 +36,17 @@ export const data = {
       data: [
         { id: 1, name: "모든 문제 풀기", href: "/#" },
         { id: 2, name: "랭킹", href: "/#" },
-      ]
-    }
-  ]
-}
+      ],
+    },
+  ],
+};
+
+export const profileData = {
+  id: 1,
+  name: "Wargame",
+  href: "/#",
+  data: [
+    { id: 1, name: "내 정보", href: "/#" },
+    { id: 2, name: "로그아웃", href: "/#" },
+  ],
+};

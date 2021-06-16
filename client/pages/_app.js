@@ -5,7 +5,7 @@ import RootHoc from "../higher-order-component/RootHOC";
 
 import { Provider } from "react-redux";
 
-import store from "../modules";
+import store from "../reducer";
 
 import { ThemeProvider } from "styled-components"; // common theme
 import theme from "../commons/theme";
