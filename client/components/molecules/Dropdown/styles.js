@@ -1,14 +1,14 @@
-import styled from 'styled-components';
-import { theme } from 'styled-tools';
+import styled from "styled-components";
+import { theme } from "styled-tools";
 
 // 드롭 다운
 export const Container = styled.div`
   ${theme("shortcuts.flexCenterColumn")};
   align-items: flex-start;
   position: absolute;
-  top: 80px;
+  top: 90px;
   left: -8px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 `;
 
 export const DropdownItem = styled.div`
