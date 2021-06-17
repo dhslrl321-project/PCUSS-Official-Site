@@ -1,9 +1,8 @@
-import styled from 'styled-components';
-import { theme, ifProp } from 'styled-tools';
+import styled from "styled-components";
+import { theme, ifProp } from "styled-tools";
 
 export const Container = styled.nav`
   ${theme("shortcuts.flexCenter")};
-  font-size: 1.2rem;
   font-weight: bolder;
   height: 80px;
 `;
@@ -21,13 +20,13 @@ export const NavWrapper = styled.div`
   height: -80px;
   transition: 0.5s ease;
   transform: ${ifProp("show", "translate(0, 0);", "translate(0, -270%)")};
-  z-index: 10;
+  z-index: 11;
 `;
 
 export const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 910px) {
+  @media screen and (max-width: 920px) {
     display: flex;
     align-items: center;
     position: absolute;
@@ -40,20 +39,23 @@ export const MobileIcon = styled.div`
 `;
 
 export const NavColumnWrapper = styled.div`
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
 export const ExpandableNavColumnWrapper = styled.div`
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   display: flex;
   justify-content: flex-start;
 `;
 
 export const Column = styled.div`
-  @media screen and (max-width: 910px) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 920px) {
     display: none;
   }
 `;
