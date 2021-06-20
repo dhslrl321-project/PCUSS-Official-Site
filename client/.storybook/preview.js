@@ -20,6 +20,7 @@ export const decorators = [
     </Provider>
   ),
 ];
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   viewport: {

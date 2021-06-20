@@ -30,8 +30,6 @@ const Navigation = ({ handleSidebarToggle }) => {
     [hideOnScroll]
   );
 
-  // useSelector 로 user 받아오기
-
   const user = useSelector((state) => state.userReducer.user);
 
   let loggedInColumn;

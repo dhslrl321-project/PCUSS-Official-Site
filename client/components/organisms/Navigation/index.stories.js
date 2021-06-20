@@ -58,11 +58,11 @@ Default.args = {
 export const Annonymous = Template.bind({});
 Annonymous.args = {
   data,
-  user: true,
+  user: null,
 };
 
 export const User = Template.bind({});
 User.args = {
   data,
-  user: true,
+  user: {},
 };
