@@ -6,7 +6,7 @@ import Dropdown from "../Dropdown";
 import * as S from "./styles";
 
 const ExpandableNavColumn = ({ data, children }) => {
-  console.log(children);
+  // console.log(children);
 
   const { name, href, data: columnData } = data;
 

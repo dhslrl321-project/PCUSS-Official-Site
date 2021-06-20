@@ -32,6 +32,13 @@
     "@storybook/addon-essentials": "^6.1.14",
     "@storybook/addon-links": "^6.1.14",
     "@storybook/react": "^6.1.14",
-    "babel-loader": "^8.2.2"
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@types/jest": "^26.0.23",
+    "@types/jest-plugin-context": "^2.9.4",
+    "babel-jest": "^27.0.2",
+    "babel-loader": "^8.2.2",
+    "jest": "^27.0.4",
+    "jest-plugin-context": "^2.9.0"
   }
 }
