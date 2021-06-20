@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from './styles';
-import SquircleGroup from '../../modules/SquircleGroup';
-import SectionHeader from '../../modules/SectionHeader';
+import SquircleGroup from '../../organisms/SquircleGroup';
+import SectionHeader from '../../organisms/SectionHeader';
 
 const Interview = ({ data }) => {
   const { headerData, cardData } = data;

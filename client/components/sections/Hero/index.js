@@ -1,6 +1,5 @@
 import React from 'react'
 import * as S from "./styles";
-import Image from "../../atoms/Image";
 
 const Hero = () => {
   return (

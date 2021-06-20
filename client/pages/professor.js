@@ -1,9 +1,15 @@
 import Professor from "../components/sections/Professor";
 import { data as professorData } from "../datas/ProfessorData";
 import withHead from "../commons/withHead";
+import Section from "../components/atoms/Section";
+
 const professor = () => {
   return (
-    <Professor data={professorData} />
+    <>
+      <Section styleType="SingleMargin">
+        <Professor data={professorData} />
+      </Section>
+    </>
   );
 }
 

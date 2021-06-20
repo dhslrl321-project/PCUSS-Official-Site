@@ -6,14 +6,14 @@ export default {
 }
 
 const Template = (args) => <Title {...args} />
-export const MainTitleRendering = Template.bind({});
-MainTitleRendering.args = {
+export const MainTitle = Template.bind({});
+MainTitle.args = {
   styleType: "MainTitle",
   children: "This is Main Ttitle",
 }
 
-export const SubTitleRendering = Template.bind({});
-SubTitleRendering.args = {
+export const SubTitle = Template.bind({});
+SubTitle.args = {
   styleType: "SubTitle",
   children: "This is Sub Title",
 }

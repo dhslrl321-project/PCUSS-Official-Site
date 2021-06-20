@@ -1,6 +1,7 @@
-import SectionHeader from "../../modules/SectionHeader";
-import CarrerGroup from '../../modules/CarrerGroup';
-import LargeDescription from "../../modules/LargeDescription";
+import SectionHeader from "../../organisms/SectionHeader";
+import CarrerGroup from '../../organisms/CarrerGroup';
+import LargeDescription from "../../organisms/LargeDescription";
+
 import * as S from "./styles";
 
 const Carrer = ({ data }) => {

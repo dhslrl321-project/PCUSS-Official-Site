@@ -1,11 +1,16 @@
 import React from 'react';
 import InterviewDetail from '../../../components/sections/InterviewDetail';
 import { data as interviewDetailData } from '../../../datas/InterviewDetailData';
+import Section from '../../../components/atoms/Section';
 
 const Index = (props) => {
 
   return (
-    <InterviewDetail data={props.pageProps} />
+    <>
+      <Section styleType="SingleMargin">
+        <InterviewDetail data={props.pageProps} />
+      </Section>
+    </>
   );
 };
 

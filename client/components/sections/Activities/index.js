@@ -1,6 +1,6 @@
 import * as S from './styles';
-import SectionHeader from '../../modules/SectionHeader';
-import CircleGroup from '../../modules/CircleGroup';
+import SectionHeader from '../../organisms/SectionHeader';
+import CircleGroup from '../../organisms/CircleGroup';
 
 const Activities = ({ data, isDescVisible }) => {
   const { headerData, cardData } = data;
