@@ -1,4 +1,8 @@
-import { createStore, combineReducers } from "redux";
+import { createStore, combineReducers, applyMiddleware } from "redux";
+
+import thunk from "redux-thunk";
+
+import { composeWithDevTools } from "redux-devtools-extension";
 
 import { reducer as userReducer } from "./user";
 // import { reducer as studentReducer } from "./student";
@@ -8,7 +12,10 @@ const rootReducer = combineReducers({
   //   studentReducer,
 });
 
-const store = createStore(rootReducer);
+const store = createStore(
+  rootReducer,
+  composeWithDevTools(applyMiddleware(thunk))
+);
 
 // console.log(store.getState());
 

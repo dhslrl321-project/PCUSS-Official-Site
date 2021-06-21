@@ -1,12 +1,7 @@
+import { login } from "../services/authService";
+
 // initialState
-const initialState = {
-  // user: {
-  //   id: 1,
-  //   nickname: "James",
-  //   profileImage:
-  //     "http://k.kakaocdn.net/dn/boEp6l/btq6MTNzPgH/mVE7m02pyxfoMLZIb0iJQK/img_640x640.jpg",
-  // },
-};
+const initialState = {};
 
 // action types
 const SET_USER = "client/user/SET_USER";
@@ -27,7 +22,19 @@ export const reducer = (state = initialState, action) => {
 export const setUser = (user) => {
   return {
     type: SET_USER,
-    user,
+    user: {
+      user,
+    },
+  };
+};
+
+export const loadUser = (code) => {
+  return async (dispatch) => {
+    const user = await login(code);
+
+    console.log("user reducer 에서의 user: ", user);
+
+    dispatch(setUser(user));
   };
 };
 
