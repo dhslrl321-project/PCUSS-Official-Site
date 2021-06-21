@@ -1,4 +1,5 @@
 import { login } from "../services/authService";
+import { silentRefresh } from "../services/userService";
 
 // initialState
 const initialState = {};
@@ -38,6 +39,13 @@ export const loadUser = (code) => {
   };
 };
 
+export const loadRefreshedUser = () => {
+  return async (dispatch) => {
+    const user = await silentRefresh();
+
+    dispatch(setUser(user));
+  };
+};
 export const clearUser = () => {
   return {
     type: CLEAR_USER,
