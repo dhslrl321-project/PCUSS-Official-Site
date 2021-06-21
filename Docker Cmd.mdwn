@@ -11,6 +11,8 @@
 
 # Bridge Network
 
+> 최초 한 번만 실행 시키면 됩니다~
+
 ```shell
 docker network create \
 --gateway 172.18.0.1 \
