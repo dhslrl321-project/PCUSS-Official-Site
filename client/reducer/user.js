@@ -2,7 +2,9 @@ import { login } from "../services/authService";
 import { silentRefresh } from "../services/userService";
 
 // initialState
-const initialState = {};
+const initialState = {
+  isConnected: false,
+};
 
 // action types
 const SET_USER = "client/user/SET_USER";
@@ -11,7 +13,11 @@ const CLEAR_USER = "client/user/CLEAR_USER";
 // reudcer
 export const reducer = (state = initialState, action) => {
   if (action.type === SET_USER) {
-    return action.user;
+    const { user } = action.user;
+    return {
+      user,
+      isConnected: true,
+    };
   } else if (action.type === CLEAR_USER) {
     return null;
   } else {
