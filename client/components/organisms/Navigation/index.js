@@ -30,22 +30,29 @@ const Navigation = ({ handleSidebarToggle }) => {
     [hideOnScroll]
   );
 
-  const user = useSelector((state) => state.userReducer.user);
+  const { user } = useSelector((state) => state.userReducer);
+  const { isConnected } = useSelector((state) => state.userReducer);
 
   let loggedInColumn;
 
-  if (!user) {
+  if (!isConnected) {
+    loggedInColumn = <></>;
+  } else if (isConnected && !user) {
     loggedInColumn = (
       <S.NavColumnWrapper>
         <NavColumn name="로그인" href="/sign-in" />
         <NavColumn name="회원 가입" href="/sign-up" />
       </S.NavColumnWrapper>
     );
-  } else if (user) {
+  } else if (isConnected && user) {
+    const imageSrc = user.profileImage
+      ? user.profileImage
+      : "https://image.ohou.se/i/bucketplace-v2-development/uploads/default_images/avatar.png?gif=1&w=640&h=640&c=c";
+
     loggedInColumn = (
       <S.ExpandableNavColumnWrapper>
         <ExpandableNavColumn data={profileData}>
-          <Profile src="http://k.kakaocdn.net/dn/boEp6l/btq6MTNzPgH/mVE7m02pyxfoMLZIb0iJQK/img_640x640.jpg" />
+          <Profile src={imageSrc} />
         </ExpandableNavColumn>
       </S.ExpandableNavColumnWrapper>
     );
