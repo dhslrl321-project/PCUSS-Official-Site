@@ -1,0 +1,56 @@
+# List
+
+- Bridge Network
+- Server
+  - Eureka Server
+  - Gateway Server
+  - Config Server
+- Service
+  - Auth-Resource-Service
+  - User-Service
+
+# Bridge Network
+
+> 최초 한 번만 실행 시키면 됩니다~
+
+```shell
+docker network create \
+--gateway 172.18.0.1 \
+--subnet 172.18.0.0/16 \
+pcuss-network
+```
+
+### Discovery Service
+
+```shell
+docker run -d -p 8761:8761 \
+--network pcuss-network \
+--name discovery-service dhslrl321/pcuss_discovery_service:1.0
+```
+
+### Gateway Service
+
+```shell
+docker run -d -p 8000:8000 \
+--network pcuss-network \
+-e "eureka.client.serviceUrl.defaultZone=http://discovery-service:8761/eureka/" \
+--name gateway-service dhslrl321/pcuss_gateway_service:1.0
+```
+
+### Auth-Resource Service
+
+```shell
+docker run -d --network pcuss-network \
+--name auth-resource-service \
+-e "eureka.client.serviceUrl.defaultZone=http://discovery-service:8761/eureka/" \
+dhslrl321/pcuss_auth_resource_service:1.0
+```
+
+### User Service
+
+```shell
+docker run -d --network pcuss-network \
+--name user-service \
+-e "eureka.client.serviceUrl.defaultZone=http://discovery-service:8761/eureka/" \
+dhslrl321/pcuss_user_service:1.0
+```

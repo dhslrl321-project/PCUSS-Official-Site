@@ -1,0 +1,32 @@
+version: "3"
+
+services:
+  discovery-service:
+    container_name: discovery-service
+    image: dhslrl321/pcuss_discovery_service:1.0
+    ports:
+      - "8761:8761"
+
+  gateway-service:
+    container_name: gateway-service
+    image: dhslrl321/pcuss_gateway_service:1.0
+    ports:
+      - "8000:8000"
+    environment:
+      - "eureka.client.serviceUrl.defaultZone=http://discovery-service:8761/eureka/"
+
+  auth-resource-service:
+    container_name: auth-resource-service
+    image: dhslrl321/pcuss_auth_resource_service:1.0
+    ports:
+      - "8084:8084"
+    environment:
+      - "eureka.client.serviceUrl.defaultZone=http://discovery-service:8761/eureka/"
+
+  user-service:
+    container_name: user-service
+    image: dhslrl321/pcuss_user_service:1.0
+    ports:
+      - "8083:8083"
+    environment:
+      - "eureka.client.serviceUrl.defaultZone=http://discovery-service:8761/eureka/"

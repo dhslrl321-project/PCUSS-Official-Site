@@ -6,10 +6,9 @@ import Dropdown from "../Dropdown";
 import * as S from "./styles";
 
 const ExpandableNavColumn = ({ data, children }) => {
-  console.log(children);
-
   const { name, href, data: columnData } = data;
 
+  // console.log(columnData);
   const [activeDropdown, setActiveDropdown] = useState(false);
 
   const handleMouseEnter = () => {

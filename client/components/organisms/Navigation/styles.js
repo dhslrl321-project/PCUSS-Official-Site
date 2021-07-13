@@ -26,7 +26,7 @@ export const NavWrapper = styled.div`
 export const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 920px) {
+  @media screen and (max-width: 982px) {
     display: flex;
     align-items: center;
     position: absolute;
@@ -55,7 +55,11 @@ export const Column = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media screen and (max-width: 920px) {
+  @media screen and (max-width: 982px) {
     display: none;
+  }
+
+  &:last-child {
+    width: 200px;
   }
 `;
