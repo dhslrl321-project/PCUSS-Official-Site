@@ -47,6 +47,6 @@ export const profileData = {
   href: "/#",
   data: [
     { id: 1, name: "내 정보", href: "/#" },
-    { id: 2, name: "로그아웃", href: "/#" },
+    { id: 2, name: "로그아웃", href: "/logout" },
   ],
 };

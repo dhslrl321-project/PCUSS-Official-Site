@@ -1,4 +1,4 @@
-import { login } from "../services/authService";
+import { login, logout } from "../services/authService";
 import { silentRefresh } from "../services/userService";
 
 // initialState
@@ -19,7 +19,9 @@ export const reducer = (state = initialState, action) => {
       isConnected: true,
     };
   } else if (action.type === CLEAR_USER) {
-    return null;
+    return {
+      user: {},
+    };
   } else {
     return state;
   }
@@ -50,6 +52,16 @@ export const loadRefreshedUser = () => {
     const user = await silentRefresh();
 
     dispatch(setUser(user));
+  };
+};
+
+export const loadLogout = () => {
+  return async (dispatch) => {
+    const data = await logout();
+
+    console.log("asdf");
+    console.log(data);
+    dispatch(clearUser());
   };
 };
 export const clearUser = () => {
