@@ -23,11 +23,28 @@ export const LabelItem = styled.li`
 
 export const InfoGroup = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 
-  width: 100vw;
+  width: 800px;
 
   margin: 30px;
+
+  @media screen and (max-width: 900px) {
+    width: 600px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 500px;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 300px;
+    font-size: 0.1rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 300px;
+  }
 `;
 
 export const InfoItemForStudent = styled.div`

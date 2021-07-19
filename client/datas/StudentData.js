@@ -19,3 +19,13 @@ export const data = {
     { id: 2, name: "활동 더 보기" },
   ],
 };
+
+export const studentCardData = {
+  content: [
+    {
+      studentId: "1684001",
+      name: "홍길동",
+      totalNumber: 2,
+    },
+  ],
+};

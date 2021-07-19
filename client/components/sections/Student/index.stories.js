@@ -9,6 +9,7 @@ export default {
 
 const Template = (args) => <Student {...args} />;
 
+
 export const Rendering = Template.bind({});
 
 Rendering.args = {

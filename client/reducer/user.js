@@ -13,14 +13,14 @@ const CLEAR_USER = "client/user/CLEAR_USER";
 // reudcer
 export const reducer = (state = initialState, action) => {
   if (action.type === SET_USER) {
-    const { user } = action.user;
+    const { users } = action.user;
     return {
-      user,
+      user: users,
       isConnected: true,
     };
   } else if (action.type === CLEAR_USER) {
     return {
-      user: {},
+      user: initialState,
     };
   } else {
     return state;
@@ -28,11 +28,11 @@ export const reducer = (state = initialState, action) => {
 };
 
 // action creator
-export const setUser = (user) => {
+export const setUser = (users) => {
   return {
     type: SET_USER,
     user: {
-      user,
+      users,
     },
   };
 };

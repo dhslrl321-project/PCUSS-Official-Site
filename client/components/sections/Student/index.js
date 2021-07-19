@@ -3,6 +3,9 @@ import * as S from "./styles";
 
 import SectionHeader from "../../organisms/SectionHeader";
 import Label from "../../atoms/Label";
+import StudentCard from "../../molecules/StudentCard";
+
+import { studentCardData } from "../../../datas/StudentData";
 
 const Student = ({ data }) => {
   const { headerData, numLabels, studentInfo, activityInfo } = data;
@@ -39,19 +42,20 @@ const Student = ({ data }) => {
       <S.InfoGroup>
         <S.InfoItemForStudent>
           {studentInfo.map((data) => (
-            <Label styleType="Label" size="1.0">
+            <Label key={data.id} styleType="Label" size="1.0">
               {data.name}
             </Label>
           ))}
         </S.InfoItemForStudent>
         <S.InfoItemForActivity>
           {activityInfo.map((data) => (
-            <Label styleType="Label" size="1.0">
+            <Label key={data.id} styleType="Label" size="1.0">
               {data.name}
             </Label>
           ))}
         </S.InfoItemForActivity>
       </S.InfoGroup>
+      <StudentCard data={studentCardData} />
     </S.Container>
   );
 };
