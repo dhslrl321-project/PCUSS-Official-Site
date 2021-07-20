@@ -21,25 +21,20 @@ export const LabelItem = styled.li`
   color: ${ifProp("active", "#4663FF", "#FFFFFF")};
 `;
 
-export const InfoGroup = styled.div`
+export const CardWrapper = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 
-  width: 800px;
+  align-items: center;
 
-  margin: 30px;
+  width: 900px;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 924px) {
     width: 600px;
   }
 
   @media screen and (max-width: 768px) {
-    width: 500px;
-  }
-
-  @media screen and (max-width: 480px) {
-    width: 300px;
-    font-size: 0.1rem;
+    width: 400px;
   }
 
   @media screen and (max-width: 480px) {
@@ -47,16 +42,33 @@ export const InfoGroup = styled.div`
   }
 `;
 
-export const InfoItemForStudent = styled.div`
-  width: 150px;
-
+export const InfoGroup = styled.div`
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  margin: 30px;
 `;
 
-export const InfoItemForActivity = styled.div`
-  width: 250px;
+export const InfoColumn_wonik = styled.div`
+  width: 100%;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+`;
+
+export const Partition = styled.div`
+  width: 600px;
+
+  @media screen and (max-width: 924px) {
+    width: 200px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100px;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 50px;
+  }
 `;

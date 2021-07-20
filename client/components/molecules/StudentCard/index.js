@@ -25,8 +25,11 @@ const StudentCard = ({ data }) => {
           </Label>
         </S.Items>
       ))}
+
+      <S.Partition id="james" />
+
       {content.map((item) => (
-        <S.Items>
+        <S.Items key={item.studentId}>
           <Label styleType="Label" size="0.5rem">
             {item.totalNumber}
           </Label>
@@ -35,7 +38,7 @@ const StudentCard = ({ data }) => {
             onMouseLeave={toggleIsHover}
             isHover={isHover}
           >
-            <HiArrowNarrowDown size="20" />
+            <HiArrowNarrowDown id="arrow" />
           </S.Button>
         </S.Items>
       ))}

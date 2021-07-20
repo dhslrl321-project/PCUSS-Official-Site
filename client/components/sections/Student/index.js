@@ -8,7 +8,7 @@ import StudentCard from "../../molecules/StudentCard";
 import { studentCardData } from "../../../datas/StudentData";
 
 const Student = ({ data }) => {
-  const { headerData, numLabels, studentInfo, activityInfo } = data;
+  const { headerData, numLabels } = data;
   const { title, description } = headerData;
 
   const [labels, setLabels] = useState(numLabels);
@@ -22,7 +22,15 @@ const Student = ({ data }) => {
       )
     );
   };
+  const studentInfo = [
+    { id: 1, name: "학번" },
+    { id: 2, name: "이름" },
+  ];
 
+  const activityInfo = [
+    { id: 1, name: "활동 수" },
+    { id: 2, name: "활동 더 보기" },
+  ];
   return (
     <S.Container data-aos="zoom-in-up">
       <SectionHeader title={title} description={description} />
@@ -39,23 +47,26 @@ const Student = ({ data }) => {
           </S.LabelItem>
         ))}
       </S.LabelGroup>
-      <S.InfoGroup>
-        <S.InfoItemForStudent>
-          {studentInfo.map((data) => (
-            <Label key={data.id} styleType="Label" size="1.0">
-              {data.name}
-            </Label>
-          ))}
-        </S.InfoItemForStudent>
-        <S.InfoItemForActivity>
-          {activityInfo.map((data) => (
-            <Label key={data.id} styleType="Label" size="1.0">
-              {data.name}
-            </Label>
-          ))}
-        </S.InfoItemForActivity>
-      </S.InfoGroup>
-      <StudentCard data={studentCardData} />
+      <S.CardWrapper>
+        <S.InfoGroup>
+          <S.InfoColumn_wonik>
+            {studentInfo.map((data) => (
+              <Label key={data.id} styleType="Label" size="0.8">
+                {data.name}
+              </Label>
+            ))}
+          </S.InfoColumn_wonik>
+          <S.Partition />
+          <S.InfoColumn_wonik>
+            {activityInfo.map((data) => (
+              <Label key={data.id} styleType="Label" size="0.8">
+                {data.name}
+              </Label>
+            ))}
+          </S.InfoColumn_wonik>
+        </S.InfoGroup>
+        <StudentCard data={studentCardData} />
+      </S.CardWrapper>
     </S.Container>
   );
 };

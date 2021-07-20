@@ -10,14 +10,6 @@ export const data = {
     { id: 4, label: "20학번", active: false },
     { id: 5, label: "21학번", active: false },
   ],
-  studentInfo: [
-    { id: 1, name: "학번" },
-    { id: 2, name: "이름" },
-  ],
-  activityInfo: [
-    { id: 1, name: "활동 수" },
-    { id: 2, name: "활동 더 보기" },
-  ],
 };
 
 export const studentCardData = {
