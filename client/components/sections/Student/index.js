@@ -3,7 +3,7 @@ import * as S from "./styles";
 
 import SectionHeader from "../../organisms/SectionHeader";
 import Label from "../../atoms/Label";
-import StudentCard from "../../molecules/StudentCard";
+import StudentGroup from "../../organisms/StudentGroup";
 
 import { studentCardData } from "../../../datas/StudentData";
 
@@ -12,6 +12,8 @@ const Student = ({ data }) => {
   const { title, description } = headerData;
 
   const [labels, setLabels] = useState(numLabels);
+
+  // 여기서 api 호출 해야될듯
 
   const handleNumLabelClick = (id) => {
     setLabels(
@@ -29,7 +31,7 @@ const Student = ({ data }) => {
 
   const activityInfo = [
     { id: 1, name: "활동 수" },
-    { id: 2, name: "활동 더 보기" },
+    { id: 2, name: "자세히" },
   ];
   return (
     <S.Container data-aos="zoom-in-up">
@@ -49,23 +51,23 @@ const Student = ({ data }) => {
       </S.LabelGroup>
       <S.CardWrapper>
         <S.InfoGroup>
-          <S.InfoColumn_wonik>
+          <S.InfoColumn>
             {studentInfo.map((data) => (
               <Label key={data.id} styleType="Label" size="0.8">
                 {data.name}
               </Label>
             ))}
-          </S.InfoColumn_wonik>
+          </S.InfoColumn>
           <S.Partition />
-          <S.InfoColumn_wonik>
+          <S.InfoColumn>
             {activityInfo.map((data) => (
               <Label key={data.id} styleType="Label" size="0.8">
                 {data.name}
               </Label>
             ))}
-          </S.InfoColumn_wonik>
+          </S.InfoColumn>
         </S.InfoGroup>
-        <StudentCard data={studentCardData} />
+        <StudentGroup data={studentCardData.content} />
       </S.CardWrapper>
     </S.Container>
   );

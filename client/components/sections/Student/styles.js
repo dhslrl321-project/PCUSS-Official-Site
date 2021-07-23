@@ -19,6 +19,13 @@ export const LabelItem = styled.li`
   list-style: none;
   margin: 15px 15px;
   color: ${ifProp("active", "#4663FF", "#FFFFFF")};
+
+  @media screen and (max-width: 480px) {
+    span {
+      font-size: 12px;
+    }
+    margin: 15px 10px;
+  }
 `;
 
 export const CardWrapper = styled.div`
@@ -46,10 +53,11 @@ export const InfoGroup = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin: 30px;
+
+  margin: 8% 0% 0% 0%;
 `;
 
-export const InfoColumn_wonik = styled.div`
+export const InfoColumn = styled.div`
   width: 100%;
 
   display: flex;
@@ -58,7 +66,7 @@ export const InfoColumn_wonik = styled.div`
 `;
 
 export const Partition = styled.div`
-  width: 600px;
+  width: 800px;
 
   @media screen and (max-width: 924px) {
     width: 200px;

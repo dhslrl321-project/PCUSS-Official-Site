@@ -7,8 +7,9 @@ export const Container = styled.div`
   width: 100%;
   padding: 10px;
 
+  margin: 1.7% 0%;
   background: #2d333b;
-  border-radius: 2px;
+  border-radius: 6px;
 `;
 
 export const Button = styled.button`
@@ -29,9 +30,9 @@ export const Button = styled.button`
   // background: ${ifProp("isHover", "red", "wheat")};
 
   @media screen and (max-width: 480px) {
-    width: 22px;
-    height: 22px;
-    border-radius: 11px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
   }
 `;
 
@@ -42,6 +43,12 @@ export const Items = styled.div`
   justify-content: space-around;
   align-items: center;
 
+  @media screen and (max-width: 768px) {
+    span {
+      font-size: 12px;
+    }
+  }
+
   @media screen and (max-width: 480px) {
     span {
       font-size: 5px;
@@ -50,7 +57,7 @@ export const Items = styled.div`
 `;
 
 export const Partition = styled.div`
-  width: 600px;
+  width: 800px;
 
   @media screen and (max-width: 924px) {
     width: 200px;
@@ -62,5 +69,21 @@ export const Partition = styled.div`
 
   @media screen and (max-width: 480px) {
     width: 50px;
+  }
+`;
+
+export const Margin = styled.div`
+  width: 20%;
+
+  @media screen and (max-width: 924px) {
+    width: 25%;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 30%;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 35%;
   }
 `;
