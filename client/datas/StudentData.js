@@ -16,13 +16,13 @@ export const studentCardData = {
   content: [
     {
       studentId: "1684001",
-      name: "안신",
+      name: "허혜진",
       totalNumber: 2,
     },
     {
       studentId: "1684002",
-      name: "허혜진",
-      totalNumber: 152,
+      name: "안신",
+      totalNumber: 15,
     },
     {
       studentId: "1684003",

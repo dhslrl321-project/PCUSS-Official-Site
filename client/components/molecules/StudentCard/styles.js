@@ -86,4 +86,9 @@ export const Margin = styled.div`
   @media screen and (max-width: 480px) {
     width: 35%;
   }
+
+  &.totalNumber {
+    width: 10%;
+    margin-left: 15px;
+  }
 `;

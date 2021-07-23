@@ -27,7 +27,7 @@ const StudentCard = ({ studentId, studentName, totalNumber }) => {
       </S.Items>
       <S.Partition />
       <S.Items>
-        <S.Margin>
+        <S.Margin className="totalNumber">
           <Label styleType="Label" size="0.5rem">
             {totalNumber}
           </Label>
