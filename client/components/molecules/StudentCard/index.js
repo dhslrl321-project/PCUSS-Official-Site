@@ -5,6 +5,9 @@ import * as S from "./styles";
 import { HiArrowNarrowDown } from "react-icons/hi";
 
 import Label from "../../atoms/Label";
+import CollapseCard from "../CollapseCard";
+
+import { collapseData } from "../../../datas/StudentData";
 
 const StudentCard = ({ studentId, studentName, totalNumber }) => {
   const [isHover, setIsHover] = useState(false);
@@ -13,50 +16,33 @@ const StudentCard = ({ studentId, studentName, totalNumber }) => {
     setIsHover(!isHover);
   };
 
+  // api 호출해서 CollapseCard에 넣어줘야 함
   return (
     <S.Container>
-      <S.Items>
-        <Label styleType="Label" size="0.5rem">
-          {studentId}
-        </Label>
-        <S.Margin>
+      <S.Unset>
+        <S.Items>
+          <Label styleType="Label" size="0.5rem">
+            {studentId}
+          </Label>
           <Label styleType="Label" size="0.5rem">
             {studentName}
           </Label>
-        </S.Margin>
-      </S.Items>
-      <S.Partition />
-      <S.Items>
-        <S.Margin className="totalNumber">
+        </S.Items>
+        <S.Partition />
+        <S.Items>
           <Label styleType="Label" size="0.5rem">
             {totalNumber}
           </Label>
-        </S.Margin>
-        <S.Button
-          onMouseEnter={toggleIsHover}
-          onMouseLeave={toggleIsHover}
-          isHover={isHover}
-        >
-          <HiArrowNarrowDown />
-        </S.Button>
-      </S.Items>
+          <S.Button onClick={toggleIsHover}>
+            <HiArrowNarrowDown />
+          </S.Button>
+        </S.Items>
+      </S.Unset>
+      <S.CardWrapper isHover={isHover}>
+        <CollapseCard data={collapseData} />
+      </S.CardWrapper>
     </S.Container>
   );
 };
-
-// const StudentCard2 = ({ studentId, studentName, totalNumber }) => {
-//   const [isHover, setIsHover] = useState(false);
-
-//   return (
-//     <S2.Container>
-//       <S2.Column>
-//         <S2.Item>{studentId}</S2.Item>
-//         <S2.Item>{studentName}</S2.Item>
-//         <S2.Item>{totalNumber}</S2.Item>
-//         <HiArrowNarrowDown id="arrow" />
-//       </S2.Column>
-//     </S2.Container>
-//   );
-// };
 
 export default StudentCard;

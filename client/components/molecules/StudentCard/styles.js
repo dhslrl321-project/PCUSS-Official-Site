@@ -4,36 +4,16 @@ import { ifProp } from "styled-tools";
 export const Container = styled.div`
   display: flex;
 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   width: 100%;
   padding: 10px;
 
   margin: 1.7% 0%;
   background: #2d333b;
   border-radius: 6px;
-`;
-
-export const Button = styled.button`
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-  width: 26px;
-  height: 26px;
-
-  background: none;
-  border: solid #adbac7 1px;
-  border-radius: 13px;
-
-  cursor: pointer;
-
-  color: #adbac7;
-  // background: ${ifProp("isHover", "red", "wheat")};
-
-  @media screen and (max-width: 480px) {
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-  }
 `;
 
 export const Items = styled.div`
@@ -43,15 +23,30 @@ export const Items = styled.div`
   justify-content: space-around;
   align-items: center;
 
+  span: nth-child(2) {
+    display: flex;
+    justify-content: flex-start;
+
+    width: 20%;
+  }
+
   @media screen and (max-width: 768px) {
     span {
       font-size: 12px;
+    }
+
+    span: nth-child(2) {
+      width: 30%;
     }
   }
 
   @media screen and (max-width: 480px) {
     span {
       font-size: 5px;
+    }
+
+    span: nth-child(2) {
+      width: 35%;
     }
   }
 `;
@@ -72,23 +67,54 @@ export const Partition = styled.div`
   }
 `;
 
-export const Margin = styled.div`
-  width: 20%;
+export const Button = styled.button`
+  display: flex;
 
-  @media screen and (max-width: 924px) {
-    width: 25%;
-  }
+  align-items: center;
+
+  width: 26px;
+  height: 26px;
+  margin-left: 5%;
+
+  background: none;
+  border: solid #adbac7 1px;
+  border-radius: 13px;
+
+  cursor: pointer;
+
+  color: #adbac7;
 
   @media screen and (max-width: 768px) {
-    width: 30%;
+    margin-right: -5%;
   }
 
   @media screen and (max-width: 480px) {
-    width: 35%;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
   }
+`;
 
-  &.totalNumber {
-    width: 10%;
-    margin-left: 15px;
+export const Unset = styled.div`
+  display: flex;
+
+  width: 100%;
+  height: 100%;
+  flex-direction: unset;
+
+  div: nth-child(3) {
+    margin-right: -1%;
   }
+`;
+
+export const CardWrapper = styled.div`
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  height: ${ifProp("isHover", "300px", "0")};
+  overflow: hidden;
+  transition: 0.5s;
 `;
