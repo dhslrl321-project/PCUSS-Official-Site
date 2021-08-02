@@ -44,11 +44,12 @@ export const HeaderWrapper = styled.div`
     }
 
     span: nth-child(2) {
+      margin-left: 10%;
       margin-right: 10%;
     }
 
     span: nth-child(3) {
-      margin-left: 10%;
+      margin-left: 13%;
     }
   }
 
@@ -59,12 +60,12 @@ export const HeaderWrapper = styled.div`
     }
 
     span: nth-child(2) {
-      margin-left: 15%;
+      margin-left: 10%;
       margin-right: 0%;
     }
 
     span: nth-child(3) {
-      margin-left: 17%;
+      margin-left: 20%;
     }
   }
 `;
@@ -104,9 +105,25 @@ export const LabelWrapper = styled.div`
   }
 
   @media screen and (max-width: 768px) {
+    span {
+      font-size: 13px;
+    }
+
+    div: nth-child(2) {
+      width: 45%;
+      margin-left: 10%;
+    }
   }
 
   @media screen and (max-width: 480px) {
+    span {
+      font-size: 8px;
+    }
+
+    div: nth-child(2) {
+      width: 45%;
+      margin-left: 7%;
+    }
   }
 `;
 

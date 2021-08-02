@@ -37,6 +37,7 @@ export const Items = styled.div`
 
     span: nth-child(2) {
       width: 30%;
+      margin-right: 10%;
     }
   }
 

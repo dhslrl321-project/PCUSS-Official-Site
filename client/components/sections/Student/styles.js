@@ -55,6 +55,13 @@ export const InfoGroup = styled.div`
   width: 100%;
 
   margin: 8% 0% 0% 0%;
+
+  @media screen and (max-width: 768px) {
+    div: nth-child(1) {
+      width: 80%;
+      margin-left: 3%;
+    }
+  }
 `;
 
 export const InfoColumn = styled.div`
@@ -74,6 +81,7 @@ export const Partition = styled.div`
 
   @media screen and (max-width: 768px) {
     width: 100px;
+    margin-right: 5%;
   }
 
   @media screen and (max-width: 480px) {
