@@ -6,7 +6,7 @@ export const data = {
       href: "/professor",
       data: [
         { id: 1, name: "교수진", href: "/professor" },
-        { id: 2, name: "학생들", href: "/#" },
+        { id: 2, name: "학생들", href: "/student" },
         { id: 3, name: "선배의 인터뷰", href: "/interview" },
       ],
     },
@@ -47,6 +47,6 @@ export const profileData = {
   href: "/#",
   data: [
     { id: 1, name: "내 정보", href: "/#" },
-    { id: 2, name: "로그아웃", href: "/#" },
+    { id: 2, name: "로그아웃", href: "/logout" },
   ],
 };

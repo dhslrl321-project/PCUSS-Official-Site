@@ -1,4 +1,4 @@
-import { login } from "../services/authService";
+import { login, logout } from "../services/authService";
 import { silentRefresh } from "../services/userService";
 
 // initialState
@@ -13,24 +13,26 @@ const CLEAR_USER = "client/user/CLEAR_USER";
 // reudcer
 export const reducer = (state = initialState, action) => {
   if (action.type === SET_USER) {
-    const { user } = action.user;
+    const { users } = action.user;
     return {
-      user,
+      user: users,
       isConnected: true,
     };
   } else if (action.type === CLEAR_USER) {
-    return null;
+    return {
+      user: initialState,
+    };
   } else {
     return state;
   }
 };
 
 // action creator
-export const setUser = (user) => {
+export const setUser = (users) => {
   return {
     type: SET_USER,
     user: {
-      user,
+      users,
     },
   };
 };
@@ -50,6 +52,16 @@ export const loadRefreshedUser = () => {
     const user = await silentRefresh();
 
     dispatch(setUser(user));
+  };
+};
+
+export const loadLogout = () => {
+  return async (dispatch) => {
+    const data = await logout();
+
+    console.log("asdf");
+    console.log(data);
+    dispatch(clearUser());
   };
 };
 export const clearUser = () => {

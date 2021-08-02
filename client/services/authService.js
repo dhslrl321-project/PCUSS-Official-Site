@@ -8,8 +8,8 @@ export const login = async (code) => {
   return data;
 };
 
+export const logout = async () => {
+  const { data } = await API.get("/user-service/auth/logout");
+  return data;
+};
 // register
-
-// silent-refresh
-
-// logout
