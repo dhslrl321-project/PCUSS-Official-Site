@@ -16,7 +16,7 @@ export const studentCardData = {
   content: [
     {
       studentId: "1684001",
-      name: "허혜진",
+      name: "홍길동",
       totalNumber: 2,
     },
     {
@@ -39,12 +39,36 @@ export const collapseData = [
     result: "자격증 취득",
   },
   {
-    id: 10,
+    id: 2,
     activityName: "정보보안학과 홈페이지 Front 제작",
     result: "홈페이지 운영중",
   },
   {
+    id: 3,
+    activityName:
+      "정보보안학과 홈페이지 Front 제작 어쩌규 저쩌구 블라블라 뭐라뭐라해",
+    result: "홈페이지 운영중 어쩌구 저쩌구 뭐라 뭐라",
+  },
+  {
+    id: 4,
+    activityName:
+      "정보보안학과 홈페이지 Front 제작 어쩌규 저쩌구 블라블라 뭐라뭐라해",
+    result: "홈페이지 운영중 어쩌구 저쩌구 뭐라 뭐라",
+  },
+  {
     id: 5,
+    activityName:
+      "정보보안학과 홈페이지 Front 제작 어쩌규 저쩌구 블라블라 뭐라뭐라해",
+    result: "홈페이지 운영중 어쩌구 저쩌구 뭐라 뭐라",
+  },
+  {
+    id: 6,
+    activityName:
+      "정보보안학과 홈페이지 Front 제작 어쩌규 저쩌구 블라블라 뭐라뭐라해",
+    result: "홈페이지 운영중 어쩌구 저쩌구 뭐라 뭐라",
+  },
+  {
+    id: 7,
     activityName:
       "정보보안학과 홈페이지 Front 제작 어쩌규 저쩌구 블라블라 뭐라뭐라해",
     result: "홈페이지 운영중 어쩌구 저쩌구 뭐라 뭐라",

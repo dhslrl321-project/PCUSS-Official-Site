@@ -34,7 +34,9 @@ const StudentCard = ({ studentId, studentName, totalNumber }) => {
             {totalNumber}
           </Label>
           <S.Button onClick={toggleIsHover}>
-            <HiArrowNarrowDown />
+            <S.Test isHover={isHover}>
+              <HiArrowNarrowDown />
+            </S.Test>
           </S.Button>
         </S.Items>
       </S.Unset>

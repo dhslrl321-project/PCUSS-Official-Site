@@ -14,6 +14,9 @@ export const Container = styled.div`
   margin: 1.7% 0%;
   background: #2d333b;
   border-radius: 6px;
+
+  &.test {
+  }
 `;
 
 export const Items = styled.div`
@@ -115,7 +118,22 @@ export const CardWrapper = styled.div`
   align-items: center;
   width: 100%;
 
-  height: ${ifProp("isHover", "300px", "0")};
+  max-height: ${ifProp("isHover", "initial", "0")};
+
   overflow: hidden;
+
+  transition: all ease 1s;
+`;
+
+export const Test = styled.div`
+  display: flex;
+  justify-content: center;
+
+  transform: ${ifProp("isHover", "rotateX(180deg)", "none")};
+
   transition: 0.5s;
+
+  @media screen and (max-width: 480px) {
+    margin-left: -4px;
+  }
 `;
