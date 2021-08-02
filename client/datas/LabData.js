@@ -55,8 +55,9 @@ export const data = {
             id: 3, infoTitle: "성과 및 주요 활동", infoDescription: [
               { id: 1, description: "📌 주기적인 실무 강의" },
               { id: 2, description: "📌 CTF 서버 자체 개발 및 관제" },
-              { id: 2, description: "📌 국내 대학 DB 취약점 제보" },
-              { id: 2, description: "📌 취약점 제보 (NAVER, Github, Netflix, KISA)" },
+              { id: 3, description: "📌 국내 대학 DB 취약점 제보" },
+              { id: 4, description: "📌 취약점 제보 (NAVER, Github, Netflix, KISA)" },
+              { id: 5, description: "📌 윤리적 해커 양성과정 교육 2명 수료 (1기, 국정원 대전 지부)" },
             ]
           },
         ]

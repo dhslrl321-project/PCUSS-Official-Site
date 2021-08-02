@@ -1,9 +1,15 @@
 import Curriculum from "../components/sections/Curriculum";
 import { data as curriculumData } from "../datas/CurriculumData";
 import withHead from "../commons/withHead";
+import Section from '../components/atoms/Section';
+
 const curriculum = () => {
   return (
-    <Curriculum datas={curriculumData} />
+    <>
+      <Section styleType="SingleMargin">
+        <Curriculum datas={curriculumData} />
+       </Section>
+    </>
   )
 }
 

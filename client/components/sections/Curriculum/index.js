@@ -1,7 +1,7 @@
 import React from 'react'
 import * as S from "./styles";
-import SectionHeader from "../../modules/SectionHeader";
-import LectureGroup from '../../modules/LectureGroup';
+import SectionHeader from "../../organisms/SectionHeader";
+import LectureGroup from '../../organisms/LectureGroup';
 
 const Curriculum = ({ datas }) => {
   return (

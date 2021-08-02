@@ -1,12 +1,11 @@
-import React from 'react'
-import * as S from './styles';
+import * as S from "./styles";
 
 const Label = ({ children, styleType, size }) => {
   const props = {
     styleType,
     size,
   };
-  
+
   switch (styleType) {
     case "Label": {
       return <S.Labels {...props}>{children}</S.Labels>;

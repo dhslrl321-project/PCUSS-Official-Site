@@ -6,7 +6,7 @@ export const data = {
   cardData: {
     cards: [
       { id: 1, label: "소모임 및 연구실", description: "test", src: "/lab/Lab103.JPG" },
-      { id: 2, label: "교수님과 학생 사이의 교류", description: "test", src: "/activity/Seminar.JPG" },
+      { id: 2, label: "교수님과 학생의 활발한 연구", description: "test", src: "/activity/Seminar.JPG" },
       { id: 3, label: "대회 참여", description: "test", src: "/activity/Conference.JPG" }
     ]
   }

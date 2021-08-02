@@ -1,7 +1,9 @@
 import React from 'react';
+
+import SectionHeader from '../../organisms/SectionHeader';
+import CircleGroup from '../../organisms/CircleGroup';
+
 import * as S from './styles';
-import SectionHeader from '../../modules/SectionHeader';
-import CircleGroup from '../../modules/CircleGroup';
 
 const Club = ({ data, isDescVisible }) => {
   const { headerData, cardData } = data;
