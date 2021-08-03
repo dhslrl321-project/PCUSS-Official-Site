@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { theme } from 'styled-tools';
+import { theme } from "styled-tools";
 
 export const Root = styled.div`
   ${theme("shortcuts.flexCenter")};
@@ -24,7 +24,7 @@ export const LectureWrapper = styled.div`
   margin: 50px 0;
   flex-direction: column;
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     flex-wrap: nowrap;
     flex-direction: column;
   }
@@ -52,7 +52,7 @@ export const LectureWrap = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  
+
   @media screen and (min-width: 481px) {
     margin-top: 10px;
 

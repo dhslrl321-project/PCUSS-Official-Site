@@ -45,10 +45,6 @@ export const Items = styled.div`
   }
 
   @media screen and (max-width: 480px) {
-    span {
-      font-size: 5px;
-    }
-
     span: nth-child(2) {
       width: 35%;
     }
@@ -91,12 +87,6 @@ export const Button = styled.button`
   @media screen and (max-width: 768px) {
     margin-right: -5%;
   }
-
-  @media screen and (max-width: 480px) {
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-  }
 `;
 
 export const Unset = styled.div`
@@ -125,7 +115,7 @@ export const CardWrapper = styled.div`
   transition: all ease 1s;
 `;
 
-export const Test = styled.div`
+export const IconWrapper = styled.div`
   display: flex;
   justify-content: center;
 
