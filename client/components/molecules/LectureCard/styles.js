@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { theme } from 'styled-tools';
+import { theme } from "styled-tools";
 
 export const Container = styled.div`
   display: flex;
@@ -28,7 +28,7 @@ export const IconColumn = styled.div`
   width: 40px;
   height: auto;
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     margin: 0 15px;
     width: 40px;
   }
@@ -38,6 +38,7 @@ export const TextColumn = styled.div`
   ${theme("shortcuts.flexCenterColumn")};
   align-items: flex-start;
   margin-left: 10px;
+
   /* Label */
   span {
     margin-bottom: 15px;
@@ -53,11 +54,10 @@ export const TextColumn = styled.div`
 
     @media screen and (min-width: 1101px) {
       width: 220px;
-    }   
+    }
   }
   /* Description */
   p {
-
     font-weight: 300;
 
     @media screen and (max-width: 480px) {
@@ -66,10 +66,10 @@ export const TextColumn = styled.div`
 
     @media screen and (min-width: 481px) and (max-width: 1100px) {
       width: 27.27vw;
-    } 
+    }
 
     @media screen and (min-width: 1101px) {
       width: 300px;
     }
   }
-`
+`;

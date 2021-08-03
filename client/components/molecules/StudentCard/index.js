@@ -21,22 +21,22 @@ const StudentCard = ({ studentId, studentName, totalNumber }) => {
     <S.Container>
       <S.Unset>
         <S.Items>
-          <Label styleType="Label" size="0.5rem">
+          <Label styleType="Label" size="0.5">
             {studentId}
           </Label>
-          <Label styleType="Label" size="0.5rem">
+          <Label styleType="Label" size="0.5">
             {studentName}
           </Label>
         </S.Items>
         <S.Partition />
         <S.Items>
-          <Label styleType="Label" size="0.5rem">
+          <Label styleType="Label" size="0.5">
             {totalNumber}
           </Label>
           <S.Button onClick={toggleIsHover}>
-            <S.Test isHover={isHover}>
+            <S.IconWrapper isHover={isHover}>
               <HiArrowNarrowDown />
-            </S.Test>
+            </S.IconWrapper>
           </S.Button>
         </S.Items>
       </S.Unset>

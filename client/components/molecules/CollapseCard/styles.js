@@ -54,18 +54,15 @@ export const HeaderWrapper = styled.div`
   }
 
   @media screen and (max-width: 480px) {
-    justify-content: center;
-    span {
-      font-size: 10px;
+    justify-content: space-around;
+
+    span: nth-child(1) {
+      margin-left: 3%;
     }
 
     span: nth-child(2) {
-      margin-left: 10%;
-      margin-right: 0%;
-    }
-
-    span: nth-child(3) {
-      margin-left: 20%;
+      margin-right: 3%;
+      margin-left: 4%;
     }
   }
 `;
@@ -116,10 +113,6 @@ export const LabelWrapper = styled.div`
   }
 
   @media screen and (max-width: 480px) {
-    span {
-      font-size: 8px;
-    }
-
     div: nth-child(2) {
       width: 45%;
       margin-left: 7%;
