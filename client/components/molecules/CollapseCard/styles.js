@@ -35,34 +35,34 @@ export const HeaderWrapper = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    justify-content: center;
-
+    justify-content: space-around;
     margin: 3% 0%;
 
-    span {
-      font-size: 12px;
+    span: nth-child(1) {
+      margin-left: 5%;
+      margin-right: 5%;
     }
 
     span: nth-child(2) {
-      margin-left: 10%;
+      margin-left: 0%;
       margin-right: 10%;
     }
 
     span: nth-child(3) {
-      margin-left: 13%;
+      margin-left: 11%;
+      margin-right: 23%;
     }
   }
 
   @media screen and (max-width: 480px) {
-    justify-content: space-around;
-
-    span: nth-child(1) {
-      margin-left: 3%;
-    }
+    margin-left: -2%;
 
     span: nth-child(2) {
-      margin-right: 3%;
-      margin-left: 4%;
+      margin-right: 2%;
+    }
+
+    span: nth-child(3) {
+      margin-right: 19%;
     }
   }
 `;

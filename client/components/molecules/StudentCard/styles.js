@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ifProp } from "styled-tools";
+import { ifProp, prop } from "styled-tools";
 
 export const Container = styled.div`
   display: flex;
@@ -33,11 +33,14 @@ export const Items = styled.div`
     width: 20%;
   }
 
-  @media screen and (max-width: 768px) {
-    span {
-      font-size: 12px;
+  @media screen and (max-width: 924px) {
+    span: nth-child(2) {
+      width: 35%;
+      margin-right: -15%;
     }
+  }
 
+  @media screen and (max-width: 768px) {
     span: nth-child(2) {
       width: 30%;
       margin-right: 10%;
@@ -46,7 +49,8 @@ export const Items = styled.div`
 
   @media screen and (max-width: 480px) {
     span: nth-child(2) {
-      width: 35%;
+      margin-right: -3%;
+      width: 40%;
     }
   }
 `;
@@ -69,7 +73,7 @@ export const Partition = styled.div`
 
 export const Button = styled.button`
   display: flex;
-
+  justify-content: center;
   align-items: center;
 
   width: 26px;
@@ -77,8 +81,10 @@ export const Button = styled.button`
   margin-left: 5%;
 
   background: none;
-  border: solid #adbac7 1px;
+  border: solid 1px;
   border-radius: 13px;
+
+  border-color: ${ifProp("isHover", "#FF6B6B", "#5EE5BC")};
 
   cursor: pointer;
 
@@ -102,28 +108,21 @@ export const Unset = styled.div`
 `;
 
 export const CardWrapper = styled.div`
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
   width: 100%;
 
-  max-height: ${ifProp("isHover", "initial", "0")};
-
+  height: ${ifProp("isHover", prop("count"), "0")};
   overflow: hidden;
 
-  transition: all ease 1s;
+  transition: 1s ease;
 `;
 
 export const IconWrapper = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
 
-  transform: ${ifProp("isHover", "rotateX(180deg)", "none")};
+  transform: ${ifProp("isHover", "rotate(-180deg)", "rotate(0deg)")};
+  color: ${ifProp("isHover", "#FF6B6B", "#5EE5BC")};
 
-  transition: 0.5s;
-
-  @media screen and (max-width: 480px) {
-    margin-left: -4px;
-  }
+  transition: all ease 0.5s;
 `;
