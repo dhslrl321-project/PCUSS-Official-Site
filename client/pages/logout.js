@@ -15,6 +15,7 @@ const logout = () => {
   useEffect(() => {
     dispatch(loadLogout());
     router.replace("/");
+    router.reload(window.location.pathname);
   }, []);
   return <Container />;
 };
