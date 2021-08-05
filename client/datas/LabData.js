@@ -25,9 +25,9 @@ export const data = {
           {
             id: 3, infoTitle: "성과 및 주요 활동", infoDescription: [
               { id: 1, description: "📌 2014 한국정보보호학회 우수논문상 수상" },
-              { id: 2, description: "📌 학과 최초 Best Of Best 합격" },
-              { id: 3, description: "📌 CTF Power of XX 70팀 중 최종 등수 6등으로 수상" },
-              { id: 4, description: "📌 배재대학교 정보보안학과 홈페이지 개발" },
+              { id: 2, description: "📌 다수의 Best of the Best 합격 (9기 보안 컨설팅, 10기 보안제품개발" },
+              { id: 3, description: "📌 CTF Power of XX 70팀 중 최종 등수 6등" },
+              { id: 4, description: "📌 배재대학교 정보보안학과 홈페이지 개발 및 운영" },
               { id: 5, description: "📌 KISA 취약점 제보 (KVE-2021-xxxx)" },
             ]
           },
