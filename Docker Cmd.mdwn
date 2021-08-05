@@ -11,7 +11,7 @@
 
 # Bridge Network
 
-> ÃÖÃÊ ÇÑ ¹ø¸¸ ½ÇÇà ½ÃÅ°¸é µË´Ï´Ù~
+> ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å°ï¿½ï¿½ ï¿½Ë´Ï´ï¿½~
 
 ```shell
 docker network create \
@@ -25,7 +25,7 @@ pcuss-network
 ```shell
 docker run -d -p 8761:8761 \
 --network pcuss-network \
---name discovery-service dhslrl321/pcuss_discovery_service:1.0
+--name discovery-service dhslrl321/pcuss-backend:discovery
 ```
 
 ### Gateway Service
@@ -34,7 +34,7 @@ docker run -d -p 8761:8761 \
 docker run -d -p 8000:8000 \
 --network pcuss-network \
 -e "eureka.client.serviceUrl.defaultZone=http://discovery-service:8761/eureka/" \
---name gateway-service dhslrl321/pcuss_gateway_service:1.0
+--name gateway-service dhslrl321/pcuss-backend:gateway
 ```
 
 ### Auth-Resource Service
@@ -43,7 +43,7 @@ docker run -d -p 8000:8000 \
 docker run -d --network pcuss-network \
 --name auth-resource-service \
 -e "eureka.client.serviceUrl.defaultZone=http://discovery-service:8761/eureka/" \
-dhslrl321/pcuss_auth_resource_service:1.0
+dhslrl321/pcuss-backend:auth-resource
 ```
 
 ### User Service
@@ -52,5 +52,14 @@ dhslrl321/pcuss_auth_resource_service:1.0
 docker run -d --network pcuss-network \
 --name user-service \
 -e "eureka.client.serviceUrl.defaultZone=http://discovery-service:8761/eureka/" \
-dhslrl321/pcuss_user_service:1.0
+dhslrl321/pcuss-backend:user
+```
+
+### Student Service
+
+```shell
+docker run -d --network pcuss-network \
+--name student-service \
+-e "eureka.client.serviceUrl.defaultZone=http://discovery-service:8761/eureka/" \
+dhslrl321/pcuss-backend:student
 ```

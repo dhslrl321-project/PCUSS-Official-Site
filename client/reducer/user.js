@@ -58,9 +58,6 @@ export const loadRefreshedUser = () => {
 export const loadLogout = () => {
   return async (dispatch) => {
     const data = await logout();
-
-    console.log("asdf");
-    console.log(data);
     dispatch(clearUser());
   };
 };
