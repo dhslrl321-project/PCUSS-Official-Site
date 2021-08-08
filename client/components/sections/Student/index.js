@@ -34,7 +34,7 @@ const Student = ({ data }) => {
 
   useEffect(() => {
     dispatch(loadStudent(17));
-  }, []);
+  }, []); // loading 표시나게 바꾸기
 
   console.log(students);
 
