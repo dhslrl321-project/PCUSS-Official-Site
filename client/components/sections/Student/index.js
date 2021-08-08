@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+
 import * as S from "./styles";
 
 import SectionHeader from "../../organisms/SectionHeader";
@@ -7,13 +9,15 @@ import StudentGroup from "../../organisms/StudentGroup";
 
 import { studentCardData } from "../../../datas/StudentData";
 
+import { loadStudent } from "../../../reducer/student";
+
 const Student = ({ data }) => {
   const { headerData, numLabels } = data;
   const { title, description } = headerData;
 
   const [labels, setLabels] = useState(numLabels);
 
-  // 여기서 api 호출 해야될듯
+  const dispatch = useDispatch();
 
   const handleNumLabelClick = (id) => {
     setLabels(
@@ -23,7 +27,17 @@ const Student = ({ data }) => {
           : { ...label, active: false }
       )
     );
+    dispatch(loadStudent(id));
   };
+
+  const { students } = useSelector((state) => state.studentReducer);
+
+  useEffect(() => {
+    dispatch(loadStudent(17));
+  }, []);
+
+  console.log(students);
+
   const studentInfo = [
     { id: 1, name: "학번" },
     { id: 2, name: "이름" },
@@ -33,6 +47,7 @@ const Student = ({ data }) => {
     { id: 1, name: "활동 수" },
     { id: 2, name: "자세히" },
   ];
+
   return (
     <S.Container data-aos="zoom-in-up">
       <SectionHeader title={title} description={description} />
@@ -67,7 +82,7 @@ const Student = ({ data }) => {
             ))}
           </S.InfoColumn>
         </S.InfoGroup>
-        <StudentGroup data={studentCardData.content} />
+        <StudentGroup data={students} />
       </S.CardWrapper>
     </S.Container>
   );

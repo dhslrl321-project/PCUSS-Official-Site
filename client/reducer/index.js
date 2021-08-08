@@ -5,11 +5,11 @@ import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
 
 import { reducer as userReducer } from "./user";
-// import { reducer as studentReducer } from "./student";
+import { reducer as studentReducer } from "./student";
 
 const rootReducer = combineReducers({
   userReducer,
-  //   studentReducer,
+  studentReducer,
 });
 
 const store = createStore(
