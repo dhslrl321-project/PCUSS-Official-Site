@@ -1,6 +1,7 @@
 import * as S from "./styles";
 
 import StudentCard from "../../molecules/StudentCard";
+import MoreButton from "../../molecules/MoreButton";
 
 const StudentGroup = ({ data }) => {
   return (
@@ -13,6 +14,9 @@ const StudentGroup = ({ data }) => {
           totalNumber={student.totalNumber}
         />
       ))}
+      <S.ButtonWrapper>
+        <MoreButton />
+      </S.ButtonWrapper>
     </S.Container>
   );
 };

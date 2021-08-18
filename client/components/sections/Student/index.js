@@ -7,8 +7,6 @@ import SectionHeader from "../../organisms/SectionHeader";
 import Label from "../../atoms/Label";
 import StudentGroup from "../../organisms/StudentGroup";
 
-import { studentCardData } from "../../../datas/StudentData";
-
 import { loadStudent } from "../../../reducer/student";
 
 const Student = ({ data }) => {
@@ -16,7 +14,7 @@ const Student = ({ data }) => {
   const { title, description } = headerData;
 
   const [labels, setLabels] = useState(numLabels);
-
+  // const [activeId, setActiveId] = useState(17);
   const dispatch = useDispatch();
 
   const handleNumLabelClick = (id) => {
@@ -27,6 +25,7 @@ const Student = ({ data }) => {
           : { ...label, active: false }
       )
     );
+    // setActiveId(id);
     dispatch(loadStudent(id));
   };
 
@@ -35,8 +34,6 @@ const Student = ({ data }) => {
   useEffect(() => {
     dispatch(loadStudent(17));
   }, []); // loading 표시나게 바꾸기
-
-  console.log(students);
 
   const studentInfo = [
     { id: 1, name: "학번" },
