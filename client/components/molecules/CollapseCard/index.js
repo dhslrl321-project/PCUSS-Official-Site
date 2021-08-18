@@ -18,8 +18,8 @@ const CollapseCard = ({ data }) => {
           </Label>
         ))}
       </S.HeaderWrapper>
-      {data.map((item) => (
-        <S.LabelWrapper key={item.id}>
+      {data.map((item, index) => (
+        <S.LabelWrapper key={index}>
           <S.Margin>
             <Label styleType="Label" size="0.5rem">
               {item.id}
