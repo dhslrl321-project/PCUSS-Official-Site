@@ -11,7 +11,7 @@ describe("Navigation", () => {
     useSelector.mockImplementation((selector) =>
       selector({
         userReducer: {
-          user: null,
+          isConnected: true,
         },
       })
     );
@@ -35,6 +35,7 @@ describe("Navigation", () => {
             profileImage:
               "http://k.kakaocdn.net/dn/boEp6l/btq6MTNzPgH/mVE7m02pyxfoMLZIb0iJQK/img_640x640.jpg",
           },
+          isConnected: true,
         },
       })
     );
