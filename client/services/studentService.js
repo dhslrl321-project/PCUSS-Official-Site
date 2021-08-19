@@ -7,7 +7,7 @@ export const fetchStudents = async (id) => {
   return data;
 };
 
-export const fetchAppendStudent = async (studentId, pageQuery) => {
+export const fetchMoreStudents = async (studentId, pageQuery) => {
   const { data } = await API.get(
     `/student-service/students/${studentId}?page=${pageQuery}&size=10`
   );
@@ -15,7 +15,7 @@ export const fetchAppendStudent = async (studentId, pageQuery) => {
   return data;
 };
 
-export const fetchActivity = async (studentId) => {
+export const fetchActivities = async (studentId) => {
   const { data } = await API.get(
     `/student-service/students/activity/${studentId}`
   );

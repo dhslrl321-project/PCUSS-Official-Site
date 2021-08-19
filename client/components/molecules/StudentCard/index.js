@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import * as S from "./styles";
 
@@ -7,18 +7,35 @@ import { HiArrowNarrowDown } from "react-icons/hi";
 import Label from "../../atoms/Label";
 import CollapseCard from "../CollapseCard";
 
-import { loadActivity } from "../../../reducer/student";
-
-const StudentCard = ({ studentId, studentName, totalNumber }) => {
-  const dispatch = useDispatch();
+const StudentCard = ({
+  studentId,
+  studentName,
+  totalNumber,
+  handleSeeMoreButtonClick,
+}) => {
+  const { grade, students } = useSelector((state) => state.studentReducer);
   const [isHover, setIsHover] = useState(false);
+  const [nowGrade, setNowGrade] = useState(grade);
 
-  const { activity } = useSelector((state) => state.studentReducer);
+  const selectedStudent = students.filter(
+    (student) => student.studentId === studentId
+  );
+
+  const { activities } = selectedStudent[0];
 
   const toggleIsHover = (studentId) => {
     setIsHover(!isHover);
-    dispatch(loadActivity(studentId));
+    if (!isHover) {
+      handleSeeMoreButtonClick(studentId);
+    }
   };
+
+  useEffect(() => {
+    if (grade !== nowGrade) {
+      setIsHover(false);
+      setNowGrade(grade);
+    }
+  });
 
   // api 호출해서 CollapseCard에 넣어줘야 함
   return (
@@ -44,8 +61,8 @@ const StudentCard = ({ studentId, studentName, totalNumber }) => {
           </S.Button>
         </S.Items>
       </S.Unset>
-      <S.CardWrapper isHover={isHover} count={activity.length * 57 + "px"}>
-        <CollapseCard data={activity} />
+      <S.CardWrapper isHover={isHover} count={activities.length * 53 + "px"}>
+        <CollapseCard data={activities} />
       </S.CardWrapper>
     </S.Container>
   );

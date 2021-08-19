@@ -1,17 +1,22 @@
+import { useSelector } from "react-redux";
+
 import * as S from "./styles";
 
 import StudentCard from "../../molecules/StudentCard";
 import MoreButton from "../../molecules/MoreButton";
 
-const StudentGroup = ({ data }) => {
+const StudentGroup = ({ handleSeeMoreButtonClick }) => {
+  const { students } = useSelector((state) => state.studentReducer);
+
   return (
     <S.Container>
-      {data.map((student, index) => (
+      {students.map((student) => (
         <StudentCard
-          key={index}
+          key={student.studentId}
           studentId={student.studentId}
           studentName={student.name}
           totalNumber={student.totalNumber}
+          handleSeeMoreButtonClick={handleSeeMoreButtonClick}
         />
       ))}
       <S.ButtonWrapper>

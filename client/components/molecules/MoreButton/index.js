@@ -6,25 +6,24 @@ import * as S from "./styles";
 
 import Button from "../../atoms/Button";
 
-import { loadAppendStudent, setLast } from "../../../reducer/student";
-import store from "../../../reducer";
+import { loadMoreStudents } from "../../../reducer/student";
 
 const MoreButton = () => {
   const dispatch = useDispatch();
 
-  const { id, last } = useSelector((state) => state.studentReducer);
+  const { grade, last } = useSelector((state) => state.studentReducer);
 
   const [nowStudentId, setNowStudentId] = useState(17);
 
   let ref = useRef(1);
 
   const handleOnClickButton = () => {
-    if (nowStudentId !== id) {
+    if (nowStudentId !== grade) {
       ref.current = 1;
     }
 
-    dispatch(loadAppendStudent(id, ref.current));
-    setNowStudentId(id);
+    dispatch(loadMoreStudents(grade, ref.current));
+    setNowStudentId(grade);
     ref.current += 1;
   };
 
