@@ -1,112 +1,140 @@
 import {
   fetchStudents,
-  fetchAppendStudent,
-  fetchActivity,
+  fetchMoreStudents,
+  fetchActivities,
 } from "../services/studentService";
 
 // initialState
 const initialState = {
   students: [],
-  id: 17,
+  grade: 17,
   last: false,
-  activity: [],
 };
 
 // action type
-const SET_STUDENT = "client/student/SET_STUDENT";
-const SET_APPEND_STUDENT = "client/student/SET_APPEND_STUDENT";
-const SET_LAST = "client/student/SET_LAST";
-const SET_ACTIVITY = "client/student/SET_ACTIVITY";
+const SET_STUDENTS_BY_GRADE = "client/student/SET_STUDENTS_BY_GRADE";
+const SET_MORE_STUDENTS = "client/student/SET_MORE_STUDENTS";
+const SET_IS_LAST_PAGE = "client/student/SET_IS_LAST_PAGE";
+const SET_ACTIVITIES = "client/student/SET_ACTIVITIES";
+
 // reducer
 export const reducer = (state = initialState, action) => {
-  if (action.type === SET_STUDENT) {
+  if (action.type === SET_STUDENTS_BY_GRADE) {
+    const { grade, students } = action.payload;
     return {
       ...state,
-      students: action.students,
-      id: action.id,
+      grade,
+      students,
     };
   }
-  if (action.type === SET_APPEND_STUDENT) {
+  if (action.type === SET_MORE_STUDENTS) {
     const { students } = state;
-    const { student } = action;
+    const { moreStudents } = action.payload;
     return {
       ...state,
-      students: students.concat(student),
+      students: students.concat(moreStudents),
     };
   }
-  if (action.type === SET_LAST) {
-    const { last } = action;
+  if (action.type === SET_IS_LAST_PAGE) {
+    const { last } = action.payload;
     return {
       ...state,
-      last: last,
+      last,
     };
   }
-  if (action.type === SET_ACTIVITY) {
-    const { activity } = action;
+  if (action.type === SET_ACTIVITIES) {
+    const { activities, studentId } = action.payload;
+    const { students } = state;
     return {
       ...state,
-      activity: activity,
+      students: students.map((student) =>
+        student.studentId === studentId ? { ...student, activities } : student
+      ),
     };
   }
   return state;
 };
 
 // action creator
-export const setStudent = (students, id) => {
+export const setStudentsByGrade = (grade, students) => {
   return {
-    type: SET_STUDENT,
-    students,
-    id,
+    type: SET_STUDENTS_BY_GRADE,
+    payload: {
+      grade,
+      students,
+    },
   };
 };
 
-export const setAppendStudent = (student) => {
+export const setMoreStudents = (moreStudents) => {
   return {
-    type: SET_APPEND_STUDENT,
-    student,
+    type: SET_MORE_STUDENTS,
+    payload: {
+      moreStudents,
+    },
   };
 };
 
-export const setLast = (last) => {
+export const setIsLastPage = (last) => {
   return {
-    type: SET_LAST,
-    last,
+    type: SET_IS_LAST_PAGE,
+    payload: {
+      last,
+    },
   };
 };
 
-export const setActivity = (activity) => {
+export const setActivities = (studentId, activities) => {
   return {
-    type: SET_ACTIVITY,
-    activity,
+    type: SET_ACTIVITIES,
+    payload: {
+      studentId,
+      activities,
+    },
   };
 };
 
-export const loadStudent = (id) => {
+export const loadStudentsByGrade = (grade) => {
   return async (dispatch) => {
-    const students = await fetchStudents(id);
+    const students = await fetchStudents(grade);
 
-    const { last, content } = students;
-    dispatch(setLast(last));
-    dispatch(setStudent(content, id));
+    const { last, content: contents } = students;
+
+    let array = [];
+
+    contents.map((content) => {
+      const { studentId, name, totalNumber } = content;
+
+      const student = {
+        studentId,
+        name,
+        totalNumber,
+        activities: [],
+      };
+      array.push(student);
+    });
+
+    dispatch(setIsLastPage(last));
+    dispatch(setStudentsByGrade(grade, array));
   };
 };
 
-export const loadAppendStudent = (count, number) => {
+export const loadMoreStudents = (count, number) => {
   return async (dispatch) => {
-    const moreStudents = await fetchAppendStudent(count, number);
+    const moreStudents = await fetchMoreStudents(count, number);
     const { content, last } = moreStudents;
 
     if (last === true) {
-      dispatch(setLast(last));
+      dispatch(setIsLastPage(last));
     }
-    dispatch(setAppendStudent(content));
+    dispatch(setMoreStudents(content));
   };
 };
 
-export const loadActivity = (studentId) => {
+export const loadActivities = (studentId) => {
   return async (dispatch) => {
-    const activity = await fetchActivity(studentId);
+    const activities = await fetchActivities(studentId);
 
-    dispatch(setActivity(activity));
+    dispatch(setActivities(studentId, activities));
   };
 };
