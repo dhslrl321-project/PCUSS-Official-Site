@@ -5,7 +5,7 @@ import * as S from "./styles";
 import StudentCard from "../../molecules/StudentCard";
 import MoreButton from "../../molecules/MoreButton";
 
-const StudentGroup = ({ handleSeeMoreButtonClick }) => {
+const StudentGroup = ({ handleSeeDetailButtonClick }) => {
   const { students } = useSelector((state) => state.studentReducer);
 
   return (
@@ -16,7 +16,7 @@ const StudentGroup = ({ handleSeeMoreButtonClick }) => {
           studentId={student.studentId}
           studentName={student.name}
           totalNumber={student.totalNumber}
-          handleSeeMoreButtonClick={handleSeeMoreButtonClick}
+          handleSeeDetailButtonClick={handleSeeDetailButtonClick}
         />
       ))}
       <S.ButtonWrapper>
