@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import Student from "../components/sections/Student";
 import { data as studentData } from "../datas/StudentData";
@@ -15,13 +15,13 @@ const student = () => {
     dispatch(loadStudentsByGrade(grade));
   };
 
-  const handleSeeMoreButtonClick = (studentId) => {
+  const handleSeeDetailButtonClick = (studentId) => {
     dispatch(loadActivities(studentId));
   };
 
   useEffect(() => {
     dispatch(loadStudentsByGrade(17));
-  }, []); // loading ±¸ÇöÇØ¾ßÇÔ
+  }, []); // loading êµ¬í˜„í•´ì•¼í•¨
 
   return (
     <>
@@ -29,7 +29,7 @@ const student = () => {
         <Student
           data={studentData}
           handleStudentIdLabelClick={handleStudentIdLabelClick}
-          handleSeeMoreButtonClick={handleSeeMoreButtonClick}
+          handleSeeDetailButtonClick={handleSeeDetailButtonClick}
         />
       </Section>
     </>

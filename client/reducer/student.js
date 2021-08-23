@@ -122,12 +122,27 @@ export const loadStudentsByGrade = (grade) => {
 export const loadMoreStudents = (count, number) => {
   return async (dispatch) => {
     const moreStudents = await fetchMoreStudents(count, number);
-    const { content, last } = moreStudents;
+    const { content: contents, last } = moreStudents;
 
     if (last === true) {
       dispatch(setIsLastPage(last));
     }
-    dispatch(setMoreStudents(content));
+
+    let array = [];
+
+    contents.map((content) => {
+      const { studentId, name, totalNumber } = content;
+
+      const student = {
+        studentId,
+        name,
+        totalNumber,
+        activities: [],
+      };
+      array.push(student);
+    });
+
+    dispatch(setMoreStudents(array));
   };
 };
 

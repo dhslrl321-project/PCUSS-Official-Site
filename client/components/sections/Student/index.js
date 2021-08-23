@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import * as S from "./styles";
 
@@ -9,7 +9,7 @@ import StudentGroup from "../../organisms/StudentGroup";
 const Student = ({
   data,
   handleStudentIdLabelClick,
-  handleSeeMoreButtonClick,
+  handleSeeDetailButtonClick,
 }) => {
   const { headerData, numLabels } = data;
   const { title, description } = headerData;
@@ -71,7 +71,7 @@ const Student = ({
             ))}
           </S.InfoColumn>
         </S.InfoGroup>
-        <StudentGroup handleSeeMoreButtonClick={handleSeeMoreButtonClick} />
+        <StudentGroup handleSeeDetailButtonClick={handleSeeDetailButtonClick} />
       </S.CardWrapper>
     </S.Container>
   );
