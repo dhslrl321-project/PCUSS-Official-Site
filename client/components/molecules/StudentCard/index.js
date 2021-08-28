@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useSelector } from "react-redux";
 import * as S from "./styles";
 
@@ -22,17 +22,13 @@ const StudentCard = ({
     }
   };
 
-  const { students, grade } = useSelector((state) => state.studentReducer);
+  const { students } = useSelector((state) => state.studentReducer);
 
   const selectedStudent = students.filter(
     (student) => student.studentId === studentId
   );
 
   const { activities } = selectedStudent[0];
-
-  useEffect(() => {
-    setIsHover(false);
-  }, [grade]);
 
   return (
     <S.Container>
@@ -57,8 +53,11 @@ const StudentCard = ({
           </S.Button>
         </S.Items>
       </S.Unset>
-      <S.CardWrapper isHover={isHover} count={activities.length * 53 + "px"}>
-        {/* <S.CardWrapper isHover={isHover} count={200 + "px"}> */}
+      {/* <S.CardWrapper isHover={isHover} count={activities.length * 59 + "px"}> */}
+      <S.CardWrapper
+        isHover={isHover}
+        count={activities.length * 100 - activities.length * 20 + "px"}
+      >
         <CollapseCard data={activities} />
       </S.CardWrapper>
     </S.Container>

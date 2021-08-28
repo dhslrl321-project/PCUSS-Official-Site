@@ -1,6 +1,7 @@
 import * as S from "./styles";
 
 import Label from "../../atoms/Label";
+import Modal from "../../organisms/Modal";
 
 const CollapseCard = ({ data }) => {
   const headerData = [
@@ -37,6 +38,9 @@ const CollapseCard = ({ data }) => {
           </S.Margin>
         </S.LabelWrapper>
       ))}
+      <S.ModalWrapper>
+        <Modal>활동 추가</Modal>
+      </S.ModalWrapper>
     </S.Container>
   );
 };
