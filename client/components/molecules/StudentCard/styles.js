@@ -109,11 +109,15 @@ export const Unset = styled.div`
 
 export const CardWrapper = styled.div`
   width: 100%;
+  max-height: ${ifProp("isHover", prop("count"), "0")};
+  min-height: ${ifProp("isHover", "130px", "0")};
 
-  height: ${ifProp("isHover", prop("count"), "0")};
   overflow: hidden;
-
   transition: 1s ease;
+
+  @media screen and (max-width: 480px) {
+    min-height: ${ifProp("isHover", "100px", "0")};
+  }
 `;
 
 export const IconWrapper = styled.div`
