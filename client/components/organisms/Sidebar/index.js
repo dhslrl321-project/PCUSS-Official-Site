@@ -12,7 +12,7 @@ const Sidebar = ({ isSidebarOpen, handleSidebarToggle }) => {
 
   return (
     <S.Container isSidebarOpen={isSidebarOpen} onClick={handleSidebarToggle}>
-      <S.Icon >
+      <S.Icon onClick={handleSidebarToggle}>
         <FaTimes />
       </S.Icon>
       <S.SidebarWrapper>

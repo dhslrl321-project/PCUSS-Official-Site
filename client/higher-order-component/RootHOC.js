@@ -17,9 +17,9 @@ const RootHOC = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const handleSidebarToggle = () => {
-    setIsSidebarOpen({
-      isSidebarOpen: !isSidebarOpen,
-    });
+    setIsSidebarOpen(
+      !isSidebarOpen,
+    );
   };
 
   useEffect(() => {
