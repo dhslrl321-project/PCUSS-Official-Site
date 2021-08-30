@@ -18,7 +18,7 @@ export const LabelItem = styled.li`
   cursor: pointer;
   list-style: none;
   margin: 15px 15px;
-  color: ${ifProp("active", "#539BF5", "#FFFFFF")};
+  color: ${ifProp("active", "#0050FF", "#FFFFFF")};
 
   @media screen and (max-width: 480px) {
     span {

@@ -4,9 +4,8 @@ export const Container = styled.div`
   height: 30px;
   width: 80px;
   margin: 15px 0px;
-  border-radius: 10px;
-  color: #539bf5;
-  font-weight: bolder;
+  color: #0050ff;
+  font-weight: bold;
 `;
 
 export const Span = styled.span`

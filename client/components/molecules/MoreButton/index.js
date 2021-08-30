@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 import { useDispatch, useSelector } from "react-redux";
 
@@ -13,27 +13,31 @@ const MoreButton = () => {
 
   const { grade, last } = useSelector((state) => state.studentReducer);
 
-  const [nowStudentId, setNowStudentId] = useState(17);
-
   let ref = useRef(1);
+  let refGrade = useRef(grade);
+
+  useEffect(() => {
+    refGrade.current = grade;
+    ref.current = 1;
+  }, [grade]);
 
   const handleOnClickButton = () => {
-    if (nowStudentId !== grade) {
+    if (refGrade.current !== grade) {
       ref.current = 1;
     }
 
     dispatch(loadMoreStudents(grade, ref.current));
-    setNowStudentId(grade);
+
     ref.current += 1;
   };
 
-  if (last === false) {
+  if (!last) {
     return (
       <S.Container>
         <Button handleOnClick={handleOnClickButton}>더 보기</Button>
       </S.Container>
     );
-  } else if (last === true) {
+  } else if (last) {
     return null;
   }
 };

@@ -1,8 +1,6 @@
 import * as S from "./styles";
 
-import Button from "../../atoms/Button";
-
-const Modal = ({ children }) => {
+const ModalButton = ({ children }) => {
   return (
     <S.Container>
       <S.Span>{children}</S.Span>
@@ -10,4 +8,4 @@ const Modal = ({ children }) => {
   );
 };
 
-export default Modal;
+export default ModalButton;

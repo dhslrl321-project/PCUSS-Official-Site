@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { theme, ifProp } from 'styled-tools';
+import styled from "styled-components";
+import { theme, ifProp } from "styled-tools";
 
 export const Container = styled.aside`
   position: fixed;
@@ -14,7 +14,12 @@ export const Container = styled.aside`
   left: 0;
   transition: 0.5s ease-in-out;
   opacity: ${({ isSidebarOpen }) => (isSidebarOpen ? "100%" : "0")};
-  top: ${({ isSidebarOpen }) => (isSidebarOpen ? "0" : '-100%')};
+  top: ${({ isSidebarOpen }) => (isSidebarOpen ? "0" : "-100%")};
+
+  display: none;
+  @media screen and (max-width: 982px) {
+    display: block;
+  }
 `;
 
 export const Icon = styled.div`
