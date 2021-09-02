@@ -1,7 +1,7 @@
 import * as S from "./styles";
 
 import Label from "../../atoms/Label";
-import ModalButton from "../../organisms/ModalButton";
+import ModalButton from "../ModalButton";
 
 const CollapseCard = ({ data }) => {
   const headerData = [

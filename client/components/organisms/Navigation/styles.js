@@ -8,7 +8,7 @@ export const Container = styled.nav`
 `;
 
 export const NavWrapper = styled.div`
-  background: ${theme("palettes.background")};
+  background: ${ifProp("isScrolled", "red", "inherit")};
 
   display: flex;
   justify-content: space-between;

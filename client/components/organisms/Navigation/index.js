@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { useSelector } from "react-redux";
+
+import * as S from "./styles";
 
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import { FaBars } from "react-icons/fa";
@@ -14,9 +16,7 @@ import {
   profileData,
 } from "../../../datas/NavigationData";
 
-import * as S from "./styles";
-
-const Navigation = ({ handleSidebarToggle }) => {
+const Navigation = ({ handleSidebarToggle, isScrolled }) => {
   const { dropdownData } = navigationData;
 
   const [hideOnScroll, setHideOnScroll] = useState(true);
@@ -60,7 +60,7 @@ const Navigation = ({ handleSidebarToggle }) => {
 
   return (
     <S.Container>
-      <S.NavWrapper show={hideOnScroll}>
+      <S.NavWrapper show={hideOnScroll} isScrolled={isScrolled}>
         <S.NavColumnWrapper>
           <NavColumn name="배재대학교 정보보안학과" href="/" />
         </S.NavColumnWrapper>
