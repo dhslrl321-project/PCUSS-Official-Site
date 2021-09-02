@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 100%;
+  transition: 1s ease;
 `;
 
 export const HeaderWrapper = styled.div`
@@ -70,7 +70,7 @@ export const HeaderWrapper = styled.div`
 export const LabelWrapper = styled.div`
   display: flex;
 
-  margin: 2% 0%;
+  padding: 1% 0%;
 
   div: nth-child(1) {
     width: 10%;
@@ -122,4 +122,9 @@ export const LabelWrapper = styled.div`
 
 export const Margin = styled.div`
   width: 100%;
+`;
+
+export const ModalWrapper = styled.div`
+  display: flex;
+  justify-content: center;
 `;

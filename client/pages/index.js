@@ -10,9 +10,7 @@ import Section from "../components/atoms/Section";
 export default function Home() {
   return (
     <>
-      <Section styleType="FirstMargin">
-        <Hero />
-      </Section>
+      <Hero />
       <Section styleType="DefaultMargin">
         <Merit data={meritData} />
       </Section>
